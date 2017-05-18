@@ -408,14 +408,6 @@ $(document).ready(function(){
   });
 });
 
-/*-----------------------------------
-Full Width Video
------------------------------------*/
-
-$(function(){
-  "use strict";
-  $(".player").mb_YTPlayer();
-});
 
 /*-----------------------------------
 Close Button for Alert Boxes
@@ -489,7 +481,7 @@ $(document).ready(function ($) {
 
  /*-----------------------------------
 Google Map
------------------------------------*/
+----------------------------------
 
 $(document).ready(function() {
   "use strict";
@@ -535,3 +527,4 @@ $(document).ready(function() {
    // End Marker
 
 })
+*/

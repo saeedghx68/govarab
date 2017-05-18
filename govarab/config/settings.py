@@ -77,9 +77,9 @@ WSGI_APPLICATION = 'config.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'govarabDB',
-        'USER': 'boshra',
-        'PASSWORD': 'b123',
+        'NAME': 'govarab_db',
+        'USER': 'saeed',
+        'PASSWORD': '123',
         'HOST': '',
         'PORT': '5432'
     }
