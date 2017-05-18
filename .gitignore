@@ -1,4 +1,5 @@
 ../.idea/
-govarab/__pycache__/
-myapp/__pycache__/
-myapp/migrations/__pycache__/
+govarab/myapp/__pycache__/
+govarab/myapp/migrations/__pycache__/
+govarab/config/settings.py
+*.pyc

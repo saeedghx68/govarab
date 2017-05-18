@@ -50,7 +50,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'govarab.urls'
+ROOT_URLCONF = 'config.urls'
 
 TEMPLATES = [
     {
@@ -68,7 +68,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'govarab.wsgi.application'
+WSGI_APPLICATION = 'config.wsgi.application'
 
 
 # Database
@@ -77,9 +77,9 @@ WSGI_APPLICATION = 'govarab.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'govarabDB',
-        'USER': 'boshra',
-        'PASSWORD': 'b123',
+        'NAME': 'govarab_db',
+        'USER': 'saeed',
+        'PASSWORD': '123',
         'HOST': '',
         'PORT': '5432'
     }

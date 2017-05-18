@@ -1,0 +1,25 @@
+a, .header ul.social-links li a:hover, .testimonials .flex-direction-nav li a:hover,
+.service-item:hover i, .price-table:hover h4, .price-table h4.selected, a.price-button:hover, a.price-button.selected,
+.accordion-button:hover, .accordion-button i.fa-arrow-circle-o-down, .team-photo ul.team-social-links li a:hover,
+a.button-to-top:hover, .title, .mobile-nav-button:hover, .callout-box.co-colored-box h5,
+a.header-down-arrow:hover, .color {color:#f1c40f;}
+
+.nav li a.selected,
+.nav li a:hover,
+.nav li a.current {color:#f1c40f !important;}
+
+a.button, .skillbar-title, .skillbar-bar, button#submit
+{background: #f1c40f;}
+
+button#submit {border:1px solid #f1c40f;}
+
+.callout-box.co-colored-box{border-left: 4px solid #f1c40f;}
+
+.static-testimonial{
+background: 
+linear-gradient(
+	rgba(241,196,15,.8),
+	rgba(241,196,15,.8)
+),
+url(../../images/pattern-2.png) left top repeat,
+url(../../images/parallax/parallax-bg-5.jpg) center center fixed;
