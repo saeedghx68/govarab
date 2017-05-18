@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+{% load static from staicfiles %}
+<html lang="en">
+<head>
+
+   <meta charset="utf-8" />
+   <title>Andare One Page HTML Theme</title>
+   <meta name="description" content="" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+   <!--Favicon -->
+	<link rel="icon" type="{% static 'image/png' %}" href="images/favicon.ico" />
+		
+	<!-- CSS Files -->	
+	<link rel="stylesheet" href="{% static 'css/reset.css' %}" />
+	<link rel="stylesheet" href="{% static 'css/animate.min.css' %}" />
+	<link rel="stylesheet" href="{% static 'css/grid.css' %}" />
+	<link rel="stylesheet" href="{% static 'css/base.css' %}" />
+	<link rel="stylesheet" href="{% static 'css/layout.css' %}" />
+	<link rel="stylesheet" href="{% static 'css/flexslider.css' %}" />
+	<link rel="stylesheet" href="{% static 'css/font-awesome.css' %}" />
+	<link rel="stylesheet" href="{% static 'css/prettyPhoto.css' %}" />
+	<link rel="stylesheet" href="{% static 'css/player/YTPlayer.css' %}" />
+	<link rel="stylesheet" href="{% static 'css/media-queries.css' %}" />
+
+	<!-- Color Options -->
+	<link id="color-options" rel="stylesheet" href="{% static 'css/colors/blue.css' %}" />
+
+	<!-- Theme Options -->
+	<link id="theme-options" rel="stylesheet" href="{% static 'css/theme/light.css' %}" />
+
+	<!-- Options Panel Styles (remove me for production) -->
+	<link rel="stylesheet" href="{% static 'panel/options-panel.css' %}" />
+
+</head>
+
+<body>
+	
+	<!-- Page Loader -->
+	<section id="preloader">
+		<div class="loader fa fa-spin"></div>
+	</section>
+
+	<!-- Navigation -->
+	<section id="navigation" class="hide-nav">
+		<!-- Navigation Container -->
+		<div class="nav-container">
+
+			<!-- Site Logo -->
+			<a href="#home" class="site-logo scroll">Andare</a>
+
+			<a class="mobile-nav-button"><i class="fa fa-bars"></i></a>
+
+			<!-- Navigation Menu -->
+			<div class="nav-menu">
+				<ul class="nav">
+					<li><a href="#home" class="scroll link">Home</a></li>
+					<li><a href="#about" class="scroll link">About</a></li>
+					<li><a href="#services" class="scroll link">Services</a></li>
+					<li><a href="#portfolio" class="scroll link">Portfolio</a></li>
+					<li><a href="#pricing" class="scroll link">Pricing</a></li>
+					<li><a href="#team" class="scroll link">Team</a></li>
+					<li>
+						<a href="#blog" class="scroll link">Blog <i class="fa fa-chevron-down"></i></a>
+						<ul>
+							<li><a href="blog-main.html">Blog Main</a></li>
+							<li><a href="blog-single.html">Blog Single</a></li>
+						</ul>
+					</li><!-- end drop down -->
+					<li><a href="features.html" class="scroll link">Features</a></li>
+					<li><a href="#contact" class="scroll link">Contact</a></li>
+				</ul>
+			</div><!-- end nav menu -->
+		</div><!-- end nav container -->
+	</section><!-- end navigation section -->
+
+
+
+	<!-- Home Section -->
+	<section id="home"> 
+		<div id="slides">
+
+			<div class="slides-container">
+				<!-- Full Screen Slides-->
+				<div class="slide-2"></div>
+				<div class="slide-3"></div>
+				<div class="slide-1"></div>
+				<div class="slide-4"></div> 
+			</div><!-- end slider container -->
+
+			<!-- Slider Controls -->
+			<nav class="slides-navigation">
+			  <a href="#" class="next"></a>
+			  <a href="#" class="prev"></a>
+			</nav><!-- end slider controls -->
+
+		</div><!-- end slides -->
+
+		<div class="container header slider-home">
+
+			<!-- Site Logo -->
+			<span class="logo">Andare</span>
+			<!-- Text Slider -->
+			<div class="header-text">
+				<ul class="text-slider">
+					<li class="text-slides">We Believe in <span class="color normal">Good Design</span></li>
+					<li class="text-slides">We Are <span class="color normal">Good Designers</span></li>
+					<li class="text-slides">We Do <span class="color normal">Incredible Designs</span></li>
+				</ul>
+			</div><!-- end text slider -->
+			<!-- Social Media Links -->
+			<div class="social-media">
+				<h4>Spread the Word</h4>
+				<ul class="social-links">
+					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fa fa-vimeo-square"></i></a></li>
+					<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+					<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+				</ul>
+			</div><!-- end social media links -->
+			<a href="#about" class="header-down-arrow scroll link"></a>
+		</div><!-- end header container -->
+	</section><!-- end home section -->
+
+
+
+	<!-- About Section -->
+	<section id="about" class="section">
+		<div class="container">
+			<h2 class="title">About The Andare Theme</h2>
+			<h4 class="subtitle">Everything you need to be stylish in one convenient place.</h4>
+				<div class="one-third column animated" data-animate="fadeInLeft" data-animate-delay="400">
+					<div class="icon-box"><i class="fa fa-eye fa-4x"></i></div>
+					<h5>Retina Ready Design</h5>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil, libero, tenetur perspiciatis eos provident laborum eum dignissimos est consectetur cupiditate tempore culpa adipisci nostrum incidunt obcaecati voluptatem architecto fuga.</div>
+				<div class="one-third column animated" data-animate="fadeIn" data-animate-delay="400">
+					<div class="icon-box"><i class="fa fa-mobile fa-4x"></i></div>
+					<h5>Responsive Mobile Friendly</h5>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, tenetur, culpa necessitatibus quibusdam quia assumenda fugiat eos dolores repudiandae voluptatem libero minus numquam cupiditate inventore excepturi. Temporibus accusantium fugiat optio!</div>
+				<div class="one-third column animated" data-animate="fadeInRight" data-animate-delay="400">
+					<div class="icon-box"><i class="fa fa-heart fa-4x"></i></div>
+					<h5>Make it Your Own</h5>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, eos ipsa quia laboriosam voluptatibus sit labore. Rerum, in temporibus. Dolor, ducimus, voluptas quidem ea laudantium doloribus quisquam doloremque fuga accusamus.</div>
+		</div><!-- end container -->
+	</section><!-- end about section -->
+
+	
+	
+	<!-- Testimonials -->
+	<section class="testimonials parallax1">
+
+	<!-- Callout Title -->
+	<section class="callout">
+		<div class="container">
+			<h3 class="animated" data-animate="fadeInDown" data-animate-delay="300">Here's what our <span class="color">customers</span> are saying!</h3>
+		</div><!-- end container -->
+	</section><!-- end callout title -->
+
+		<div class="container">
+			<ul class="testimonial-slider">
+				<!-- Testimonial 1 -->
+				<li class="t-slide">
+					<h4>Everyone designs who devises <span class="color">courses of action</span> aimed at changing existing situations into preferred ones.</h4>
+					<p>Herbert Simon</p>
+				</li>
+				<!-- Testimonial 2 -->
+				<li class="t-slide">
+					<h4>Design works if it's authentic, inspired, and has a clear <span class="color">point of view</span>. It can't be a collection of input.</h4>
+					<p>Ron Johnson</p>
+				</li>
+				<!-- Testimonial 3 -->
+				<li class="t-slide">
+					<h4>The design of each element should <span class="color">be thought out</span> in order to be easy to make and easy to repair.</h4>
+					<p>Leo Fender</p>
+				</li>
+			</ul><!-- end testimonials list -->
+		</div><!-- end container -->
+	</section><!-- end testimonials -->
+
+
+
+	<!-- Services Section -->
+	<section id="services" class="section">
+		<div class="container">
+			<h2 class="title">What Andare Provides</h2>
+			<h4 class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, enim.</h4>
+			<div class="animated" data-animate="fadeInUp" data-animate-delay="400">
+				<img src="{% static 'images/imonitor-1.png' %}" alt="Monitor Image" class="scale-with-grid mockup" title="There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which"  />
+			</div>
+		</div><!-- end container -->
+		
+		<section class="services-list parallax2">
+			<div class="container">
+				<div class="row">
+					<div class="four columns animated service-item" data-animate="fadeInLeft" data-animate-delay="300">
+						<i class="fa fa-wrench fa-3x tipped" data-title="An Awesome Tooltip!"></i>
+						<h5>Easy to Customize</h5>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, praesentium iure tenetur officia quisquam architecto ullam facere optio inventore rem.
+					</div>
+					<div class="four columns animated service-item" data-animate="fadeIn" data-animate-delay="300">
+						<i class="fa fa-tablet fa-3x tipped" data-title="An Awesome Tooltip!"></i>
+						<h5>Fully Responsive</h5>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa magnam provident delectus perspiciatis ut cumque quos maiores quae officiis magni.
+					</div>
+					<div class="four columns animated service-item" data-animate="fadeIn" data-animate-delay="300">
+						<i class="fa fa-table fa-3x tipped" data-title="An Awesome Tooltip!"></i>
+						<h5>Grid Based Design</h5>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, nam quaerat sit! Quasi magni esse fuga modi ex libero deserunt.
+					</div>
+					<div class="four columns animated service-item" data-animate="fadeInRight" data-animate-delay="300">
+						<i class="fa fa-html5 fa-3x tipped" data-title="An Awesome Tooltip!"></i>
+						<h5>HTML5 & CSS3</h5>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, ex nam dolorem nesciunt corporis quisquam saepe omnis sunt natus nostrum!
+					</div>
+				</div><!-- end row -->
+				<div class="row">
+					<div class="four columns animated service-item" data-animate="fadeInLeft" data-animate-delay="300">
+						<i class="fa fa-tint fa-3x tipped" data-title="An Awesome Tooltip!"></i>
+						<h5>Easy Color Change</h5>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, praesentium iure tenetur officia quisquam architecto ullam facere optio inventore rem.
+					</div>
+					<div class="four columns animated service-item" data-animate="fadeIn" data-animate-delay="300">
+						<i class="fa fa-file-text fa-3x tipped" data-title="An Awesome Tooltip!"></i>
+						<h5>One Page Layout</h5>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa magnam provident delectus perspiciatis ut cumque quos maiores quae officiis magni.
+					</div>
+					<div class="four columns animated service-item" data-animate="fadeIn" data-animate-delay="300">
+						<i class="fa fa-code fa-3x tipped" data-title="An Awesome Tooltip!"></i>
+						<h5>Commented Code</h5>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, nam quaerat sit! Quasi magni esse fuga modi ex libero deserunt.
+					</div>
+					<div class="four columns animated service-item" data-animate="fadeInRight" data-animate-delay="300">
+						<i class="fa fa-rocket fa-3x tipped" data-title="An Awesome Tooltip!"></i>
+						<h5>Will Make You Awesome</h5>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, ex nam dolorem nesciunt corporis quisquam saepe omnis sunt natus nostrum!
+					</div>
+				</div><!-- end row -->
+			</div><!-- end container -->
+		</section><!-- end parallax section -->	
+	</section><!-- end services section-->
+
+
+
+	<!-- Portfolio Section -->
+	<section id="portfolio" class="section">
+
+		<div class="container" id="portfolio-title">
+			<h2 class="title">Our Recent Work</h2>
+			<h4 class="subtitle">Check out a list of our most favorite projects.</h4>
+		</div><!-- end portfolio title container -->
+
+			<!-- Project Expander -->
+			<div class="item-expander">
+				<div id="item-expander">
+					<p class="close-btn"><a class="close"></a></p>
+					<div class="expander-container"></div>
+				</div>
+			</div>
+		
+		<div class="container" id="portfolio-container">
+
+			<!-- Portfolio Filters -->
+			<div id="options" class="filter-menu">
+				<ul id="filters" class="option-set" data-option-key="filter">
+					<li><a href="#filter" data-option-value="*" class="selected">All</a></li>
+					<li><a href="#filter" data-option-value=".illustration">Illustration</a></li>
+					<li><a href="#filter" data-option-value=".photography">Photography</a></li>
+					<li><a href="#filter" data-option-value=".motion">Motion</a></li>
+					<li><a href="#filter" data-option-value=".web">Web</a></li>
+				</ul>
+			</div>
+
+			<!-- Portfolio Items -->
+			<div class="portfolio-items">
+
+					<!-- Item 1 -->
+					<div class="item four columns illustration">
+						<a href="project-1.html" class="expander">
+							<img src="{% static 'images/portfolio/project-1.jpg' %}" alt="" />
+							<div class="mask"></div>
+							<h5>Poster Design</h5>
+						</a>
+					</div>
+					
+					<!-- Item 2 -->
+					<div class="item four columns photography">
+						<a href="project-2.html" class="expander">
+							<img src="{% static 'images/portfolio/project-2.jpg' %}" alt="" />
+							<div class="mask"></div>
+							<h5>Logo Illustration</h5>
+						</a>
+					</div>
+
+					<!-- Item 3 -->
+					<div class="item four columns web">
+						<a href="images/portfolio/project-3.jpg' %}" data-rel="prettyPhoto">
+							<img src="{% static 'images/portfolio/project-3.jpg' %}" alt="" />
+							<div class="mask"></div>
+							<h5>Client Work</h5>
+						</a>
+					</div>
+
+					<!-- Item 4 -->
+					<div class="item four columns photography">
+						<a href="project-1.html" class="expander">
+							<img src="{% static 'images/portfolio/project-4.jpg' %}" alt="" />
+							<div class="mask"></div>
+							<h5>Personal Design</h5>
+						</a>
+					</div>
+
+					<!-- Item 5 -->
+					<div class="item four columns motion">
+						<a href="project-2.html" class="expander">
+							<img src="{% static 'images/portfolio/project-5.jpg' %}" alt="" />
+							<div class="mask"></div>
+							<h5>Poster Illustration</h5>
+						</a>
+					</div>
+
+					<!-- Item 6 -->
+					<div class="item four columns illustration">
+						<a href="images/portfolio/project-6.jpg' %}" data-rel="prettyPhoto">
+							<img src="{% static 'images/portfolio/project-6.jpg' %}" alt="" />
+							<div class="mask"></div>
+							<h5>Logo Concept</h5>
+						</a>
+					</div>
+
+					<!-- Item 7 -->
+					<div class="item four columns web">
+						<a href="project-1.html" class="expander">
+							<img src="{% static 'images/portfolio/project-7.jpg' %}" alt="" />
+							<div class="mask"></div>
+							<h5>Lettering Work</h5>
+						</a>
+					</div>
+
+					<!-- Item 8 -->
+					<div class="item four columns illustration">
+						<a href="project-2.html" class="expander">
+							<img src="{% static 'images/portfolio/project-8.jpg' %}" alt="" />
+							<div class="mask"></div>
+							<h5>Personal Work</h5>
+						</a>
+					</div>
+
+					<!-- Item 9 -->
+					<div class="item four columns motion">
+						<a href="images/portfolio/project-9.jpg' %}" data-rel="prettyPhoto">
+							<img src="{% static 'images/portfolio/project-9.jpg' %}" alt="" />
+							<div class="mask"></div>
+							<h5>Poster Illustration</h5>
+						</a>
+					</div>
+
+					<!-- Item 10 -->
+					<div class="item four columns illustration">
+						<a href="project-1.html" class="expander">
+							<img src="{% static 'images/portfolio/project-10.jpg' %}" alt="" />
+							<div class="mask"></div>
+							<h5>Logo Concept</h5>
+						</a>
+					</div>
+
+					<!-- Item 11 -->
+					<div class="item four columns web">
+						<a href="project-2.html" class="expander">
+							<img src="{% static 'images/portfolio/project-11.jpg' %}" alt="" />
+							<div class="mask"></div>
+							<h5>Lettering Work</h5>
+						</a>
+					</div>
+
+					<!-- Item 12 -->
+					<div class="item four columns illustration">
+						<a href="images/portfolio/project-12.jpg' %}" data-rel="prettyPhoto">
+							<img src="{% static 'images/portfolio/project-12.jpg' %}" alt="" />
+							<div class="mask"></div>
+							<h5>Personal Work</h5>
+						</a>
+					</div>
+
+			</div><!-- end portfolio items -->
+		</div><!-- end container -->
+	</section><!-- end portfolio section -->
+
+
+
+	<!-- Counter -->
+	<section class="counter parallax3">
+
+	<!-- Callout Title -->
+	<section class="callout">
+		<div class="container">
+			<h3 class="animated" data-animate="fadeInDown" data-animate-delay="300">Andare by the <span class="color">numbers!</span></h3>
+		</div><!-- end container -->
+	</section><!-- end callout title -->
+
+		<div class="container">
+
+				<!-- Counter Column -->
+				<div class="four columns">
+					<div class="icon-box"><i class="fa fa-flag-o fa-4x"></i></div>
+					<div class="count" data-to="354">
+						<h1 class="count-number"></h1>
+						<h5>Projects <span class="color">Completed</span></h5>
+					</div><!-- end counter data -->
+				</div><!-- end counter column -->
+
+				<!-- Counter Column -->
+				<div class="four columns">
+					<div class="icon-box"><i class="fa fa-smile-o fa-4x"></i></div>
+					<div class="count" data-to="203">
+						<h1 class="count-number"></h1>
+						<h5>Happy <span class="color">Clients</span></h5>
+					</div><!-- end counter data -->
+				</div><!-- end counter column -->
+
+				<!-- Counter Column -->
+				<div class="four columns">
+					<div class="icon-box"><i class="fa fa-comments-o fa-4x"></i></div>
+					<div class="count" data-to="467">
+						<h1 class="count-number"></h1>
+						<h5>Brainstorm <span class="color">Sessions</span></h5>
+					</div><!-- end counter data -->
+				</div><!-- end counter column -->
+
+				<!-- Counter Column -->
+				<div class="four columns">
+					<div class="icon-box"><i class="fa fa-envelope-o fa-4x"></i></div>
+					<div class="count" data-to="647">
+						<h1 class="count-number"></h1>
+						<h5>Emails <span class="color">Exchanged</span></h5>
+					</div><!-- end counter data -->
+				</div><!-- end counter column -->
+
+		</div><!-- end container -->
+	</section><!-- end counter -->
+
+
+
+	<!-- Pricing Section -->
+	<section id="pricing" class="section">
+		<div class="container">
+			<h2 class="title">We've got a price that's right for you</h2>
+			<h4 class="subtitle">Our plans are versatile and affordable</h4>
+				
+				<!-- Pricing Table -->
+				<div class="one-third column price-table animated" data-animate="fadeInLeft" data-animate-delay="400">
+					<h4>Standard</h4>
+					<div class="price-table-container">
+						<div class="price"><span class="dollar">$</span>9.95</div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, vel, veritatis porro praesentium iste vero.</p>
+						<ul>
+							<li class="tipped" data-title="Lorem ipsum dolor sit amet"><span class="color">Branding</span> Review</li>
+							<li class="tipped" data-title="Mollitia vel veritatis porro"><span class="color">Interfce</span> Design</li>
+							<li class="tipped" data-title="Lorem ipsum dolor sit amet"><span class="color">Story</span> Boards</li>
+							<li class="tipped" data-title="Mollitia vel veritatis porro"><span class="color">Social</span> Marketing</li>
+							<li class="tipped" data-title="Lorem ipsum dolor sit amet"><span class="color">Hosting</span> Plans</li>
+						</ul>
+					</div><!-- end price table container -->
+					<a href="#" class="price-button">Sign Up Now</a>
+				</div><!-- end price table -->
+				
+				<!-- Pricing Table -->
+				<div class="one-third column price-table animated" data-animate="fadeIn" data-animate-delay="400">
+					<h4 class="selected">Professional</h4>
+					<div class="price-table-container">
+						<div class="price"><span class="dollar">$</span>19.95</div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, vel, veritatis porro praesentium iste vero.</p>
+						<ul>
+							<li class="tipped" data-title="Lorem ipsum dolor sit amet"><span class="color">Branding</span> Review</li>
+							<li class="tipped" data-title="Mollitia vel veritatis porro"><span class="color">Interfce</span> Design</li>
+							<li class="tipped" data-title="Lorem ipsum dolor sit amet"><span class="color">Story</span> Boards</li>
+							<li class="tipped" data-title="Mollitia vel veritatis porro"><span class="color">Social</span> Marketing</li>
+							<li class="tipped" data-title="Lorem ipsum dolor sit amet"><span class="color">Hosting</span> Plans</li>
+						</ul>
+					</div><!-- end price table container -->
+					<a href="#" class="price-button selected">Sign Up Now</a>
+				</div><!-- end price table -->
+				
+				<!-- Pricing Table -->
+				<div class="one-third column price-table animated" data-animate="fadeInRight" data-animate-delay="400">
+					<h4>Business</h4>
+					<div class="price-table-container">
+						<div class="price"><span class="dollar">$</span>29.95</div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, vel, veritatis porro praesentium iste vero.</p>
+						<ul>
+							<li class="tipped" data-title="Lorem ipsum dolor sit amet"><span class="color">Branding</span> Review</li>
+							<li class="tipped" data-title="Mollitia vel veritatis porro"><span class="color">Interfce</span> Design</li>
+							<li class="tipped" data-title="Lorem ipsum dolor sit amet"><span class="color">Story</span> Boards</li>
+							<li class="tipped" data-title="Mollitia vel veritatis porro"><span class="color">Social</span> Marketing</li>
+							<li class="tipped" data-title="Lorem ipsum dolor sit amet"><span class="color">Hosting</span> Plans</li>
+						</ul>
+					</div><!-- end price table container -->
+					<a href="#" class="price-button">Sign Up Now</a>
+				</div><!-- end price table -->
+
+		</div><!-- end container -->
+	</section><!-- end pricing section -->
+
+	<section id="accordion" class="section accordion parallax4">
+		<div class="container">
+
+			<div class="eight columns animated" data-animate="fadeInLeft" data-animate-delay="400">
+				<img src="{% static 'images/imonitor-2.png' %}" alt="iPad Image" class="scale-with-grid mockup" />
+			</div><!-- end ipad mockup -->
+
+			<div class="eight columns accordion-container">
+				<h2 class="title">You're gonna dig Andare</h2>
+				<h4 class="subtitle">Here's why we think so</h4>
+
+				<div class="accordion-button"><i class="fa fa-arrow-circle-o-down fa-lg"></i>Andare is flexible</div>
+				<div class="accordion-content active">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, fugit, dolores, ea non harum molestias tempore earum obcaecati omnis praesentium corrupti recusandae assumenda molestiae autem?</p>
+
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, quos, porro consectetur nobis officia sequi voluptate eveniet hic quam minima ex soluta repellendus laboriosam molestias nam ratione culpa sunt error ad inventore repudiandae amet quasi illo neque blanditiis! Totam, architecto.</p>
+				</div>
+
+				<div class="accordion-button"><i class="fa fa-arrow-circle-o-right fa-lg"></i>A simply incredible theme</div>
+				<div class="accordion-content">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, quos, porro consectetur nobis officia sequi voluptate eveniet hic quam minima ex soluta repellendus laboriosam molestias nam ratione culpa sunt error ad inventore repudiandae amet quasi illo neque blanditiis! Totam, architecto.
+				</div>
+
+				<div class="accordion-button"><i class="fa fa-arrow-circle-o-right fa-lg"></i>Many options to choose from</div>
+				<div class="accordion-content">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, explicabo, impedit, aliquid inventore quia fugiat et illo doloribus illum beatae provident temporibus dicta eligendi quod soluta labore quaerat cupiditate magni repellendus incidunt veniam aspernatur eius?
+				</div>
+
+				<div class="accordion-button"><i class="fa fa-arrow-circle-o-right fa-lg"></i>Happy clients make life easy</div>
+				<div class="accordion-content">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, vitae, natus illo officia inventore et tempora eum at nisi pariatur beatae earum temporibus unde ipsum quae odio blanditiis dolorum voluptatum eligendi porro accusantium nesciunt doloribus quo aut qui. Iste, soluta beatae dolore repellat deserunt eligendi in impedit eius recusandae dolorem magni cupiditate ad commodi laboriosam corporis atque ullam quod dolor!
+				</div>
+			</div><!-- end eight col accordion section -->
+
+		</div><!-- end container -->
+	</section><!-- end accordion section -->
+
+
+
+	<section id="team" class="section">
+		<div class="container">
+			<h2 class="title">Our Creative Team</h2>
+			<h4 class="subtitle">We design circles around ourselves</h4>
+
+			<div class="four columns team">
+				<div class="team-photo">
+					<img src="{% static 'images/team-1.jpg' %}" alt="" class="scale-with-grid">
+					<div class="mask"></div>
+					<h5>Connet with Jane</h5>
+					<ul class="team-social-links">
+						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+						<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+						<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+					</ul>
+				</div><!-- end team photo -->
+
+				<h4>Jane Donaven</h4>
+				<h6>UI Developer</h6>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, adipisci quasi quod fugiat obcaecati! Mollitia amet ducimus ipsa consequuntur similique.</p>
+
+				<div class="skillbar clearfix " data-percent="85%">
+					<div class="skillbar-title"><span>HTML5</span></div>
+					<div class="skillbar-bar"></div>
+					<div class="skill-bar-percent">80%</div>
+				</div> <!-- end skill bar -->
+
+				<div class="skillbar clearfix " data-percent="95%">
+					<div class="skillbar-title"><span>CSS3</span></div>
+					<div class="skillbar-bar"></div>
+					<div class="skill-bar-percent">95%</div>
+				</div> <!-- end skill bar -->
+
+				<div class="skillbar clearfix " data-percent="63%">
+					<div class="skillbar-title"><span>Photoshop</span></div>
+					<div class="skillbar-bar"></div>
+					<div class="skill-bar-percent">63%</div>
+				</div> <!-- end skill bar -->
+
+			</div><!-- end team column -->
+
+			<div class="four columns team">
+				<div class="team-photo">
+					<img src="{% static 'images/team-2.jpg' %}" alt="" class="scale-with-grid">
+					<div class="mask"></div>
+					<h5>Connect with Jonathan</h5>
+					<ul class="team-social-links">
+						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+						<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+						<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+					</ul>
+				</div><!-- end team photo -->
+
+				<h4>Jonathan Smith</h4>
+				<h6>Designer</h6>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, adipisci quasi quod fugiat obcaecati! Mollitia amet ducimus ipsa consequuntur similique.</p>
+
+				<div class="skillbar clearfix " data-percent="60%">
+					<div class="skillbar-title"><span>HTML5</span></div>
+					<div class="skillbar-bar"></div>
+					<div class="skill-bar-percent">60%</div>
+				</div> <!-- end skill bar -->
+
+				<div class="skillbar clearfix " data-percent="75%">
+					<div class="skillbar-title"><span>CSS3</span></div>
+					<div class="skillbar-bar"></div>
+					<div class="skill-bar-percent">75%</div>
+				</div> <!-- end skill bar -->
+
+				<div class="skillbar clearfix " data-percent="84%">
+					<div class="skillbar-title"><span>Photoshop</span></div>
+					<div class="skillbar-bar"></div>
+					<div class="skill-bar-percent">84%</div>
+				</div> <!-- end skill bar -->
+
+			</div><!-- end team column -->
+
+			<div class="four columns team">
+				<div class="team-photo">
+					<img src="{% static 'images/team-3.jpg' %}" alt="" class="scale-with-grid">
+					<div class="mask"></div>
+					<h5>Connect with Sam</h5>
+					<ul class="team-social-links">
+						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+						<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+						<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+					</ul>
+				</div><!-- end team photo -->
+
+				<h4>Sam Davidson</h4>
+				<h6>Programmer</h6>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, adipisci quasi quod fugiat obcaecati! Mollitia amet ducimus ipsa consequuntur similique.</p>
+
+				<div class="skillbar clearfix " data-percent="87%">
+					<div class="skillbar-title"><span>HTML5</span></div>
+					<div class="skillbar-bar"></div>
+					<div class="skill-bar-percent">87%</div>
+				</div> <!-- end skill bar -->
+
+				<div class="skillbar clearfix " data-percent="54%">
+					<div class="skillbar-title"><span>Javascript</span></div>
+					<div class="skillbar-bar"></div>
+					<div class="skill-bar-percent">54%</div>
+				</div> <!-- end skill bar -->
+
+				<div class="skillbar clearfix " data-percent="72%">
+					<div class="skillbar-title"><span>PHP</span></div>
+					<div class="skillbar-bar"></div>
+					<div class="skill-bar-percent">72%</div>
+				</div> <!-- end skill bar -->
+
+			</div><!-- end team column -->
+
+			<div class="four columns team">
+				<div class="team-photo">
+					<img src="{% static 'images/team-4.jpg' %}" alt="" class="scale-with-grid">
+					<div class="mask"></div>
+					<h5>Connect with Kelly</h5>
+					<ul class="team-social-links">
+						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+						<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+						<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+					</ul>
+				</div><!-- end team photo -->
+
+				<h4>Kelly Johnson</h4>
+				<h6>UX Developer</h6>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, adipisci quasi quod fugiat obcaecati! Mollitia amet ducimus ipsa consequuntur similique.</p>
+
+				<div class="skillbar clearfix " data-percent="54%">
+					<div class="skillbar-title"><span>HTML5</span></div>
+					<div class="skillbar-bar"></div>
+					<div class="skill-bar-percent">54%</div>
+				</div> <!-- end skill bar -->
+
+				<div class="skillbar clearfix " data-percent="62%">
+					<div class="skillbar-title"><span>CSS3</span></div>
+					<div class="skillbar-bar"></div>
+					<div class="skill-bar-percent">62%</div>
+				</div> <!-- end skill bar -->
+
+				<div class="skillbar clearfix " data-percent="63%">
+					<div class="skillbar-title"><span>Javascript</span></div>
+					<div class="skillbar-bar"></div>
+					<div class="skill-bar-percent">63%</div>
+				</div> <!-- end skill bar -->
+
+			</div><!-- end team column -->
+
+		</div><!-- end container -->
+	</section><!-- end team section -->
+
+
+
+	<section id="video" class="full-video">
+		<div class="video-msg">
+			<h1>We are incredible</h1>
+			<a href="#about" class="button scroll">Find out why</a>
+		</div><!-- end video message -->
+
+		<div id="P1" class="player video-container" data-property="{videoURL:'https://www.youtube.com/watch?v=GELKWLdCTv8',containment:'#video', autoPlay:true, showControls:false, mute:true, startAt:0, opacity:1}"></div><!-- end video container -->
+	</section><!-- end video section -->
+
+
+
+	<section id="blog" class="section">
+		<div class="container">
+			<h2 class="title">We're always doing something cool</h2>
+			<h4 class="subtitle">Check out the latest from our blog</h4>
+
+			<div class="one-third column post-preview animated" data-animate="fadeInLeft" data-animate-delay="400">
+				<a href="#" class="post-img">
+					<img src="{% static 'images/blog-1.jpg' %}" alt="" class="scale-with-grid">
+					<div class="mask"></div>
+					<h5>Read the full article</h5>
+				</a><!-- end post image -->
+				<a href="#" class="post-title">A Day in The Life of a Designer Has Lots of Freedom</a>
+				<ul class="post-meta">
+					<li><i class="fa fa-user"></i> <a href="#">John Doe</a></li>
+					<li><i class="fa fa-calendar"></i> 10/15/2015</li>
+					<li><i class="fa fa-comments"></i> <a href="#">3</a> comments</li>
+				</ul><!-- end post meta -->
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, deserunt ut consequuntur est ea dolore accusantium illo consequatur quos laudantium eum doloribus reprehenderit at? Veniam, obcaecati, facilis, ad, nihil sit eaque minus fugiat magnam perspiciatis quia rem quae consequuntur sint cumque iste.</p>
+				<a href="#">Read more &raquo;</a>
+			</div><!-- end post preview -->
+
+			<div class="one-third column post-preview animated" data-animate="fadeIn" data-animate-delay="400">
+				<a href="#" class="post-img">
+					<img src="{% static 'images/blog-2.jpg' %}" alt="" class="scale-with-grid">
+					<div class="mask"></div>
+					<h5>Read the full article</h5>
+				</a><!-- end post image -->
+				<a href="#" class="post-title">Climbing The Ladder of Life is What We're All About</a>
+				<ul class="post-meta">
+					<li><i class="fa fa-user"></i> <a href="#">John Doe</a></li>
+					<li><i class="fa fa-calendar"></i> 10/15/2015</li>
+					<li><i class="fa fa-comments"></i> <a href="#">3</a> comments</li>
+				</ul><!-- end post meta -->
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, deserunt ut consequuntur est ea dolore accusantium illo consequatur quos laudantium eum doloribus reprehenderit at? Veniam, obcaecati, facilis, ad, nihil sit eaque minus fugiat magnam perspiciatis quia rem quae consequuntur sint cumque iste.</p>
+				<a href="#">Read more &raquo;</a>
+			</div><!-- end post preview -->
+
+			<div class="one-third column post-preview animated" data-animate="fadeInRight" data-animate-delay="400">
+				<a href="#" class="post-img">
+					<img src="{% static 'images/blog-3.jpg' %}" alt="" class="scale-with-grid">
+					<div class="mask"></div>
+					<h5>Read the full article</h5>
+				</a><!-- end post image -->
+				<a href="#" class="post-title">Client Calls are Always a Top Priority No Matter What</a>
+				<ul class="post-meta">
+					<li><i class="fa fa-user"></i> <a href="#">John Doe</a></li>
+					<li><i class="fa fa-calendar"></i> 10/15/2015</li>
+					<li><i class="fa fa-comments"></i> <a href="#">3</a> comments</li>
+				</ul><!-- end post meta -->
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, deserunt ut consequuntur est ea dolore accusantium illo consequatur quos laudantium eum doloribus reprehenderit at? Veniam, obcaecati, facilis, ad, nihil sit eaque minus fugiat magnam perspiciatis quia rem quae consequuntur sint cumque iste.</p>
+				<a href="#">Read more &raquo;</a>
+			</div><!-- end post preview -->
+
+			<div class="row full-blog-link">
+				<a href="#" class="button">Read our full blog</a> 
+			</div>
+			
+		</div><!-- end container -->
+	</section><!-- end blog section -->
+
+
+
+	<section class="static-testimonial parallax5">
+		<div class="container">
+			<blockquote>
+				<i class="fa fa-quote-left"></i>
+				<i class="fa fa-quote-right"></i>
+				Color does not add a pleasant quality to design - it reinforces it.
+				<span>Pierre Bonnard</span>
+			</blockquote><!-- end quote -->
+		</div><!-- end container -->
+
+		<section class="client-logos">
+			<div class="container clients">
+				<ul>
+					<li class="two columns"><img src="{% static 'images/client-logo-1.png' %}" alt="" class="scale-with-grid"></li>
+					<li class="two columns"><img src="{% static 'images/client-logo-2.png' %}" alt="" class="scale-with-grid"></li>
+					<li class="two columns"><img src="{% static 'images/client-logo-3.png' %}" alt="" class="scale-with-grid"></li>
+					<li class="two columns"><img src="{% static 'images/client-logo-4.png' %}" alt="" class="scale-with-grid"></li>
+					<li class="two columns"><img src="{% static 'images/client-logo-5.png' %}" alt="" class="scale-with-grid"></li>
+					<li class="two columns"><img src="{% static 'images/client-logo-6.png' %}" alt="" class="scale-with-grid"></li>
+					<li class="two columns"><img src="{% static 'images/client-logo-7.png' %}" alt="" class="scale-with-grid"></li>
+					<li class="two columns"><img src="{% static 'images/client-logo-8.png' %}" alt="" class="scale-with-grid"></li>
+				</ul>
+			</div>
+		</section><!-- end client logo section -->
+	</section><!-- end static testimonial section -->
+
+
+
+
+	<section id="contact" class="section">
+		<div class="container">
+
+			<h2 class="title">There's no better time than now</h2>
+			<h4 class="subtitle">Get in touch, let's work together</h4>
+			
+			<div class="contact-form">
+				
+				<div class="error-container">
+					<span class="error" id="error-name">Please enter your name</span>
+					<span class="error" id="error-email">Please enter your email</span>
+					<span class="error" id="error-valid-email">Your e-mail is not a valid format</span>
+					<span class="error" id="error-valid-phone">Your phone number is not a valid format</span>
+					<span class="error" id="error-timedout">The email submission timed out. Please try again.</span>
+					<span class="error" id="error-state">Oops! An error occurred. Please try again later.</span>
+					<span class="success" id="email-success">Message received! Thank you.</span>
+				</div><!-- end error messages -->
+
+				<form id="contact-us" method="post" action="http://graphicmonkee.com/demo/html/andare/php/mail.php">
+					
+					<div class="eight columns animated" data-animate="fadeInLeft" data-animate-delay="400">
+						<input type="text" name="name" id="name" required="required" placeholder="Name" />
+						<input type="email" name="email" id="email" required="required" placeholder="Email" />
+						<input type="text" name="phone" id="phone" placeholder="Phone" />
+					</div>
+
+					<div class="eight columns animated" data-animate="fadeInRight" data-animate-delay="400">
+					<textarea name="message" id="message" placeholder="Message"></textarea>
+					</div>
+
+					<button type="submit" id="submit" name="submit">Send Message</button> 
+				</form>
+			</div><!-- end contact form -->
+
+		</div><!-- end container -->
+	</section><!-- end contact section -->
+
+		
+	<!-- Google Map -->
+	<section id="map" class="section">
+
+		<!-- Callout Title -->
+		<section class="callout">
+		<div class="container">
+			<h3 class="animated" data-animate="fadeInDown" data-animate-delay="300">Come out and <span class="color">see us!</span></h3>
+		</div><!-- end container -->
+		</section><!-- end callout title -->
+
+		<div id="google-map"></div>
+	</section><!-- end map section -->
+
+
+
+	<section id="footer-top" class="section">
+		<div class="container">
+			<ul class="social-links">
+					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fa fa-vimeo-square"></i></a></li>
+					<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+					<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+				</ul><!-- end social links -->
+			800.123.4567 | <a href="#">info@andaredomain.com</a><br />
+			123 East Main Austin, Texas 12345
+		</div><!-- end container -->
+	</section><!-- end footer top section -->
+
+	<section id="footer-bottom" class="section">
+		<div class="container">
+			<a href="#home" class="scroll button-to-top">
+					<i class="fa fa-angle-double-up"></i>
+				</a>
+			<h2>Andare</h2>
+			<p><span class="color">Made in the USA.</span><br /> 
+				&copy; 2014 All rights reserved.</p>
+		</div><!-- end container -->
+	</section><!-- end footer bottom section -->
+
+
+	<!-- All The JS Files -->
+	<script type="text/javascript" src="{% static 'js/jquery-1.11.0.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/jquery.appear.js' %}"></script>	
+	<script type="text/javascript" src="{% static 'js/jquery.prettyPhoto.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/SmoothScroll.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/jquery.parallax-1.1.3.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/jquery.superslides.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/jquery.flexslider.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/jquery.isotope.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/jquery.mb.YTPlayer.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/jquery.fitvids.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/jquery.countTo.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/jquery.fs.tipper.js' %}"></script>
+	<!--<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>-->
+	<script type="text/javascript" src="{% static 'js/custom.js' %}"></script>
+
+</body>
+</html>

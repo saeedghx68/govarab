@@ -1,0 +1,82 @@
+/* --------------------------------
+Options Panel
+-------------------------------- */
+
+#options-panel h5 {color:#2f2f2f !important;}
+
+#options-panel a.panel-button{
+	position: absolute;
+	width:95px;
+	height:40px;
+	right:-68px;
+	top:30px;
+	padding-top: 6px;
+	text-align: center;
+	font-size:14px;
+	font-weight: 400;
+	text-transform: uppercase;
+	color:#fff !important;
+	cursor: pointer;
+	background:#000;
+	border:1px solid #000;
+	border-bottom-right-radius:3px;
+	border-bottom-left-radius:3px;
+
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+}
+
+#options-panel{
+	position: fixed;
+	text-align:left;
+	width:220px;
+	height: auto;
+	top:150px;
+	min-height: 150px;
+	background:#ededed;
+	border:1px solid #ededed;
+	z-index: 5;
+	border-top-right-radius:3px;
+	border-bottom-right-radius:3px;
+
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.close-panel {left:-220px;}
+.open-panel{left:-1px;}
+
+#options-panel .area{
+	width:100%;
+	padding:16px 24px;
+}
+
+#options-panel .switch,
+#options-panel .theme{
+	display: inline-block;
+	width:24px;
+	height: 24px;
+	margin-right:3px;
+	margin-top:6px;
+	cursor: pointer;
+}
+
+/* Color Options */
+.blue {background: #2980b9;}
+.gray {background: #5f7488;}
+.orange {background: #e67e22;} 
+.purple {background: #9b59b6;}
+.green {background: #2ecc71;}
+.yellow {background: #f1c40f;}
+.red {background: #e74c3c;}
+.lime {background: #acd323;}
+.deep-blue {background: #4c7298;}
+.cool-gray {background: #95a5a6;}
+
+/* Theme Options */
+.dark {background: #323333;}
+.light {background: #c8cdce;}
