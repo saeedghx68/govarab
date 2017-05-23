@@ -1,0 +1,442 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-05-23 20:49+0430\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: config/settings.py:121
+msgid "Farsi"
+msgstr ""
+
+#: config/settings.py:122
+msgid "Arabic"
+msgstr ""
+
+#: config/settings.py:123
+msgid "English"
+msgstr ""
+
+#: myapp/models.py:9 myapp/models.py:50
+msgid "small image"
+msgstr "تصویر کوچک"
+
+#: myapp/models.py:11 myapp/models.py:52
+msgid "large image"
+msgstr "تصویر بزرگ"
+
+#: myapp/models.py:12
+msgid "title"
+msgstr "عنوان"
+
+#: myapp/models.py:28 myapp/models.py:29
+msgid "Gallery"
+msgstr "گالری"
+
+#: myapp/models.py:35
+msgid "category name"
+msgstr "نام دسته بندی"
+
+#: myapp/models.py:41 myapp/models.py:42
+msgid "Product Category"
+msgstr "دسته بندی محصولات"
+
+#: myapp/models.py:48
+msgid "product category"
+msgstr "دسته بندی محصول"
+
+#: myapp/models.py:49
+msgid "product name"
+msgstr "نام محصول"
+
+#: myapp/models.py:61
+msgid "Product"
+msgstr "محصول"
+
+#: myapp/models.py:62
+msgid "Products"
+msgstr "محصولات"
+
+#: myapp/models.py:68
+msgid "question"
+msgstr ""
+
+#: myapp/models.py:69
+msgid "answer"
+msgstr ""
+
+#: myapp/models.py:77
+msgid "FAQ"
+msgstr ""
+
+#: myapp/models.py:78
+msgid "FAQs"
+msgstr ""
+
+#: myapp/models.py:85
+msgid "name"
+msgstr "نام"
+
+#: myapp/models.py:86
+msgid "post"
+msgstr "سمت"
+
+#: myapp/models.py:87
+msgid "image"
+msgstr "عکس"
+
+#: myapp/models.py:89
+msgid "priority"
+msgstr "ترتیب چیدمان"
+
+#: myapp/models.py:95 myapp/models.py:96
+msgid "Team"
+msgstr "تیم فنی"
+
+#: templates/index.html:9 templates/index.html:120
+msgid "گواراب"
+msgstr ""
+
+#: templates/index.html:58
+msgid "دانلود کاتالوگ"
+msgstr ""
+
+#: templates/index.html:67
+msgid "خانه"
+msgstr ""
+
+#: templates/index.html:68
+msgid "درباره ما"
+msgstr ""
+
+#: templates/index.html:69 templates/index.html:162
+msgid "خدمات"
+msgstr ""
+
+#: templates/index.html:70
+msgid "محصولات"
+msgstr ""
+
+#: templates/index.html:71 templates/index.html:336
+msgid "سؤالات متداول"
+msgstr ""
+
+#: templates/index.html:72
+msgid "گالری"
+msgstr ""
+
+#: templates/index.html:73
+msgid "اعضای تیم"
+msgstr ""
+
+#: templates/index.html:75
+msgid "تماس با ما "
+msgstr ""
+
+#: templates/index.html:124
+msgid "اولین شرکت دانش بنیان در زمینه "
+msgstr ""
+
+#: templates/index.html:124
+msgid "تصفیه آب"
+msgstr ""
+
+#: templates/index.html:124
+msgid " در ایران"
+msgstr ""
+
+#: templates/index.html:125
+msgid "طراح و سازنده انواع "
+msgstr ""
+
+#: templates/index.html:125
+msgid " فیلترهای کربنی، پلیمری و معدنی "
+msgstr ""
+
+#: templates/index.html:126
+msgid "مرکز "
+msgstr ""
+
+#: templates/index.html:126
+msgid "آزمون عملکرد و بهداشت "
+msgstr ""
+
+#: templates/index.html:126
+msgid "فیلترهای آب شرب"
+msgstr ""
+
+#: templates/index.html:144
+#, python-format
+msgid ""
+"\n"
+"\t\t%(amount)s\n"
+"\t"
+msgstr ""
+
+#: templates/index.html:151
+msgid "درباره گواراب"
+msgstr ""
+
+#: templates/index.html:152
+msgid ""
+"شرکت گواراب سازان دشت سبز که بطور کلّی ساختار خویش را بر فعّالیّت در صنعت تصفیه "
+"ی آب؛ با همه ی گرایش های تخصّصی و مؤلّفه های علمی دربرگیرنده ی این صنعت، طرح "
+"ریزی کرده است، در تدوین چشم انداز، اهداف کلان و راه های دستیابی به آن ها و "
+"در همه جای فعّالیّت خویش از تأمین موادّ اوّلیّه تا تولید محصولات نهایی و از "
+"مستندسازی تا اجرای فرایندهای متعدّد سازمانی و از تأمین و آموزش نیروهای انسانی "
+"تا شاخص های انتخاب منابع برون سازمانی مانند شعب و نمایندگان فروش و خدمات پس "
+"از فروش و نیز فعّالیّت های برون سپاری شده مانند صنایع میانی، نصّاب ها و عوامل "
+"لجستیک، به رویکردهای ذیل که نقشی ارزشی و غیر قابل اغماض دارد پایبندی کامل "
+"دارد:"
+msgstr ""
+
+#: templates/index.html:155
+msgid "پاسخگویی"
+msgstr ""
+
+#: templates/index.html:157
+msgid ""
+"در شرکت گواراب سازان دشت سبز، مسؤولیّت ها به نحوی مستند، آموزش و پایش شده اند "
+"که چه در فرایندهای درون سازمانی و چه فرایندهای مرتبط با مشتری، پاسخگویی به "
+"عنوان یک رویکرد راهبردی و در جهت بهبود اثربخش کار تعریف شده است."
+msgstr ""
+
+#: templates/index.html:164
+msgid ""
+"شرکت گواراب سازان دشت سبز در رویکرد ارزشی خود، برخورداری مشتریان را نه تنها "
+"به بایسته های خدمات مرتبط با محصولات خویش مانند پاسخگویی اثربخش و ضمانت "
+"معتبر رسمیّت سازمانی داده است بلکه افزایش دانش و آگاهی از صنعت آب را بخصوص در "
+"زمینه ی آب شرب و استانداردهای لازم آن و نیز آنچه که برای مصرف کنندگان این "
+"مادّه حیاتی تصمیم سازی می نماید در زمره ی خدمات خویش می داند."
+msgstr ""
+
+#: templates/index.html:169
+msgid "پژوهش و توسعه"
+msgstr ""
+
+#: templates/index.html:171
+msgid ""
+"این شرکت در راستای پیشرفت تمام علوم و صنایع، بر خود می داند نسبت به شناسایی "
+"آنچه کیفیّت ضروری ترین نیاز زیستی مصرف کنندگان را داراست مطالعه نماید؛ مطالعه "
+"ای که طبق هدف گذاری واحد R&D منجر به طرح های قابل اجرای صنعتی گردد. مصرف "
+"کنندگان محصولات این شرکت از چنان ارزشی برخوردازند که سهمی از فروش شرکت صرف "
+"مطالعه، طراحی و ساخت ملزومات ارتقایی کیفیّت آب مصرفی ایشان گردد."
+msgstr ""
+
+#: templates/index.html:176
+msgid "کیفیّت"
+msgstr ""
+
+#: templates/index.html:178
+msgid ""
+"کیفیّت به عنوان یکی از اصلی ترین و قدرتمندترین فرایندهای سازمانی این شرکت، "
+"تصمیم سازی کار، ابزارهای پایش و کنترل دائمی، اقدامات اصلاحی و بهبود مستمرّ را "
+"در کلّیه ی مراحل پیش، حین و پس از تولید ایجاد می کند."
+msgstr ""
+
+#: templates/index.html:191
+msgid "چشم انداز شرکت "
+msgstr ""
+
+#: templates/index.html:199
+msgid ""
+"تا پایان سال ۱۳۹۸، ارائه دهنده محصولات و خدمات با مزیت رقابتی ویژه در کشور و "
+"وسعت بخشی به قلمروی حضور در خارج از مرزهای کشور و تبدیل شدن به شرکتی سرآمد و "
+"جهانی در صنعت پالایش آب باشیم بطوریکه نام تجاری شرکت در بازارهای منطقه "
+"همواره مورد توجه قرار گیرد."
+msgstr ""
+
+#: templates/index.html:210
+msgid "خدمات شرکت"
+msgstr ""
+
+#: templates/index.html:211
+msgid ""
+"شرکت گواراب سازان دشت سبز همانگونه که در مفاهیم مدرن مارکتینگ نیز بدان تأکید "
+"شده بر این اعتقاد است که هر محصول خانواده ای دارد. خانواده ی محصولات گواراب "
+"را تأمین کنندگان موادّ اولیّه، کارخانه و همه ی منابع داخلی آن، شعب و نمایندگان "
+"فروش و خدمات پس از فروش، توزیع کنندگان عمده و خرد، تمام عوامل ستادی و میانی "
+"و بالاخره مصرف کنندگان تشکیل می دهند. ما معتقدیم؛ مصرف کنندگان مهمترین عضو "
+"این خانواده هستند که همه ی اقدامات در نهایت در جهت نیازها و خواسته های واقعی "
+"او و بهره مندی ایشان از خدمات شایسته، بجا و بموقع شکل می گیرد. در خانواده ی "
+"گواراب، همه ی عوامل انجام این مهمّ دارای ارزشی درخور هستند و شرکت به عنوان "
+"ریشه ی این درخت، مسؤولیّت حفظ و بهره مندی همه ی اجزا را بر عهده دارد. لذا همه "
+"ی آنان که دانش، تجربه و منش خدمت به مشتریان را می دانند و به اصول کار و "
+"تجارت و خدمت پایبندی دارند و به تدریج و کاملاً موزون به خانواده ی گواراب "
+"پیوند می خورند مشمول مزایای همیشگی این همکاری مبارک خواهند بود و در ساختاری "
+"که مسؤولیّت ها افراز می شوند همگان منتفع خواهیم بود."
+msgstr ""
+
+#: templates/index.html:220
+msgid "مأموریت گواراب"
+msgstr ""
+
+#: templates/index.html:225
+msgid "در افق این سند تا پایان سال ۱۳۹۸، ماموريت شرکت گواراب به شرح زیر است:"
+msgstr ""
+
+#: templates/index.html:230 templates/index.html:231
+msgid "فناوری"
+msgstr ""
+
+#: templates/index.html:233
+msgid ""
+"از این نظر شركت همواره اقدام به پایش مستمر فناوری های روز محصولات و "
+"فرایندهای تولید نموده و توسعه و بهبود محصولات و بومی سازی تولید ماشین آلات "
+"تولیدی با رویکرد مکانیزه نمودن تولید و افزایش بهره وری تولید را سرلوحه کار "
+"خود قرار می دهد."
+msgstr ""
+
+#: templates/index.html:237 templates/index.html:238
+msgid "بازارها"
+msgstr ""
+
+#: templates/index.html:240
+msgid ""
+"ما با تمام توان مي‏كوشيم شركت گواراب را در صحنه رقابت جهاني موفق كنيم. "
+"بازارهای مد نظر شرکت در افق این ماموریت عبارتند از: بازار ایران، شمال "
+"آفریقا، خاور میانه و اروپا"
+msgstr ""
+
+#: templates/index.html:244 templates/index.html:245
+msgid "محصولات يا خدمات"
+msgstr ""
+
+#: templates/index.html:247
+msgid ""
+" انواع فیلترهای کربنی، انواع فیلترهای الیافی، تولید کربن اکتیو، تولید انواع "
+"دستگاه های تصفیه آب، خدمات آزمایشگاهی، ارایه مشاوره های فنی و مهندسی، تولید "
+"محصولاتي با كيفيت بسيار بالا از لحاظ ویژگی های عملکردی، سلامتی و ایمنی و "
+"ظاهری متناسب با آب منطقه با استفاده از مواد اولیه متناسب با سلامت آب شرب."
+msgstr ""
+
+#: templates/index.html:251 templates/index.html:252
+msgid "مشتريان"
+msgstr ""
+
+#: templates/index.html:254
+msgid ""
+"ما بر اين باوريم كه پيش از هر چيز در برابر نیازهای حال و آینده مشتریان و "
+"سلامت جامعه ملی و جهانی مسئول هستیم و خود را پاسخگوی مشتریان در قبال محصولات "
+"و خدمات خود می دانیم و احترام به مشتریان و جلب اعتماد آنها را سر لوحه کار "
+"خود قرار می دانیم و به دنبال خلق مشتریان وفادار از طریق ارزش آفرینی پایدار "
+"برای آنها هستیم."
+msgstr ""
+
+#: templates/index.html:259 templates/index.html:260
+msgid "توجه به كاركنان"
+msgstr ""
+
+#: templates/index.html:262
+msgid ""
+"آموزش ‏دادن؛ ايجاد انگيزه؛ حفظ و نگهداري كاركناني كه از نظر توانايي، اخلاق و "
+"تعهد به سازمان داراي ويژگي ممتاز هستند؛ ایجاد محيط كار مناسب؛ جبران خدمت بر "
+"مبناي عملكرد جهت رشد و تأمين امنيت شغلي براي كاركنان؛ایجاد حس تعلق به سازمان "
+"و حس افتخار نسبت به کار در شرکت."
+msgstr ""
+
+#: templates/index.html:266 templates/index.html:267
+msgid "ويژگي های ممتاز"
+msgstr ""
+
+#: templates/index.html:269
+msgid ""
+"توان علمی و دانش فنی و توانايي‏هاي خلاق و سازنده مدیران؛پایبندی به مباحث کیفی "
+"محصولات و مشتری مداری برای حفظ فاصله از رقبا؛ توانمندی در تولید محصولات "
+"متنوع؛"
+msgstr ""
+
+#: templates/index.html:273 templates/index.html:274
+msgid "فلسفه"
+msgstr ""
+
+#: templates/index.html:276
+msgid ""
+"ما بر اين باوريم كه حرکت در جهت سلامت انسانها از ارزشمندترين هدفهاي بشریت "
+"است و فلسفه گواراب در اين جمله خلاصه مي‏شود: تقويت روح مشاركت صنعتگر، ایده "
+"پرداز و بازاریاب و توجه به مكاني كه افراد بتوانند دانش كسب و تولید كنند، "
+"تجربه بياموزند و وقت خود را با مسرت و خوشي بگذرانند."
+msgstr ""
+
+#: templates/index.html:280 templates/index.html:281
+msgid "توجه به بقا، رشد و سودآوري"
+msgstr ""
+
+#: templates/index.html:283
+msgid ""
+"از اين نظر شركت عمليات خود را با احتياط انجام مي‏دهد و ميزان سود و رشد خود را "
+"به‏ گونه‏ اي تنظيم مي‏نمايد كه در نهايت موفقيت بلند مدت تضمين شود. به عبارت "
+"دیگر شركت با چشم داشتي به سودي منصفانه، مي‏كوشد به‏گونه‏اي كه منافع مشتريان، "
+"كاركنان، سهامداران،تامین کنندگان و جامعه تأمين شود."
+msgstr ""
+
+#: templates/index.html:296
+msgid "محصولات گواراب"
+msgstr ""
+
+#: templates/index.html:304
+msgid "همه"
+msgstr ""
+
+#: templates/index.html:337
+msgid "پرسش های مشتریان و پاسخ آنها"
+msgstr ""
+
+#: templates/index.html:364
+msgid "گالری تصاویر"
+msgstr ""
+
+#: templates/index.html:391
+msgid ""
+"ما اکنون می توانیم با معتبرترین شرکتهای عرصه آب دنیا بر سر کیفیت محصول و "
+"خدمات خود به رقابت بپردازیم"
+msgstr ""
+
+#: templates/index.html:398
+msgid "اعضای تیم فنی"
+msgstr ""
+
+#: templates/index.html:406
+msgid "ارتباط با "
+msgstr ""
+
+#: templates/index.html:431
+msgid "تماس با ما"
+msgstr ""
+
+#~ msgid "category description"
+#~ msgstr "توضیح دسته بندی"
+
+#~ msgid "category image"
+#~ msgstr "تصویر دسته بندی"
+
+#~ msgid "product model"
+#~ msgstr "مدل محصول"
+
+#~ msgid "product specification"
+#~ msgstr "مشخصات محصول"
+
+#~ msgid "product price"
+#~ msgstr "قیمت محصول"
+
+#~ msgid "product description"
+#~ msgstr "توضیحات محصول"
+
+#~ msgid "product"
+#~ msgstr "محصول"
+
+#~ msgid "Product Image"
+#~ msgstr "تصویر محصول"
