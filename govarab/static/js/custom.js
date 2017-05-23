@@ -151,14 +151,21 @@ Show Navigation Bar on Scroll Down
 $(document).ready(function () {
   "use strict";
   var menu = $('#navigation');
+  var logo = $('#logo');
 
   $(window).scroll(function () {
     "use strict";
     var y = $(this).scrollTop();
     var z = $('#about').offset().top - 250;
 
-    if (y >= z) { menu.removeClass('hide-nav').addClass('show-nav');}
-    else { menu.removeClass('show-nav').addClass('hide-nav'); }
+    if (y >= z) {
+        menu.removeClass('hide-nav').addClass('show-nav');
+        logo.removeClass('hide-nav').addClass('show-nav');
+    }
+    else {
+        menu.removeClass('show-nav').addClass('hide-nav');
+        logo.removeClass('show-nav').addClass('hide-nav');
+    }
   });
 });
 
@@ -259,7 +266,7 @@ $(window).load(function() {
 
   // Project Expander
   var loader = $('.item-expander');
-  
+
   $('.expander').on('click', function(e){
     e.preventDefault();
     e.stopPropagation();
@@ -272,7 +279,7 @@ $(window).load(function() {
         var bottomPosition = topPosition + portfolioContainer.height();
         $('html,body').delay(600).animate({ scrollTop: topPosition }, 800);
         var container = $('#item-expander>div', loader);
-        
+
         container.html(data);
          $(".fit-vids").fitVids();
         $('.project').flexslider({
@@ -280,9 +287,9 @@ $(window).load(function() {
           selector: ".project-slides .slide",
           controlNav: true,
           directionNav: true ,
-          slideshowSpeed: 5000,  
+          slideshowSpeed: 5000,
             });
-        
+
       //   container.fitVids();
         loader.slideDown(function(){
           if(typeof keepVideoRatio == 'function'){
@@ -292,13 +299,13 @@ $(window).load(function() {
       });
     });
   });
-    
+
     $('.close', loader).on('click', function(){
       loader.delay(300).slideUp(function(){
         var container = $('#item-expander>div', loader);
         container.html('');
         $(this).css({opacity:0});
-        
+
       });
       var portfolioContainer = $('#portfolio-container');
         var topPosition = portfolioContainer.offset().top;

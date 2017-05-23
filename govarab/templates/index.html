@@ -1,22 +1,28 @@
 <!DOCTYPE html>
 {% load static from staticfiles %}
-<html lang="en">
+{% load i18n %}
+
+<html lang="{{ SELECTEDLANG }}">
 <head>
 
    <meta charset="utf-8" />
-   <title>Andare One Page HTML Theme</title>
+   <title>{% trans "گواراب" %}</title>
    <meta name="description" content="" />
    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 
    <!--Favicon -->
-	<link rel="icon" type="{% static 'image/png' %}" href="images/favicon.ico" />
+	<link rel="icon" type="{% static 'image/png' %}" href="{% static 'images/logo.ico' %}" />
 		
 	<!-- CSS Files -->	
 	<link rel="stylesheet" href="{% static 'css/reset.css' %}" />
 	<link rel="stylesheet" href="{% static 'css/animate.min.css' %}" />
 	<link rel="stylesheet" href="{% static 'css/grid.css' %}" />
 	<link rel="stylesheet" href="{% static 'css/base.css' %}" />
-	<link rel="stylesheet" href="{% static 'css/layout.css' %}" />
+	{% if SELECTEDLANG == 'en' %}
+		<link rel="stylesheet" href="{% static 'css/layout_en.css' %}" />
+	{% else %}
+		<link rel="stylesheet" href="{% static 'css/layout_fa.css' %}" />
+	{% endif %}
 	<link rel="stylesheet" href="{% static 'css/flexslider.css' %}" />
 	<link rel="stylesheet" href="{% static 'css/font-awesome.css' %}" />
 	<link rel="stylesheet" href="{% static 'css/prettyPhoto.css' %}" />
@@ -44,36 +50,48 @@
 	<!-- Navigation -->
 	<section id="navigation" class="hide-nav">
 		<!-- Navigation Container -->
-		<div class="nav-container">
+		<!-- Site Logo -->
+		<a href="#home" class="site-logo scroll hide-nav" id="logo">
+			<img src="{% static 'images/logo.png' %}" style="position: relative; left: 50px; top: 4px; width: 65px; height: 65px;" alt="">
+		</a>
 
-			<!-- Site Logo -->
-			<a href="#home" class="site-logo scroll">Andare</a>
+		<a href="#about" id="catalog" class="button scroll" style="position: relative; left: 70px;top: 20px;">{% trans "دانلود کاتالوگ" %}</a>
+
+		<div class="nav-container">
 
 			<a class="mobile-nav-button"><i class="fa fa-bars"></i></a>
 
 			<!-- Navigation Menu -->
 			<div class="nav-menu">
 				<ul class="nav">
-					<li><a href="#home" class="scroll link">Home</a></li>
-					<li><a href="#about" class="scroll link">About</a></li>
-					<li><a href="#services" class="scroll link">Services</a></li>
-					<li><a href="#portfolio" class="scroll link">Portfolio</a></li>
-					<li><a href="#pricing" class="scroll link">Pricing</a></li>
-					<li><a href="#team" class="scroll link">Team</a></li>
+					<li><a href="#home" class="scroll link">{% trans "خانه" %}</a></li>
+					<li><a href="#about" class="scroll link">{% trans "درباره ما" %}</a></li>
+					<li><a href="#services" class="scroll link">{% trans "خدمات" %}</a></li>
+					<li><a href="#products" class="scroll link">{% trans "محصولات" %}</a></li>
+					<li><a href="#accordion" class="scroll link">{% trans "سؤالات متداول" %}</a></li>
+					<li><a href="#gallery" class="scroll link">{% trans "گالری" %}</a></li>
+					<li><a href="#team" class="scroll link">{% trans "اعضای تیم" %}</a></li>
 					<li>
-						<a href="#blog" class="scroll link">Blog <i class="fa fa-chevron-down"></i></a>
-						<ul>
-							<li><a href="blog-main.html">Blog Main</a></li>
+						<a href="#map" class="scroll link">{% trans "تماس با ما " %}</a>
+						<!--<ul>
+							<li><i class="fa fa-chevron-down"></i><a href="blog-main.html">Blog Main</a></li>
 							<li><a href="blog-single.html">Blog Single</a></li>
-						</ul>
+						</ul>-->
 					</li><!-- end drop down -->
-					<li><a href="features.html" class="scroll link">Features</a></li>
-					<li><a href="#contact" class="scroll link">Contact</a></li>
 				</ul>
 			</div><!-- end nav menu -->
+			<ul id="lang-menu">
+				{% get_language_info_list for LANGUAGES as languages %}
+				{% for language in languages %}
+					<li>
+						<a href="/{{ language.code }}" style="font-family: 'Lato', sans-serif;">
+							{{ language.code }}
+						</a>
+					</li>
+				{% endfor %}
+			</ul>
 		</div><!-- end nav container -->
 	</section><!-- end navigation section -->
-
 
 
 	<!-- Home Section -->
@@ -99,18 +117,18 @@
 		<div class="container header slider-home">
 
 			<!-- Site Logo -->
-			<span class="logo">Andare</span>
+			<span class="logo">{% trans "گواراب" %}</span>
 			<!-- Text Slider -->
 			<div class="header-text">
 				<ul class="text-slider">
-					<li class="text-slides">We Believe in <span class="color normal">Good Design</span></li>
-					<li class="text-slides">We Are <span class="color normal">Good Designers</span></li>
-					<li class="text-slides">We Do <span class="color normal">Incredible Designs</span></li>
+					<li class="text-slides">{% trans 'اولین شرکت دانش بنیان در زمینه ' %}<span class="color normal">{% trans 'تصفیه آب' %}</span>{% trans ' در ایران' %}</li>
+					<li class="text-slides">{% trans 'طراح و سازنده انواع ' %}<span class="color normal">{% trans ' فیلترهای کربنی، پلیمری و معدنی ' %}</span></li>
+					<li class="text-slides">{% trans 'مرکز ' %}<span class="color normal">{% trans 'آزمون عملکرد و بهداشت ' %}</span>{% trans 'فیلترهای آب شرب' %}</li>
 				</ul>
 			</div><!-- end text slider -->
 			<!-- Social Media Links -->
 			<div class="social-media">
-				<h4>Spread the Word</h4>
+				<h4></h4>
 				<ul class="social-links">
 					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
 					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -123,37 +141,54 @@
 		</div><!-- end header container -->
 	</section><!-- end home section -->
 
-
+	<!--<h1>{% blocktrans with amount=team.post %}
+		{{ amount }}
+	{% endblocktrans %}</h1>-->
 
 	<!-- About Section -->
 	<section id="about" class="section">
 		<div class="container">
-			<h2 class="title">About The Andare Theme</h2>
-			<h4 class="subtitle">Everything you need to be stylish in one convenient place.</h4>
-				<div class="one-third column animated" data-animate="fadeInLeft" data-animate-delay="400">
-					<div class="icon-box"><i class="fa fa-eye fa-4x"></i></div>
-					<h5>Retina Ready Design</h5>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil, libero, tenetur perspiciatis eos provident laborum eum dignissimos est consectetur cupiditate tempore culpa adipisci nostrum incidunt obcaecati voluptatem architecto fuga.</div>
-				<div class="one-third column animated" data-animate="fadeIn" data-animate-delay="400">
-					<div class="icon-box"><i class="fa fa-mobile fa-4x"></i></div>
-					<h5>Responsive Mobile Friendly</h5>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, tenetur, culpa necessitatibus quibusdam quia assumenda fugiat eos dolores repudiandae voluptatem libero minus numquam cupiditate inventore excepturi. Temporibus accusantium fugiat optio!</div>
-				<div class="one-third column animated" data-animate="fadeInRight" data-animate-delay="400">
-					<div class="icon-box"><i class="fa fa-heart fa-4x"></i></div>
-					<h5>Make it Your Own</h5>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, eos ipsa quia laboriosam voluptatibus sit labore. Rerum, in temporibus. Dolor, ducimus, voluptas quidem ea laudantium doloribus quisquam doloremque fuga accusamus.</div>
+			<h2 class="title">{% trans "درباره گواراب" %}</h2>
+			<h5 class="subtitle">{% trans "شرکت گواراب سازان دشت سبز که بطور کلّی ساختار خویش را بر فعّالیّت در صنعت تصفیه ی آب؛ با همه ی گرایش های تخصّصی و مؤلّفه های علمی دربرگیرنده ی این صنعت، طرح ریزی کرده است، در تدوین چشم انداز، اهداف کلان و راه های دستیابی به آن ها و در همه جای فعّالیّت خویش از تأمین موادّ اوّلیّه تا تولید محصولات نهایی و از مستندسازی تا اجرای فرایندهای متعدّد سازمانی و از تأمین و آموزش نیروهای انسانی تا شاخص های انتخاب منابع برون سازمانی مانند شعب و نمایندگان فروش و خدمات پس از فروش و نیز فعّالیّت های برون سپاری شده مانند صنایع میانی، نصّاب ها و عوامل لجستیک، به رویکردهای ذیل که نقشی ارزشی و غیر قابل اغماض دارد پایبندی کامل دارد:" %}</h5>
+			<div class="four columns animated visible fadeIn" data-animate="fadeIn" data-animate-delay="400">
+				<div class="icon-box"><i class="fa fa-mail-reply-all fa-4x"></i></div>
+				<h4>{% trans "پاسخگویی" %}</h4>
+				<p>
+						{% trans "در شرکت گواراب سازان دشت سبز، مسؤولیّت ها به نحوی مستند، آموزش و پایش شده اند که چه در فرایندهای درون سازمانی و چه فرایندهای مرتبط با مشتری، پاسخگویی به عنوان یک رویکرد راهبردی و در جهت بهبود اثربخش کار تعریف شده است." %}
+				</p>
+			</div>
+			<div class="four columns animated visible fadeIn" data-animate="fadeIn" data-animate-delay="400">
+				<div class="icon-box"><i class="fa fa-heart fa-4x"></i></div>
+				<h4>{% trans "خدمات" %}</h4>
+				<p>
+					{% trans "شرکت گواراب سازان دشت سبز در رویکرد ارزشی خود، برخورداری مشتریان را نه تنها به بایسته های خدمات مرتبط با محصولات خویش مانند پاسخگویی اثربخش و ضمانت معتبر رسمیّت سازمانی داده است بلکه افزایش دانش و آگاهی از صنعت آب را بخصوص در زمینه ی آب شرب و استانداردهای لازم آن و نیز آنچه که برای مصرف کنندگان این مادّه حیاتی تصمیم سازی می نماید در زمره ی خدمات خویش می داند." %}
+				</p>
+			</div>
+			<div class="four columns animated visible fadeInRight" data-animate="fadeInRight" data-animate-delay="400">
+				<div class="icon-box"><i class="fa fa-search fa-4x"></i></div>
+				<h4>{% trans "پژوهش و توسعه" %}</h4>
+				<p>
+				{% trans "این شرکت در راستای پیشرفت تمام علوم و صنایع، بر خود می داند نسبت به شناسایی آنچه کیفیّت ضروری ترین نیاز زیستی مصرف کنندگان را داراست مطالعه نماید؛ مطالعه ای که طبق هدف گذاری واحد R&D منجر به طرح های قابل اجرای صنعتی گردد. مصرف کنندگان محصولات این شرکت از چنان ارزشی برخوردازند که سهمی از فروش شرکت صرف مطالعه، طراحی و ساخت ملزومات ارتقایی کیفیّت آب مصرفی ایشان گردد." %}
+				</p>
+			</div>
+			<div class="four columns animated fadeInLeft visible" data-animate="fadeInLeft" data-animate-delay="400">
+				<div class="icon-box"><i class="fa fa-eye fa-4x"></i></div>
+				<h4>{% trans "کیفیّت" %}</h4>
+				<p>
+					{% trans 'کیفیّت به عنوان یکی از اصلی ترین و قدرتمندترین فرایندهای سازمانی این شرکت، تصمیم سازی کار، ابزارهای پایش و کنترل دائمی، اقدامات اصلاحی و بهبود مستمرّ را در کلّیه ی مراحل پیش، حین و پس از تولید ایجاد می کند.' %}
+				</p>
+			</div>
 		</div><!-- end container -->
 	</section><!-- end about section -->
 
 	
-	
 	<!-- Testimonials -->
-	<section class="testimonials parallax1">
+	<section class="testimonials parallax1" style="padding-bottom:0px;">
 
 	<!-- Callout Title -->
-	<section class="callout">
+	<section class="callout" style="margin-bottom:0px;">
 		<div class="container">
-			<h3 class="animated" data-animate="fadeInDown" data-animate-delay="300">Here's what our <span class="color">customers</span> are saying!</h3>
+			<h3 class="animated" data-animate="fadeInDown" data-animate-delay="300">{% trans 'چشم انداز شرکت ' %}<span class="color"></span></h3>
 		</div><!-- end container -->
 	</section><!-- end callout title -->
 
@@ -161,713 +196,258 @@
 			<ul class="testimonial-slider">
 				<!-- Testimonial 1 -->
 				<li class="t-slide">
-					<h4>Everyone designs who devises <span class="color">courses of action</span> aimed at changing existing situations into preferred ones.</h4>
-					<p>Herbert Simon</p>
+					<h4>{% trans 'تا پایان سال ۱۳۹۸، ارائه دهنده محصولات و خدمات با مزیت رقابتی ویژه در کشور و وسعت بخشی به قلمروی حضور در خارج از مرزهای کشور و تبدیل شدن به شرکتی سرآمد و جهانی در صنعت پالایش آب باشیم بطوریکه نام تجاری شرکت در بازارهای منطقه همواره مورد توجه قرار گیرد.' %}
+					</h4>
 				</li>
 				<!-- Testimonial 2 -->
-				<li class="t-slide">
-					<h4>Design works if it's authentic, inspired, and has a clear <span class="color">point of view</span>. It can't be a collection of input.</h4>
-					<p>Ron Johnson</p>
-				</li>
-				<!-- Testimonial 3 -->
-				<li class="t-slide">
-					<h4>The design of each element should <span class="color">be thought out</span> in order to be easy to make and easy to repair.</h4>
-					<p>Leo Fender</p>
-				</li>
 			</ul><!-- end testimonials list -->
 		</div><!-- end container -->
 	</section><!-- end testimonials -->
 
-
-
 	<!-- Services Section -->
 	<section id="services" class="section">
 		<div class="container">
-			<h2 class="title">What Andare Provides</h2>
-			<h4 class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, enim.</h4>
+			<h3 class="title">{% trans 'خدمات شرکت' %}</h3>
+			<h5 class="subtitle">{% trans 'شرکت گواراب سازان دشت سبز همانگونه که در مفاهیم مدرن مارکتینگ نیز بدان تأکید شده بر این اعتقاد است که هر محصول خانواده ای دارد. خانواده ی محصولات گواراب را تأمین کنندگان موادّ اولیّه، کارخانه و همه ی منابع داخلی آن، شعب و نمایندگان فروش و خدمات پس از فروش، توزیع کنندگان عمده و خرد، تمام عوامل ستادی و میانی و بالاخره مصرف کنندگان تشکیل می دهند. ما معتقدیم؛ مصرف کنندگان مهمترین عضو این خانواده هستند که همه ی اقدامات در نهایت در جهت نیازها و خواسته های واقعی او و بهره مندی ایشان از خدمات شایسته، بجا و بموقع شکل می گیرد. در خانواده ی گواراب، همه ی عوامل انجام این مهمّ دارای ارزشی درخور هستند و شرکت به عنوان ریشه ی این درخت، مسؤولیّت حفظ و بهره مندی همه ی اجزا را بر عهده دارد. لذا همه ی آنان که دانش، تجربه و منش خدمت به مشتریان را می دانند و به اصول کار و تجارت و خدمت پایبندی دارند و به تدریج و کاملاً موزون به خانواده ی گواراب پیوند می خورند مشمول مزایای همیشگی این همکاری مبارک خواهند بود و در ساختاری که مسؤولیّت ها افراز می شوند همگان منتفع خواهیم بود.' %}</h5>
 			<div class="animated" data-animate="fadeInUp" data-animate-delay="400">
-				<img src="{% static 'images/imonitor-1.png' %}" alt="Monitor Image" class="scale-with-grid mockup" title="There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which"  />
+				<img src="{% static 'images/service.jpg' %}" alt="Service Image" class="scale-with-grid mockup" title="There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which"  />
 			</div>
 		</div><!-- end container -->
 		
-		<section class="services-list parallax2">
+		<section id="Mission-list" class="services-list parallax2" style="padding-top:0px;">
+			<section class="callout" style="margin-bottom:0px;">
+				<div class="container">
+					<h3 class="animated fadeInDown visible" data-animate="fadeInDown" data-animate-delay="300" style="font-size: 32px;">{% trans 'مأموریت گواراب' %}</h3>
+				</div><!-- end container -->
+			</section>
 			<div class="container">
 				<div class="row">
-					<div class="four columns animated service-item" data-animate="fadeInLeft" data-animate-delay="300">
-						<i class="fa fa-wrench fa-3x tipped" data-title="An Awesome Tooltip!"></i>
-						<h5>Easy to Customize</h5>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, praesentium iure tenetur officia quisquam architecto ullam facere optio inventore rem.
-					</div>
-					<div class="four columns animated service-item" data-animate="fadeIn" data-animate-delay="300">
-						<i class="fa fa-tablet fa-3x tipped" data-title="An Awesome Tooltip!"></i>
-						<h5>Fully Responsive</h5>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa magnam provident delectus perspiciatis ut cumque quos maiores quae officiis magni.
-					</div>
-					<div class="four columns animated service-item" data-animate="fadeIn" data-animate-delay="300">
-						<i class="fa fa-table fa-3x tipped" data-title="An Awesome Tooltip!"></i>
-						<h5>Grid Based Design</h5>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, nam quaerat sit! Quasi magni esse fuga modi ex libero deserunt.
-					</div>
-					<div class="four columns animated service-item" data-animate="fadeInRight" data-animate-delay="300">
-						<i class="fa fa-html5 fa-3x tipped" data-title="An Awesome Tooltip!"></i>
-						<h5>HTML5 & CSS3</h5>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, ex nam dolorem nesciunt corporis quisquam saepe omnis sunt natus nostrum!
-					</div>
-				</div><!-- end row -->
+					<h6>{% trans 'در افق این سند تا پایان سال ۱۳۹۸، ماموريت شرکت گواراب به شرح زیر است:' %}
+					</h6>
+				</div>
 				<div class="row">
 					<div class="four columns animated service-item" data-animate="fadeInLeft" data-animate-delay="300">
-						<i class="fa fa-tint fa-3x tipped" data-title="An Awesome Tooltip!"></i>
-						<h5>Easy Color Change</h5>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, praesentium iure tenetur officia quisquam architecto ullam facere optio inventore rem.
+						<i class="fa fa-cloud fa-3x tipped" data-title="{% trans 'فناوری' %}"></i>
+						<h5>{% trans 'فناوری' %}</h5>
+						<p>
+							{% trans 'از این نظر شركت همواره اقدام به پایش مستمر فناوری های روز محصولات و فرایندهای تولید نموده و توسعه و بهبود محصولات و بومی سازی تولید ماشین آلات تولیدی با رویکرد مکانیزه نمودن تولید و افزایش بهره وری تولید را سرلوحه کار خود قرار می دهد.' %}
+						</p>
 					</div>
 					<div class="four columns animated service-item" data-animate="fadeIn" data-animate-delay="300">
-						<i class="fa fa-file-text fa-3x tipped" data-title="An Awesome Tooltip!"></i>
-						<h5>One Page Layout</h5>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa magnam provident delectus perspiciatis ut cumque quos maiores quae officiis magni.
+						<i class="fa fa-exchange fa-3x tipped" data-title="{% trans 'بازارها' %}"></i>
+						<h5>{% trans 'بازارها' %}</h5>
+						<p>
+							{% trans 'ما با تمام توان مي‏كوشيم شركت گواراب را در صحنه رقابت جهاني موفق كنيم. بازارهای مد نظر شرکت در افق این ماموریت عبارتند از: بازار ایران، شمال آفریقا، خاور میانه و اروپا' %}
+						</p>
 					</div>
 					<div class="four columns animated service-item" data-animate="fadeIn" data-animate-delay="300">
-						<i class="fa fa-code fa-3x tipped" data-title="An Awesome Tooltip!"></i>
-						<h5>Commented Code</h5>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, nam quaerat sit! Quasi magni esse fuga modi ex libero deserunt.
+						<i class="fa fa-tags fa-3x tipped" data-title="{% trans 'محصولات يا خدمات' %}"></i>
+						<h5>{% trans 'محصولات يا خدمات' %}</h5>
+						<p>
+							{% trans ' انواع فیلترهای کربنی، انواع فیلترهای الیافی، تولید کربن اکتیو، تولید انواع دستگاه های تصفیه آب، خدمات آزمایشگاهی، ارایه مشاوره های فنی و مهندسی، تولید محصولاتي با كيفيت بسيار بالا از لحاظ ویژگی های عملکردی، سلامتی و ایمنی و ظاهری متناسب با آب منطقه با استفاده از مواد اولیه متناسب با سلامت آب شرب.' %}
+						</p>
 					</div>
 					<div class="four columns animated service-item" data-animate="fadeInRight" data-animate-delay="300">
-						<i class="fa fa-rocket fa-3x tipped" data-title="An Awesome Tooltip!"></i>
-						<h5>Will Make You Awesome</h5>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, ex nam dolorem nesciunt corporis quisquam saepe omnis sunt natus nostrum!
+						<i class="fa fa-users fa-3x tipped" data-title="{% trans 'مشتريان' %}"></i>
+						<h5>{% trans 'مشتريان' %}</h5>
+						<p>
+						{% trans 'ما بر اين باوريم كه پيش از هر چيز در برابر نیازهای حال و آینده مشتریان و سلامت جامعه ملی و جهانی مسئول هستیم و خود را پاسخگوی مشتریان در قبال محصولات و خدمات خود می دانیم و احترام به مشتریان و جلب اعتماد آنها را سر لوحه کار خود قرار می دانیم و به دنبال خلق مشتریان وفادار از طریق ارزش آفرینی پایدار برای آنها هستیم.' %}
+						</p>
 					</div>
+						<div class="row">
+					<div class="four columns animated service-item" data-animate="fadeInLeft" data-animate-delay="300">
+						<i class="fa fa-male fa-3x tipped" data-title="{% trans 'توجه به كاركنان' %}"></i>
+						<h5>{% trans 'توجه به كاركنان' %}</h5>
+						<p>
+							{% trans 'آموزش ‏دادن؛ ايجاد انگيزه؛ حفظ و نگهداري كاركناني كه از نظر توانايي، اخلاق و تعهد به سازمان داراي ويژگي ممتاز هستند؛ ایجاد محيط كار مناسب؛ جبران خدمت بر مبناي عملكرد جهت رشد و تأمين امنيت شغلي براي كاركنان؛ایجاد حس تعلق به سازمان و حس افتخار نسبت به کار در شرکت.' %}
+						</p>
+					</div>
+					<div class="four columns animated service-item" data-animate="fadeIn" data-animate-delay="300">
+						<i class="fa fa-file-text fa-3x tipped" data-title="{% trans 'ويژگي های ممتاز' %}"></i>
+						<h5>{% trans 'ويژگي های ممتاز' %}</h5>
+						<p>
+							{% trans 'توان علمی و دانش فنی و توانايي‏هاي خلاق و سازنده مدیران؛پایبندی به مباحث کیفی محصولات و مشتری مداری برای حفظ فاصله از رقبا؛ توانمندی در تولید محصولات متنوع؛' %}
+						</p>
+					</div>
+					<div class="four columns animated service-item" data-animate="fadeIn" data-animate-delay="300">
+						<i class="fa fa-flag fa-3x tipped" data-title="{% trans 'فلسفه' %}"></i>
+						<h5>{% trans 'فلسفه' %}</h5>
+						<p>
+							{% trans 'ما بر اين باوريم كه حرکت در جهت سلامت انسانها از ارزشمندترين هدفهاي بشریت است و فلسفه گواراب در اين جمله خلاصه مي‏شود: تقويت روح مشاركت صنعتگر، ایده پرداز و بازاریاب و توجه به مكاني كه افراد بتوانند دانش كسب و تولید كنند، تجربه بياموزند و وقت خود را با مسرت و خوشي بگذرانند.' %}
+						</p>
+					</div>
+					<div class="four columns animated service-item" data-animate="fadeInRight" data-animate-delay="300">
+						<i class="fa fa-rocket fa-3x tipped" data-title="{% trans 'توجه به بقا، رشد و سودآوري' %}"></i>
+						<h5>{% trans 'توجه به بقا، رشد و سودآوري' %}</h5>
+						<p>
+							{% trans 'از اين نظر شركت عمليات خود را با احتياط انجام مي‏دهد و ميزان سود و رشد خود را به‏ گونه‏ اي تنظيم مي‏نمايد كه در نهايت موفقيت بلند مدت تضمين شود. به عبارت دیگر شركت با چشم داشتي به سودي منصفانه، مي‏كوشد به‏گونه‏اي كه منافع مشتريان، كاركنان، سهامداران،تامین کنندگان و جامعه تأمين شود.' %}
+						</p>
+					</div>
+		</div><!-- end row -->
 				</div><!-- end row -->
 			</div><!-- end container -->
 		</section><!-- end parallax section -->	
 	</section><!-- end services section-->
 
-
-
 	<!-- Portfolio Section -->
-	<section id="portfolio" class="section">
+	<section id="products" class="section">
 
 		<div class="container" id="portfolio-title">
-			<h2 class="title">Our Recent Work</h2>
-			<h4 class="subtitle">Check out a list of our most favorite projects.</h4>
+			<h2 class="title">{% trans 'محصولات گواراب' %}</h2>
 		</div><!-- end portfolio title container -->
 
-			<!-- Project Expander -->
-			<div class="item-expander">
-				<div id="item-expander">
-					<p class="close-btn"><a class="close"></a></p>
-					<div class="expander-container"></div>
-				</div>
-			</div>
-		
-		<div class="container" id="portfolio-container">
+		<div class="container" style="padding-top: 30px;">
 
 			<!-- Portfolio Filters -->
 			<div id="options" class="filter-menu">
 				<ul id="filters" class="option-set" data-option-key="filter">
-					<li><a href="#filter" data-option-value="*" class="selected">All</a></li>
-					<li><a href="#filter" data-option-value=".illustration">Illustration</a></li>
-					<li><a href="#filter" data-option-value=".photography">Photography</a></li>
-					<li><a href="#filter" data-option-value=".motion">Motion</a></li>
-					<li><a href="#filter" data-option-value=".web">Web</a></li>
+					<li><a href="#filter" data-option-value="*" class="selected">{% trans 'همه' %}</a></li>
+					{% for item in productCategory %}
+                        <li><a href="#filter" data-option-value=".{{ item.id }}">{{ item.name }}</a></li>
+                    {% endfor %}
 				</ul>
 			</div>
 
 			<!-- Portfolio Items -->
 			<div class="portfolio-items">
-
-					<!-- Item 1 -->
-					<div class="item four columns illustration">
-						<a href="project-1.html" class="expander">
-							<img src="{% static 'images/portfolio/project-1.jpg' %}" alt="" />
+				{% for product in products %}
+					<div class="item four columns {{ product.category.id }}">
+						<a href="/media/{{ product.small_img }}" class="expander" data-rel="prettyPhoto">
+							<img src="/media/{{ product.big_img }}" alt="{{ product.name }}" />
 							<div class="mask"></div>
-							<h5>Poster Design</h5>
+							<h5>{{ product.name }}</h5>
 						</a>
 					</div>
-					
-					<!-- Item 2 -->
-					<div class="item four columns photography">
-						<a href="project-2.html" class="expander">
-							<img src="{% static 'images/portfolio/project-2.jpg' %}" alt="" />
-							<div class="mask"></div>
-							<h5>Logo Illustration</h5>
-						</a>
-					</div>
-
-					<!-- Item 3 -->
-					<div class="item four columns web">
-						<a href="images/portfolio/project-3.jpg' %}" data-rel="prettyPhoto">
-							<img src="{% static 'images/portfolio/project-3.jpg' %}" alt="" />
-							<div class="mask"></div>
-							<h5>Client Work</h5>
-						</a>
-					</div>
-
-					<!-- Item 4 -->
-					<div class="item four columns photography">
-						<a href="project-1.html" class="expander">
-							<img src="{% static 'images/portfolio/project-4.jpg' %}" alt="" />
-							<div class="mask"></div>
-							<h5>Personal Design</h5>
-						</a>
-					</div>
-
-					<!-- Item 5 -->
-					<div class="item four columns motion">
-						<a href="project-2.html" class="expander">
-							<img src="{% static 'images/portfolio/project-5.jpg' %}" alt="" />
-							<div class="mask"></div>
-							<h5>Poster Illustration</h5>
-						</a>
-					</div>
-
-					<!-- Item 6 -->
-					<div class="item four columns illustration">
-						<a href="images/portfolio/project-6.jpg' %}" data-rel="prettyPhoto">
-							<img src="{% static 'images/portfolio/project-6.jpg' %}" alt="" />
-							<div class="mask"></div>
-							<h5>Logo Concept</h5>
-						</a>
-					</div>
-
-					<!-- Item 7 -->
-					<div class="item four columns web">
-						<a href="project-1.html" class="expander">
-							<img src="{% static 'images/portfolio/project-7.jpg' %}" alt="" />
-							<div class="mask"></div>
-							<h5>Lettering Work</h5>
-						</a>
-					</div>
-
-					<!-- Item 8 -->
-					<div class="item four columns illustration">
-						<a href="project-2.html" class="expander">
-							<img src="{% static 'images/portfolio/project-8.jpg' %}" alt="" />
-							<div class="mask"></div>
-							<h5>Personal Work</h5>
-						</a>
-					</div>
-
-					<!-- Item 9 -->
-					<div class="item four columns motion">
-						<a href="images/portfolio/project-9.jpg' %}" data-rel="prettyPhoto">
-							<img src="{% static 'images/portfolio/project-9.jpg' %}" alt="" />
-							<div class="mask"></div>
-							<h5>Poster Illustration</h5>
-						</a>
-					</div>
-
-					<!-- Item 10 -->
-					<div class="item four columns illustration">
-						<a href="project-1.html" class="expander">
-							<img src="{% static 'images/portfolio/project-10.jpg' %}" alt="" />
-							<div class="mask"></div>
-							<h5>Logo Concept</h5>
-						</a>
-					</div>
-
-					<!-- Item 11 -->
-					<div class="item four columns web">
-						<a href="project-2.html" class="expander">
-							<img src="{% static 'images/portfolio/project-11.jpg' %}" alt="" />
-							<div class="mask"></div>
-							<h5>Lettering Work</h5>
-						</a>
-					</div>
-
-					<!-- Item 12 -->
-					<div class="item four columns illustration">
-						<a href="images/portfolio/project-12.jpg' %}" data-rel="prettyPhoto">
-							<img src="{% static 'images/portfolio/project-12.jpg' %}" alt="" />
-							<div class="mask"></div>
-							<h5>Personal Work</h5>
-						</a>
-					</div>
+				{% endfor %}
 
 			</div><!-- end portfolio items -->
 		</div><!-- end container -->
 	</section><!-- end portfolio section -->
 
-
-
-	<!-- Counter -->
-	<section class="counter parallax3">
-
-	<!-- Callout Title -->
-	<section class="callout">
-		<div class="container">
-			<h3 class="animated" data-animate="fadeInDown" data-animate-delay="300">Andare by the <span class="color">numbers!</span></h3>
-		</div><!-- end container -->
-	</section><!-- end callout title -->
-
-		<div class="container">
-
-				<!-- Counter Column -->
-				<div class="four columns">
-					<div class="icon-box"><i class="fa fa-flag-o fa-4x"></i></div>
-					<div class="count" data-to="354">
-						<h1 class="count-number"></h1>
-						<h5>Projects <span class="color">Completed</span></h5>
-					</div><!-- end counter data -->
-				</div><!-- end counter column -->
-
-				<!-- Counter Column -->
-				<div class="four columns">
-					<div class="icon-box"><i class="fa fa-smile-o fa-4x"></i></div>
-					<div class="count" data-to="203">
-						<h1 class="count-number"></h1>
-						<h5>Happy <span class="color">Clients</span></h5>
-					</div><!-- end counter data -->
-				</div><!-- end counter column -->
-
-				<!-- Counter Column -->
-				<div class="four columns">
-					<div class="icon-box"><i class="fa fa-comments-o fa-4x"></i></div>
-					<div class="count" data-to="467">
-						<h1 class="count-number"></h1>
-						<h5>Brainstorm <span class="color">Sessions</span></h5>
-					</div><!-- end counter data -->
-				</div><!-- end counter column -->
-
-				<!-- Counter Column -->
-				<div class="four columns">
-					<div class="icon-box"><i class="fa fa-envelope-o fa-4x"></i></div>
-					<div class="count" data-to="647">
-						<h1 class="count-number"></h1>
-						<h5>Emails <span class="color">Exchanged</span></h5>
-					</div><!-- end counter data -->
-				</div><!-- end counter column -->
-
-		</div><!-- end container -->
-	</section><!-- end counter -->
-
-
-
-	<!-- Pricing Section -->
-	<section id="pricing" class="section">
-		<div class="container">
-			<h2 class="title">We've got a price that's right for you</h2>
-			<h4 class="subtitle">Our plans are versatile and affordable</h4>
-				
-				<!-- Pricing Table -->
-				<div class="one-third column price-table animated" data-animate="fadeInLeft" data-animate-delay="400">
-					<h4>Standard</h4>
-					<div class="price-table-container">
-						<div class="price"><span class="dollar">$</span>9.95</div>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, vel, veritatis porro praesentium iste vero.</p>
-						<ul>
-							<li class="tipped" data-title="Lorem ipsum dolor sit amet"><span class="color">Branding</span> Review</li>
-							<li class="tipped" data-title="Mollitia vel veritatis porro"><span class="color">Interfce</span> Design</li>
-							<li class="tipped" data-title="Lorem ipsum dolor sit amet"><span class="color">Story</span> Boards</li>
-							<li class="tipped" data-title="Mollitia vel veritatis porro"><span class="color">Social</span> Marketing</li>
-							<li class="tipped" data-title="Lorem ipsum dolor sit amet"><span class="color">Hosting</span> Plans</li>
-						</ul>
-					</div><!-- end price table container -->
-					<a href="#" class="price-button">Sign Up Now</a>
-				</div><!-- end price table -->
-				
-				<!-- Pricing Table -->
-				<div class="one-third column price-table animated" data-animate="fadeIn" data-animate-delay="400">
-					<h4 class="selected">Professional</h4>
-					<div class="price-table-container">
-						<div class="price"><span class="dollar">$</span>19.95</div>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, vel, veritatis porro praesentium iste vero.</p>
-						<ul>
-							<li class="tipped" data-title="Lorem ipsum dolor sit amet"><span class="color">Branding</span> Review</li>
-							<li class="tipped" data-title="Mollitia vel veritatis porro"><span class="color">Interfce</span> Design</li>
-							<li class="tipped" data-title="Lorem ipsum dolor sit amet"><span class="color">Story</span> Boards</li>
-							<li class="tipped" data-title="Mollitia vel veritatis porro"><span class="color">Social</span> Marketing</li>
-							<li class="tipped" data-title="Lorem ipsum dolor sit amet"><span class="color">Hosting</span> Plans</li>
-						</ul>
-					</div><!-- end price table container -->
-					<a href="#" class="price-button selected">Sign Up Now</a>
-				</div><!-- end price table -->
-				
-				<!-- Pricing Table -->
-				<div class="one-third column price-table animated" data-animate="fadeInRight" data-animate-delay="400">
-					<h4>Business</h4>
-					<div class="price-table-container">
-						<div class="price"><span class="dollar">$</span>29.95</div>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, vel, veritatis porro praesentium iste vero.</p>
-						<ul>
-							<li class="tipped" data-title="Lorem ipsum dolor sit amet"><span class="color">Branding</span> Review</li>
-							<li class="tipped" data-title="Mollitia vel veritatis porro"><span class="color">Interfce</span> Design</li>
-							<li class="tipped" data-title="Lorem ipsum dolor sit amet"><span class="color">Story</span> Boards</li>
-							<li class="tipped" data-title="Mollitia vel veritatis porro"><span class="color">Social</span> Marketing</li>
-							<li class="tipped" data-title="Lorem ipsum dolor sit amet"><span class="color">Hosting</span> Plans</li>
-						</ul>
-					</div><!-- end price table container -->
-					<a href="#" class="price-button">Sign Up Now</a>
-				</div><!-- end price table -->
-
-		</div><!-- end container -->
-	</section><!-- end pricing section -->
-
 	<section id="accordion" class="section accordion parallax4">
+
 		<div class="container">
 
 			<div class="eight columns animated" data-animate="fadeInLeft" data-animate-delay="400">
-				<img src="{% static 'images/imonitor-2.png' %}" alt="iPad Image" class="scale-with-grid mockup" />
+				<img src="{% static 'images/faq.jpg' %}" alt="iPad Image" class="scale-with-grid mockup" />
 			</div><!-- end ipad mockup -->
 
-			<div class="eight columns accordion-container">
-				<h2 class="title">You're gonna dig Andare</h2>
-				<h4 class="subtitle">Here's why we think so</h4>
+			<div id="question" class="eight columns accordion-container">
+				<h2 class="title">{% trans 'سؤالات متداول' %}</h2>
+				<h4 class="subtitle">{% trans 'پرسش های مشتریان و پاسخ آنها' %}</h4>
 
-				<div class="accordion-button"><i class="fa fa-arrow-circle-o-down fa-lg"></i>Andare is flexible</div>
-				<div class="accordion-content active">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, fugit, dolores, ea non harum molestias tempore earum obcaecati omnis praesentium corrupti recusandae assumenda molestiae autem?</p>
+				{% for faq in FAQs %}
+					{% if forloop.first %}
+						<div class="accordion-button"><i class="fa fa-arrow-circle-o-down fa-lg"></i>{{ faq.question }}</div>
+						<div class="accordion-content active">
+							<p>
+								{{ faq.answer }}
+							</p>
+						</div>
+					{% else %}
+						<div class="accordion-button"><i class="fa fa-arrow-circle-o-right fa-lg"></i>{{ faq.question }}</div>
+						<div class="accordion-content">
+							<p> {{ faq.answer }} </p>
+						</div>
+					{% endif %}
+				{% endfor %}
 
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, quos, porro consectetur nobis officia sequi voluptate eveniet hic quam minima ex soluta repellendus laboriosam molestias nam ratione culpa sunt error ad inventore repudiandae amet quasi illo neque blanditiis! Totam, architecto.</p>
-				</div>
-
-				<div class="accordion-button"><i class="fa fa-arrow-circle-o-right fa-lg"></i>A simply incredible theme</div>
-				<div class="accordion-content">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, quos, porro consectetur nobis officia sequi voluptate eveniet hic quam minima ex soluta repellendus laboriosam molestias nam ratione culpa sunt error ad inventore repudiandae amet quasi illo neque blanditiis! Totam, architecto.
-				</div>
-
-				<div class="accordion-button"><i class="fa fa-arrow-circle-o-right fa-lg"></i>Many options to choose from</div>
-				<div class="accordion-content">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, explicabo, impedit, aliquid inventore quia fugiat et illo doloribus illum beatae provident temporibus dicta eligendi quod soluta labore quaerat cupiditate magni repellendus incidunt veniam aspernatur eius?
-				</div>
-
-				<div class="accordion-button"><i class="fa fa-arrow-circle-o-right fa-lg"></i>Happy clients make life easy</div>
-				<div class="accordion-content">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, vitae, natus illo officia inventore et tempora eum at nisi pariatur beatae earum temporibus unde ipsum quae odio blanditiis dolorum voluptatum eligendi porro accusantium nesciunt doloribus quo aut qui. Iste, soluta beatae dolore repellat deserunt eligendi in impedit eius recusandae dolorem magni cupiditate ad commodi laboriosam corporis atque ullam quod dolor!
-				</div>
 			</div><!-- end eight col accordion section -->
 
 		</div><!-- end container -->
 	</section><!-- end accordion section -->
 
+		<!-- Portfolio Section -->
+	<section id="gallery" class="section">
 
-
-	<section id="team" class="section">
 		<div class="container">
-			<h2 class="title">Our Creative Team</h2>
-			<h4 class="subtitle">We design circles around ourselves</h4>
+			<h2 class="title">{% trans 'گالری تصاویر' %}</h2>
+		</div><!-- end portfolio title container -->
 
-			<div class="four columns team">
-				<div class="team-photo">
-					<img src="{% static 'images/team-1.jpg' %}" alt="" class="scale-with-grid">
-					<div class="mask"></div>
-					<h5>Connet with Jane</h5>
-					<ul class="team-social-links">
-						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-						<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-						<li><a href="#"><i class="fa fa-instagram"></i></a></li>
-						<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-					</ul>
-				</div><!-- end team photo -->
+		<div class="container" style="padding-top:0;">
 
-				<h4>Jane Donaven</h4>
-				<h6>UI Developer</h6>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, adipisci quasi quod fugiat obcaecati! Mollitia amet ducimus ipsa consequuntur similique.</p>
+			<!-- Portfolio Items -->
+			<div class="portfolio-items">
 
-				<div class="skillbar clearfix " data-percent="85%">
-					<div class="skillbar-title"><span>HTML5</span></div>
-					<div class="skillbar-bar"></div>
-					<div class="skill-bar-percent">80%</div>
-				</div> <!-- end skill bar -->
+				{% for item in gallery %}
+					<div class="item four columns">
+						<a href="/media/{{ item.small_img }}" data-rel="prettyPhoto[gallery]">
+							<img src="/media/{{ item.large_img }}" alt="{{ item.alt }}" />
+							<div class="mask"></div>
+							<h5>{{ item.alt }}</h5>
+						</a>
+					</div>
+				{% endfor %}
 
-				<div class="skillbar clearfix " data-percent="95%">
-					<div class="skillbar-title"><span>CSS3</span></div>
-					<div class="skillbar-bar"></div>
-					<div class="skill-bar-percent">95%</div>
-				</div> <!-- end skill bar -->
-
-				<div class="skillbar clearfix " data-percent="63%">
-					<div class="skillbar-title"><span>Photoshop</span></div>
-					<div class="skillbar-bar"></div>
-					<div class="skill-bar-percent">63%</div>
-				</div> <!-- end skill bar -->
-
-			</div><!-- end team column -->
-
-			<div class="four columns team">
-				<div class="team-photo">
-					<img src="{% static 'images/team-2.jpg' %}" alt="" class="scale-with-grid">
-					<div class="mask"></div>
-					<h5>Connect with Jonathan</h5>
-					<ul class="team-social-links">
-						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-						<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-						<li><a href="#"><i class="fa fa-instagram"></i></a></li>
-						<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-					</ul>
-				</div><!-- end team photo -->
-
-				<h4>Jonathan Smith</h4>
-				<h6>Designer</h6>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, adipisci quasi quod fugiat obcaecati! Mollitia amet ducimus ipsa consequuntur similique.</p>
-
-				<div class="skillbar clearfix " data-percent="60%">
-					<div class="skillbar-title"><span>HTML5</span></div>
-					<div class="skillbar-bar"></div>
-					<div class="skill-bar-percent">60%</div>
-				</div> <!-- end skill bar -->
-
-				<div class="skillbar clearfix " data-percent="75%">
-					<div class="skillbar-title"><span>CSS3</span></div>
-					<div class="skillbar-bar"></div>
-					<div class="skill-bar-percent">75%</div>
-				</div> <!-- end skill bar -->
-
-				<div class="skillbar clearfix " data-percent="84%">
-					<div class="skillbar-title"><span>Photoshop</span></div>
-					<div class="skillbar-bar"></div>
-					<div class="skill-bar-percent">84%</div>
-				</div> <!-- end skill bar -->
-
-			</div><!-- end team column -->
-
-			<div class="four columns team">
-				<div class="team-photo">
-					<img src="{% static 'images/team-3.jpg' %}" alt="" class="scale-with-grid">
-					<div class="mask"></div>
-					<h5>Connect with Sam</h5>
-					<ul class="team-social-links">
-						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-						<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-						<li><a href="#"><i class="fa fa-instagram"></i></a></li>
-						<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-					</ul>
-				</div><!-- end team photo -->
-
-				<h4>Sam Davidson</h4>
-				<h6>Programmer</h6>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, adipisci quasi quod fugiat obcaecati! Mollitia amet ducimus ipsa consequuntur similique.</p>
-
-				<div class="skillbar clearfix " data-percent="87%">
-					<div class="skillbar-title"><span>HTML5</span></div>
-					<div class="skillbar-bar"></div>
-					<div class="skill-bar-percent">87%</div>
-				</div> <!-- end skill bar -->
-
-				<div class="skillbar clearfix " data-percent="54%">
-					<div class="skillbar-title"><span>Javascript</span></div>
-					<div class="skillbar-bar"></div>
-					<div class="skill-bar-percent">54%</div>
-				</div> <!-- end skill bar -->
-
-				<div class="skillbar clearfix " data-percent="72%">
-					<div class="skillbar-title"><span>PHP</span></div>
-					<div class="skillbar-bar"></div>
-					<div class="skill-bar-percent">72%</div>
-				</div> <!-- end skill bar -->
-
-			</div><!-- end team column -->
-
-			<div class="four columns team">
-				<div class="team-photo">
-					<img src="{% static 'images/team-4.jpg' %}" alt="" class="scale-with-grid">
-					<div class="mask"></div>
-					<h5>Connect with Kelly</h5>
-					<ul class="team-social-links">
-						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-						<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-						<li><a href="#"><i class="fa fa-instagram"></i></a></li>
-						<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-					</ul>
-				</div><!-- end team photo -->
-
-				<h4>Kelly Johnson</h4>
-				<h6>UX Developer</h6>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, adipisci quasi quod fugiat obcaecati! Mollitia amet ducimus ipsa consequuntur similique.</p>
-
-				<div class="skillbar clearfix " data-percent="54%">
-					<div class="skillbar-title"><span>HTML5</span></div>
-					<div class="skillbar-bar"></div>
-					<div class="skill-bar-percent">54%</div>
-				</div> <!-- end skill bar -->
-
-				<div class="skillbar clearfix " data-percent="62%">
-					<div class="skillbar-title"><span>CSS3</span></div>
-					<div class="skillbar-bar"></div>
-					<div class="skill-bar-percent">62%</div>
-				</div> <!-- end skill bar -->
-
-				<div class="skillbar clearfix " data-percent="63%">
-					<div class="skillbar-title"><span>Javascript</span></div>
-					<div class="skillbar-bar"></div>
-					<div class="skill-bar-percent">63%</div>
-				</div> <!-- end skill bar -->
-
-			</div><!-- end team column -->
-
+			</div><!-- end portfolio items -->
 		</div><!-- end container -->
-	</section><!-- end team section -->
-
-
-
-	<section id="video" class="full-video">
-		<div class="video-msg">
-			<h1>We are incredible</h1>
-			<a href="#about" class="button scroll">Find out why</a>
-		</div><!-- end video message -->
-
-		<div id="P1" class="player video-container" data-property="{videoURL:'https://www.youtube.com/watch?v=GELKWLdCTv8',containment:'#video', autoPlay:true, showControls:false, mute:true, startAt:0, opacity:1}"></div><!-- end video container -->
-	</section><!-- end video section -->
-
-
-
-	<section id="blog" class="section">
-		<div class="container">
-			<h2 class="title">We're always doing something cool</h2>
-			<h4 class="subtitle">Check out the latest from our blog</h4>
-
-			<div class="one-third column post-preview animated" data-animate="fadeInLeft" data-animate-delay="400">
-				<a href="#" class="post-img">
-					<img src="{% static 'images/blog-1.jpg' %}" alt="" class="scale-with-grid">
-					<div class="mask"></div>
-					<h5>Read the full article</h5>
-				</a><!-- end post image -->
-				<a href="#" class="post-title">A Day in The Life of a Designer Has Lots of Freedom</a>
-				<ul class="post-meta">
-					<li><i class="fa fa-user"></i> <a href="#">John Doe</a></li>
-					<li><i class="fa fa-calendar"></i> 10/15/2015</li>
-					<li><i class="fa fa-comments"></i> <a href="#">3</a> comments</li>
-				</ul><!-- end post meta -->
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, deserunt ut consequuntur est ea dolore accusantium illo consequatur quos laudantium eum doloribus reprehenderit at? Veniam, obcaecati, facilis, ad, nihil sit eaque minus fugiat magnam perspiciatis quia rem quae consequuntur sint cumque iste.</p>
-				<a href="#">Read more &raquo;</a>
-			</div><!-- end post preview -->
-
-			<div class="one-third column post-preview animated" data-animate="fadeIn" data-animate-delay="400">
-				<a href="#" class="post-img">
-					<img src="{% static 'images/blog-2.jpg' %}" alt="" class="scale-with-grid">
-					<div class="mask"></div>
-					<h5>Read the full article</h5>
-				</a><!-- end post image -->
-				<a href="#" class="post-title">Climbing The Ladder of Life is What We're All About</a>
-				<ul class="post-meta">
-					<li><i class="fa fa-user"></i> <a href="#">John Doe</a></li>
-					<li><i class="fa fa-calendar"></i> 10/15/2015</li>
-					<li><i class="fa fa-comments"></i> <a href="#">3</a> comments</li>
-				</ul><!-- end post meta -->
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, deserunt ut consequuntur est ea dolore accusantium illo consequatur quos laudantium eum doloribus reprehenderit at? Veniam, obcaecati, facilis, ad, nihil sit eaque minus fugiat magnam perspiciatis quia rem quae consequuntur sint cumque iste.</p>
-				<a href="#">Read more &raquo;</a>
-			</div><!-- end post preview -->
-
-			<div class="one-third column post-preview animated" data-animate="fadeInRight" data-animate-delay="400">
-				<a href="#" class="post-img">
-					<img src="{% static 'images/blog-3.jpg' %}" alt="" class="scale-with-grid">
-					<div class="mask"></div>
-					<h5>Read the full article</h5>
-				</a><!-- end post image -->
-				<a href="#" class="post-title">Client Calls are Always a Top Priority No Matter What</a>
-				<ul class="post-meta">
-					<li><i class="fa fa-user"></i> <a href="#">John Doe</a></li>
-					<li><i class="fa fa-calendar"></i> 10/15/2015</li>
-					<li><i class="fa fa-comments"></i> <a href="#">3</a> comments</li>
-				</ul><!-- end post meta -->
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, deserunt ut consequuntur est ea dolore accusantium illo consequatur quos laudantium eum doloribus reprehenderit at? Veniam, obcaecati, facilis, ad, nihil sit eaque minus fugiat magnam perspiciatis quia rem quae consequuntur sint cumque iste.</p>
-				<a href="#">Read more &raquo;</a>
-			</div><!-- end post preview -->
-
-			<div class="row full-blog-link">
-				<a href="#" class="button">Read our full blog</a> 
-			</div>
-			
-		</div><!-- end container -->
-	</section><!-- end blog section -->
-
-
+	</section><!-- end portfolio section -->
 
 	<section class="static-testimonial parallax5">
 		<div class="container">
 			<blockquote>
 				<i class="fa fa-quote-left"></i>
 				<i class="fa fa-quote-right"></i>
-				Color does not add a pleasant quality to design - it reinforces it.
-				<span>Pierre Bonnard</span>
+				<span style="font-size:26px;padding: 3px 30px;">{% trans 'ما اکنون می توانیم با معتبرترین شرکتهای عرصه آب دنیا بر سر کیفیت محصول و خدمات خود به رقابت بپردازیم' %}</span>
 			</blockquote><!-- end quote -->
 		</div><!-- end container -->
-
-		<section class="client-logos">
-			<div class="container clients">
-				<ul>
-					<li class="two columns"><img src="{% static 'images/client-logo-1.png' %}" alt="" class="scale-with-grid"></li>
-					<li class="two columns"><img src="{% static 'images/client-logo-2.png' %}" alt="" class="scale-with-grid"></li>
-					<li class="two columns"><img src="{% static 'images/client-logo-3.png' %}" alt="" class="scale-with-grid"></li>
-					<li class="two columns"><img src="{% static 'images/client-logo-4.png' %}" alt="" class="scale-with-grid"></li>
-					<li class="two columns"><img src="{% static 'images/client-logo-5.png' %}" alt="" class="scale-with-grid"></li>
-					<li class="two columns"><img src="{% static 'images/client-logo-6.png' %}" alt="" class="scale-with-grid"></li>
-					<li class="two columns"><img src="{% static 'images/client-logo-7.png' %}" alt="" class="scale-with-grid"></li>
-					<li class="two columns"><img src="{% static 'images/client-logo-8.png' %}" alt="" class="scale-with-grid"></li>
-				</ul>
-			</div>
-		</section><!-- end client logo section -->
 	</section><!-- end static testimonial section -->
 
-
-
-
-	<section id="contact" class="section">
+	<section id="team" class="section">
+		<div class="container" style="padding-bottom:0px;">
+			<h2 class="title">{% trans 'اعضای تیم فنی' %}</h2>
+		</div>
 		<div class="container">
+			{% for member in team %}
+				<div class="four columns team">
+					<div class="team-photo">
+						<img src="/media/{{ member.image }}" alt="{{ member.name }}" class="scale-with-grid">
+						<div class="mask"></div>
+						<h5>{% trans 'ارتباط با ' %} {{ member.name }}</h5>
+						<ul class="team-social-links">
+							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+							<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+							<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+							<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+						</ul>
+					</div><!-- end team photo -->
 
-			<h2 class="title">There's no better time than now</h2>
-			<h4 class="subtitle">Get in touch, let's work together</h4>
-			
-			<div class="contact-form">
-				
-				<div class="error-container">
-					<span class="error" id="error-name">Please enter your name</span>
-					<span class="error" id="error-email">Please enter your email</span>
-					<span class="error" id="error-valid-email">Your e-mail is not a valid format</span>
-					<span class="error" id="error-valid-phone">Your phone number is not a valid format</span>
-					<span class="error" id="error-timedout">The email submission timed out. Please try again.</span>
-					<span class="error" id="error-state">Oops! An error occurred. Please try again later.</span>
-					<span class="success" id="email-success">Message received! Thank you.</span>
-				</div><!-- end error messages -->
+					<h4>{{ member.name }}</h4>
+					<h6>{{ member.post }}</h6>
 
-				<form id="contact-us" method="post" action="http://graphicmonkee.com/demo/html/andare/php/mail.php">
-					
-					<div class="eight columns animated" data-animate="fadeInLeft" data-animate-delay="400">
-						<input type="text" name="name" id="name" required="required" placeholder="Name" />
-						<input type="email" name="email" id="email" required="required" placeholder="Email" />
-						<input type="text" name="phone" id="phone" placeholder="Phone" />
-					</div>
-
-					<div class="eight columns animated" data-animate="fadeInRight" data-animate-delay="400">
-					<textarea name="message" id="message" placeholder="Message"></textarea>
-					</div>
-
-					<button type="submit" id="submit" name="submit">Send Message</button> 
-				</form>
-			</div><!-- end contact form -->
+				</div><!-- end team column -->
+			{% endfor %}
 
 		</div><!-- end container -->
-	</section><!-- end contact section -->
-
+	</section><!-- end team section -->
 		
 	<!-- Google Map -->
 	<section id="map" class="section">
 
 		<!-- Callout Title -->
-		<section class="callout">
-		<div class="container">
-			<h3 class="animated" data-animate="fadeInDown" data-animate-delay="300">Come out and <span class="color">see us!</span></h3>
-		</div><!-- end container -->
+		<section class="callout" >
+			<div class="container">
+				<h2 class="animated fadeInDown visible" data-animate="fadeInDown" data-animate-delay="300" style="color:#fff;">{% trans 'تماس با ما' %}</h2>
+			</div>
 		</section><!-- end callout title -->
 
-		<div id="google-map"></div>
+		<div id="google-map">
+			<iframe marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d209961.59360736088!2d50.71197817334581!3d34.688784481321996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f93bb6eb88ce195%3A0xcc35bec1c2604470!2sQom%2C+Qom+Province!5e0!3m2!1sen!2sir!4v1495482575764" frameborder="0" height="400" width="100%"></iframe>
+		</div>
 	</section><!-- end map section -->
 
-
-
 	<section id="footer-top" class="section">
-		<div class="container">
+		<div class="container" style="font-family: 'Lato', sans-serif;">
 			<ul class="social-links">
-					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-					<li><a href="#"><i class="fa fa-vimeo-square"></i></a></li>
-					<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-					<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-				</ul><!-- end social links -->
-			800.123.4567 | <a href="#">info@andaredomain.com</a><br />
-			123 East Main Austin, Texas 12345
+				<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+				<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+				<li><a href="#"><i class="fa fa-vimeo-square"></i></a></li>
+				<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+				<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+			</ul><!-- end social links -->
+			 025 - 36647647 &nbsp;| &nbsp; 0912 651 2267<br />
+			gowarab | <a href="#" style="font-family: 'Lato', sans-serif;">Info@Gowarab.com</a>@
 		</div><!-- end container -->
 	</section><!-- end footer top section -->
 
@@ -876,9 +456,9 @@
 			<a href="#home" class="scroll button-to-top">
 					<i class="fa fa-angle-double-up"></i>
 				</a>
-			<h2>Andare</h2>
-			<p><span class="color">Made in the USA.</span><br /> 
-				&copy; 2014 All rights reserved.</p>
+			<h2 style="font-family: 'Lato', sans-serif;">GOWARAB</h2>
+			<p><span class="color" style="font-family: 'Lato', sans-serif;">
+				 2017 &copy; All rights reserved </span></p>
 		</div><!-- end container -->
 	</section><!-- end footer bottom section -->
 

@@ -1,4 +1,25 @@
 /* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 1310px) {
+
+    #lang-menu{
+        right: 10%;
+    }
+	/* Navigation */
+	.mobile-nav-button{
+		display: block;
+	}
+	.nav-menu{
+		display: none;
+		width: 100%;
+		height: auto;
+		top: 30%;
+		background: #ecf0f1;
+		padding: 32px 16px;
+	}
+	.nav li {float: none;}
+	.nav li a:after{content:"";}
+}
+
 @media only screen and (max-width: 959px) {
 	
 	.site-logo{padding-left: 16px;}
@@ -67,4 +88,9 @@
 @media only screen and (min-width: 568px) and (max-width: 767px) {}
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-@media only screen and (max-width: 567px) {}
+@media only screen and (max-width: 567px) {
+
+    #catalog {
+        font-size: 10px !important;
+    }
+}

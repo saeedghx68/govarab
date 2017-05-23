@@ -85,7 +85,7 @@ h6{
 .subtitle{
 	font-weight: 300;
 	color: #6c6c6c;
-	margin: 0 0 56px 0; 
+	margin: 15px 0 56px 0;
 	padding: 0;
 }
 
@@ -124,7 +124,7 @@ a.button{
 	color: #fff !important;
 	background: #e74c3c;
 	display: inline-block;
-	padding: 8px 16px;
+	padding: 4px 8px;
 	text-transform: uppercase;
 	font-weight: 400;
 	-webkit-border-radius: 3px;
@@ -247,7 +247,6 @@ blockquote span {
 	display: block;
 	font-size: 24px;
 }
-blockquote span:before{content: "\2013  ";}
 
 /* --------------------------------
 Social Media Buttons
