@@ -85,7 +85,7 @@ WSGI_APPLICATION = 'config.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'govarabDB',
+        'NAME': 'govarab_db',
         'USER': 'boshra',
         'PASSWORD': 'b123',
         'HOST': '',
@@ -116,21 +116,21 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/1.10/topics/i18n/
 
+
+LANGUAGE_CODE = 'fa-ir'
+MODELTRANSLATION_DEFAULT_LANGUAGE = 'fa'
+
 gettext = lambda s: s
+
 LANGUAGES = (
     ('fa', gettext('Farsi')),
     ('ar', gettext('Arabic')),
     ('en', gettext('English')),
 )
 
-LANGUAGE_CODE = 'fa-ir'
-MODELTRANSLATION_DEFAULT_LANGUAGE = 'fa'
-MODELTRANSLATION_AUTO_POPULATE = True
-MODELTRANSLATION_FALLBACK_LANGUAGES = ('fa',)
-# MODELTRANSLATION_LANGUAGES = ('fa', 'ar', 'en')
-MODELTRANSLATION_TRANSLATION_FILES = (
-    'myapp.translation',
-)
+MODELTRANSLATION_FALLBACK_LANGUAGES = ('fa', 'ar')
+MODELTRANSLATION_DEBUG = True
+
 
 TIME_ZONE = 'Asia/Tehran'
 
@@ -151,3 +151,4 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 PROJECT_DIR = os.path.dirname(__file__)
+

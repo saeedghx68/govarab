@@ -1,10 +1,16 @@
+from django import forms
+import myapp.translation
+from modeltranslation.admin import TranslationAdmin
 from django.contrib import admin
 from .models import *
-from django import forms
 
 
-admin.site.register(Gallery)
-admin.site.register(ProductCategory)
-admin.site.register(Product)
-admin.site.register(FAQ)
-admin.site.register(Team)
+class ExampleAdmin(TranslationAdmin):
+    pass
+
+
+admin.site.register(Gallery, ExampleAdmin)
+admin.site.register(ProductCategory, ExampleAdmin)
+admin.site.register(Product, ExampleAdmin)
+admin.site.register(FAQ, ExampleAdmin)
+admin.site.register(Team, ExampleAdmin)
