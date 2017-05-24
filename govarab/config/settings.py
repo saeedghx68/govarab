@@ -51,7 +51,6 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.middleware.locale.LocaleMiddleware',
-    'myapp.force_default_middleware.ForceDefaultLanguageMiddleware',
 ]
 
 LOCALE_PATHS = (
