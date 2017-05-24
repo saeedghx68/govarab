@@ -2,12 +2,13 @@
 from django.shortcuts import render, render_to_response
 from config import settings
 from myapp.models import *
-# from django.utils.translation import activate
-
-# activate('fa-ir')
+from django.utils import translation
+user_language = 'fa'
+translation.activate(user_language)
 
 
 def home(request):
+    request.session[translation.LANGUAGE_SESSION_KEY] = user_language
     c = {}
     c['LANGUAGES'] = settings.LANGUAGES
     c['SELECTEDLANG'] = request.LANGUAGE_CODE

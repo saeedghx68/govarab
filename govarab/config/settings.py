@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     'myapp',
 ]
 
-MIDDLEWARE_CLASSES = [
+MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -51,6 +51,7 @@ MIDDLEWARE_CLASSES = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.middleware.locale.LocaleMiddleware',
+    'myapp.force_default_middleware.ForceDefaultLanguageMiddleware',
 ]
 
 LOCALE_PATHS = (
@@ -116,18 +117,19 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/1.10/topics/i18n/
 
-
-LANGUAGE_CODE = 'fa-ir'
-MODELTRANSLATION_DEFAULT_LANGUAGE = 'fa'
-
-gettext = lambda s: s
+from django.utils.translation import ugettext_lazy as _
 
 LANGUAGES = (
-    ('fa', gettext('Farsi')),
-    ('ar', gettext('Arabic')),
-    ('en', gettext('English')),
+ ('fa', _('Farsi')),
+ ('ar', _('Arabic')),
+ ('en', _('English')),
 )
 
+LANGUAGE_CODE = 'fa'
+
+
+MODELTRANSLATION_DEFAULT_LANGUAGE = 'fa'
+MODELTRANSLATION_AUTO_POPULATE = True  # !
 MODELTRANSLATION_FALLBACK_LANGUAGES = ('fa', 'ar')
 MODELTRANSLATION_DEBUG = True
 
