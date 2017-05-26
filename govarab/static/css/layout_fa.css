@@ -64,7 +64,7 @@ Home (Header) Section
 }
 .home:after {clear: both;}
 .header{
-	padding-top: 21%;
+	padding-top: 32%;
 	text-align: center;
 }
 .header .logo{
@@ -83,7 +83,7 @@ Home (Header) Section
     padding: 24px 16px;
     margin: 0 auto;
     width: 45%;
-    margin-bottom: 56px;
+    margin-bottom: 30px;
 }
 .text-slides{
 	text-transform: uppercase;
@@ -123,12 +123,11 @@ Home (Header) Section
 
 a.header-down-arrow {
     direction: ltr !important;
-	color: #2980b9;
+	color: #00a0d8;
 	display: inline-block;
 	font-size: 40px;
 	font-weight: 400;
-	margin-top: 100px;
-
+	margin-top: 30px;
 	-webkit-transform: rotate(-90deg);
 	-moz-transform: rotate(-90deg);
 	-ms-transform: rotate(-90deg);
@@ -399,8 +398,8 @@ About Section
 	height: 96px;
 	padding: 26px 0 0 2px;
     margin: 0 auto 16px auto;
-    border: 3px solid #f78b1f;
-    background: rgb(247, 139, 31);
+    border: 3px solid #07507F;
+    background: #07507F;
     color: #fff;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
@@ -412,12 +411,12 @@ About Section
 }
 
 .icon-box:hover{
-	border-color: rgb(247, 139, 31);
+	border-color: #07507F;
 	background: #fff;
 }
 
 .icon-box:hover i{
-	color: rgb(247, 139, 31) !important;
+	color: #07507F !important;
 }
 
 .icon-box:hover:after{
@@ -985,9 +984,9 @@ Accordion
 	cursor: pointer;
 	margin: 16px 0;
 }
-.accordion-button:hover{color: #f68e26;}
+.accordion-button:hover{color: #00a0d8;}
 .accordion-button i{margin-right: 8px;}
-.accordion-button i.fa-arrow-circle-o-down{color: rgb(246, 142, 38);}
+.accordion-button i.fa-arrow-circle-o-down{color: #00a0d8;}
 .accordion-content{margin-bottom: 16px;}
 
 /* --------------------------------
@@ -1554,7 +1553,7 @@ a.button-to-top:hover {color: #e74c3c;}
 
 #about h4{
     font-size: 20px;
-    color: rgb(247, 139, 31);
+    color: #07507F;
     font-weight: bold;
 }
 
