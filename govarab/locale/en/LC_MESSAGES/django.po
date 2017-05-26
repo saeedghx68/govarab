@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-05-23 20:49+0430\n"
+"POT-Creation-Date: 2017-05-26 08:01+0430\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: config/settings.py:121
+#: config/settings.py:123
 msgid "Farsi"
 msgstr ""
 
-#: config/settings.py:122
+#: config/settings.py:124
 msgid "Arabic"
 msgstr ""
 
-#: config/settings.py:123
+#: config/settings.py:125
 msgid "English"
 msgstr ""
 
@@ -105,7 +105,7 @@ msgstr ""
 msgid "Team"
 msgstr ""
 
-#: templates/index.html:9 templates/index.html:120
+#: templates/index.html:9 templates/index.html:121
 msgid "گواراب"
 msgstr "GOWARAB"
 
@@ -121,7 +121,7 @@ msgstr "home"
 msgid "درباره ما"
 msgstr "about us"
 
-#: templates/index.html:69 templates/index.html:162
+#: templates/index.html:69 templates/index.html:163
 msgid "خدمات"
 msgstr "services"
 
@@ -129,7 +129,7 @@ msgstr "services"
 msgid "محصولات"
 msgstr "products"
 
-#: templates/index.html:71 templates/index.html:336
+#: templates/index.html:71 templates/index.html:342
 msgid "سؤالات متداول"
 msgstr "Frequently Asked Questions"
 
@@ -145,43 +145,24 @@ msgstr "team"
 msgid "تماس با ما "
 msgstr "contact us"
 
-#: templates/index.html:124
-msgid "اولین شرکت دانش بنیان در زمینه "
-msgstr "The first knowledge-based companies in the field of "
-
-#: templates/index.html:124
-msgid "تصفیه آب"
-msgstr "water treatment"
-
-#: templates/index.html:124
-msgid " در ایران"
-msgstr " in Iran"
-
 #: templates/index.html:125
-msgid "طراح و سازنده انواع "
-msgstr "Designer and manufacturer of "
-
-#: templates/index.html:125
-msgid " فیلترهای کربنی، پلیمری و معدنی "
-msgstr "carbon filters, polymer and mineral"
+msgid "اولین شرکت دانش بنیان در زمینه تصفیه آب در ایران"
+msgstr "The first knowledge-based companies in the field of water treatment in Iran"
 
 #: templates/index.html:126
-msgid "مرکز "
-msgstr " "
+msgid "طراح و سازنده انواع  فیلترهای کربنی، پلیمری و معدنی "
+msgstr "Designer and manufacturer of carbon filters, polymer and mineral"
 
-#: templates/index.html:126
-msgid "آزمون عملکرد و بهداشت "
-msgstr "Performance Test Center and Health"
+#: templates/index.html:127
+msgid "مرکز آزمون عملکرد و بهداشت فیلترهای آب شرب"
+msgstr "Performance Test Center and Health Drinking Water Filters"
 
-#: templates/index.html:126
-msgid "فیلترهای آب شرب"
-msgstr " Drinking Water Filters"
 
-#: templates/index.html:151
+#: templates/index.html:152
 msgid "درباره گواراب"
 msgstr "ABOUT GOWARAB"
 
-#: templates/index.html:152
+#: templates/index.html:153
 msgid ""
 "شرکت گواراب سازان دشت سبز که بطور کلّی ساختار خویش را بر فعّالیّت در صنعت تصفیه "
 "ی آب؛ با همه ی گرایش های تخصّصی و مؤلّفه های علمی دربرگیرنده ی این صنعت، طرح "
@@ -204,11 +185,11 @@ msgstr ""
 "intermediate products, installers and logistic factors, the approach The "
 "following codes are a non-negligible role of values ​​and strict adherence to:"
 
-#: templates/index.html:155
+#: templates/index.html:156
 msgid "پاسخگویی"
 msgstr "responsiveness"
 
-#: templates/index.html:157
+#: templates/index.html:158
 msgid ""
 "در شرکت گواراب سازان دشت سبز، مسؤولیّت ها به نحوی مستند، آموزش و پایش شده اند "
 "که چه در فرایندهای درون سازمانی و چه فرایندهای مرتبط با مشتری، پاسخگویی به "
@@ -219,7 +200,7 @@ msgstr ""
 "processes related to customer responsiveness as a strategic approach in "
 "order to improve the effectiveness of work defined"
 
-#: templates/index.html:164
+#: templates/index.html:165
 msgid ""
 "شرکت گواراب سازان دشت سبز در رویکرد ارزشی خود، برخورداری مشتریان را نه تنها "
 "به بایسته های خدمات مرتبط با محصولات خویش مانند پاسخگویی اثربخش و ضمانت "
@@ -235,11 +216,11 @@ msgstr ""
 "consumers need for this vital decision-making are among the services he "
 "knows."
 
-#: templates/index.html:169
+#: templates/index.html:170
 msgid "پژوهش و توسعه"
 msgstr "Research and development"
 
-#: templates/index.html:171
+#: templates/index.html:172
 msgid ""
 "این شرکت در راستای پیشرفت تمام علوم و صنایع، بر خود می داند نسبت به شناسایی "
 "آنچه کیفیّت ضروری ترین نیاز زیستی مصرف کنندگان را داراست مطالعه نماید؛ مطالعه "
@@ -254,11 +235,11 @@ msgstr ""
 "research, design and construction requirements for water quality improvement "
 "is consumed by them."
 
-#: templates/index.html:176
+#: templates/index.html:177
 msgid "کیفیّت"
 msgstr "Quality"
 
-#: templates/index.html:178
+#: templates/index.html:179
 msgid ""
 "کیفیّت به عنوان یکی از اصلی ترین و قدرتمندترین فرایندهای سازمانی این شرکت، "
 "تصمیم سازی کار، ابزارهای پایش و کنترل دائمی، اقدامات اصلاحی و بهبود مستمرّ را "
@@ -269,11 +250,11 @@ msgstr ""
 "corrective actions and continuous improvement in all stages before, during "
 "and after the production."
 
-#: templates/index.html:191
+#: templates/index.html:192
 msgid "چشم انداز شرکت "
 msgstr "GOWARAB'S VISION"
 
-#: templates/index.html:199
+#: templates/index.html:200
 msgid ""
 "تا پایان سال ۱۳۹۸، ارائه دهنده محصولات و خدمات با مزیت رقابتی ویژه در کشور و "
 "وسعت بخشی به قلمروی حضور در خارج از مرزهای کشور و تبدیل شدن به شرکتی سرآمد و "
@@ -286,11 +267,11 @@ msgstr ""
 "global industrial water treatment, we as the company's brand in regional "
 "markets attention be."
 
-#: templates/index.html:210
+#: templates/index.html:217
 msgid "خدمات شرکت"
 msgstr "GOWARAB'S VISION"
 
-#: templates/index.html:211
+#: templates/index.html:218
 msgid ""
 "شرکت گواراب سازان دشت سبز همانگونه که در مفاهیم مدرن مارکتینگ نیز بدان تأکید "
 "شده بر این اعتقاد است که هر محصول خانواده ای دارد. خانواده ی محصولات گواراب "
@@ -305,23 +286,32 @@ msgid ""
 "تجارت و خدمت پایبندی دارند و به تدریج و کاملاً موزون به خانواده ی گواراب "
 "پیوند می خورند مشمول مزایای همیشگی این همکاری مبارک خواهند بود و در ساختاری "
 "که مسؤولیّت ها افراز می شوند همگان منتفع خواهیم بود."
-msgstr "Company Gowarab makers green plains as in modern marketing concepts also emphasized on the belief that each product has a family. We believe, consumers are the most important member of this family who all ultimately to the real needs and wishes him and benefit from the services they deserve, apropos formed. Therefore, all those who have knowledge, experience and character to serve the customers know the basics of business and service commitment and gradually and perfectly proportioned to the family Gowarab bonded entitled to the benefits of ongoing cooperation blessed and structure responsibilities are divided as everyone will benefit."
+msgstr ""
+"Company Gowarab makers green plains as in modern marketing concepts also "
+"emphasized on the belief that each product has a family. We believe, "
+"consumers are the most important member of this family who all ultimately to "
+"the real needs and wishes him and benefit from the services they deserve, "
+"apropos formed. Therefore, all those who have knowledge, experience and "
+"character to serve the customers know the basics of business and service "
+"commitment and gradually and perfectly proportioned to the family Gowarab "
+"bonded entitled to the benefits of ongoing cooperation blessed and structure "
+"responsibilities are divided as everyone will benefit."
 
-#: templates/index.html:220
+#: templates/index.html:226
 msgid "مأموریت گواراب"
 msgstr "GOWARAB'S MISSOIN"
 
-#: templates/index.html:225
+#: templates/index.html:231
 msgid "در افق این سند تا پایان سال ۱۳۹۸، ماموريت شرکت گواراب به شرح زیر است:"
 msgstr ""
 "On the horizon of this document by the end of 2020, Gowarab mission is as "
 "follows:"
 
-#: templates/index.html:230 templates/index.html:231
+#: templates/index.html:236 templates/index.html:237
 msgid "فناوری"
 msgstr "Technology"
 
-#: templates/index.html:233
+#: templates/index.html:239
 msgid ""
 "از این نظر شركت همواره اقدام به پایش مستمر فناوری های روز محصولات و "
 "فرایندهای تولید نموده و توسعه و بهبود محصولات و بومی سازی تولید ماشین آلات "
@@ -333,11 +323,11 @@ msgstr ""
 "localization machinery manufacturing mechanized approach to production and "
 "increase production efficiency as a priority as well."
 
-#: templates/index.html:237 templates/index.html:238
+#: templates/index.html:243 templates/index.html:244
 msgid "بازارها"
 msgstr "Markets"
 
-#: templates/index.html:240
+#: templates/index.html:246
 msgid ""
 "ما با تمام توان مي‏كوشيم شركت گواراب را در صحنه رقابت جهاني موفق كنيم. "
 "بازارهای مد نظر شرکت در افق این ماموریت عبارتند از: بازار ایران، شمال "
@@ -347,11 +337,11 @@ msgstr ""
 "be successful. Global Horizons consider participating in this mission are: "
 "the Iran, North Africa, the Middle East and Europe"
 
-#: templates/index.html:244 templates/index.html:245
+#: templates/index.html:250 templates/index.html:251
 msgid "محصولات يا خدمات"
 msgstr "Products or Services"
 
-#: templates/index.html:247
+#: templates/index.html:253
 msgid ""
 " انواع فیلترهای کربنی، انواع فیلترهای الیافی، تولید کربن اکتیو، تولید انواع "
 "دستگاه های تصفیه آب، خدمات آزمایشگاهی، ارایه مشاوره های فنی و مهندسی، تولید "
@@ -364,11 +354,11 @@ msgstr ""
 "characteristics, health and safety and appearance according to the Water "
 "District using raw materials appropriate to the health of drinking water."
 
-#: templates/index.html:251 templates/index.html:252
+#: templates/index.html:257 templates/index.html:258
 msgid "مشتريان"
 msgstr "customers"
 
-#: templates/index.html:254
+#: templates/index.html:260
 msgid ""
 "ما بر اين باوريم كه پيش از هر چيز در برابر نیازهای حال و آینده مشتریان و "
 "سلامت جامعه ملی و جهانی مسئول هستیم و خود را پاسخگوی مشتریان در قبال محصولات "
@@ -382,11 +372,11 @@ msgstr ""
 "confided them to the top of his career the know and to create customer "
 "loyalty through sustainable value for them."
 
-#: templates/index.html:259 templates/index.html:260
+#: templates/index.html:265 templates/index.html:266
 msgid "توجه به كاركنان"
 msgstr "According to the staff"
 
-#: templates/index.html:262
+#: templates/index.html:268
 msgid ""
 "آموزش ‏دادن؛ ايجاد انگيزه؛ حفظ و نگهداري كاركناني كه از نظر توانايي، اخلاق و "
 "تعهد به سازمان داراي ويژگي ممتاز هستند؛ ایجاد محيط كار مناسب؛ جبران خدمت بر "
@@ -399,11 +389,11 @@ msgstr ""
 "security for employees;Create a sense of belonging to the organization and "
 "feel proud to work in the company."
 
-#: templates/index.html:266 templates/index.html:267
+#: templates/index.html:272 templates/index.html:273
 msgid "ويژگي های ممتاز"
 msgstr "Premium Features"
 
-#: templates/index.html:269
+#: templates/index.html:275
 msgid ""
 "توان علمی و دانش فنی و توانايي‏هاي خلاق و سازنده مدیران؛پایبندی به مباحث کیفی "
 "محصولات و مشتری مداری برای حفظ فاصله از رقبا؛ توانمندی در تولید محصولات "
@@ -413,11 +403,11 @@ msgstr ""
 "management commitment to quality products and customer issues to keep away "
 "from competitors; the ability to produce different products;"
 
-#: templates/index.html:273 templates/index.html:274
+#: templates/index.html:279 templates/index.html:280
 msgid "فلسفه"
 msgstr "Philosophy"
 
-#: templates/index.html:276
+#: templates/index.html:282
 msgid ""
 "ما بر اين باوريم كه حرکت در جهت سلامت انسانها از ارزشمندترين هدفهاي بشریت "
 "است و فلسفه گواراب در اين جمله خلاصه مي‏شود: تقويت روح مشاركت صنعتگر، ایده "
@@ -428,11 +418,11 @@ msgstr ""
 "to the places where people can acquire knowledge and production experience, "
 "learn and spend time with winsome."
 
-#: templates/index.html:280 templates/index.html:281
+#: templates/index.html:286 templates/index.html:287
 msgid "توجه به بقا، رشد و سودآوري"
 msgstr "Due to the survival, growth and profitability"
 
-#: templates/index.html:283
+#: templates/index.html:289
 msgid ""
 "از اين نظر شركت عمليات خود را با احتياط انجام مي‏دهد و ميزان سود و رشد خود را "
 "به‏ گونه‏ اي تنظيم مي‏نمايد كه در نهايت موفقيت بلند مدت تضمين شود. به عبارت "
@@ -443,23 +433,23 @@ msgstr ""
 "interests of customers, employees, shareholders, suppliers and society is "
 "fulfilled."
 
-#: templates/index.html:296
+#: templates/index.html:302
 msgid "محصولات گواراب"
 msgstr "GOWARAB"
 
-#: templates/index.html:304
+#: templates/index.html:310
 msgid "همه"
 msgstr "all"
 
-#: templates/index.html:337
+#: templates/index.html:343
 msgid "پرسش های مشتریان و پاسخ آنها"
 msgstr "Customer questions and answers"
 
-#: templates/index.html:364
+#: templates/index.html:370
 msgid "گالری تصاویر"
 msgstr "GALLERY"
 
-#: templates/index.html:391
+#: templates/index.html:397
 msgid ""
 "ما اکنون می توانیم با معتبرترین شرکتهای عرصه آب دنیا بر سر کیفیت محصول و "
 "خدمات خود به رقابت بپردازیم"
@@ -467,14 +457,33 @@ msgstr ""
 "We can now world's most prestigious companies in the field of water over the "
 "quality of their products and services to compete"
 
-#: templates/index.html:398
+#: templates/index.html:404
 msgid "اعضای تیم فنی"
 msgstr "TECHNICAL TEAM MEMBERS"
 
-#: templates/index.html:406
+#: templates/index.html:412
 msgid "ارتباط با "
 msgstr "contact with"
 
-#: templates/index.html:431
+#: templates/index.html:437
 msgid "تماس با ما"
 msgstr "CONTACT US"
+
+#: templates/index.html:457
+msgid "قم، کیلومتر ۴ جاده قدیم قم-تهران، جنب مجتمع بعثت"
+msgstr "Qom, Qom-Tehran 4 km old road, next to the complex Besat"
+
+#~ msgid "تصفیه آب"
+#~ msgstr "water treatment"
+
+#~ msgid " در ایران"
+#~ msgstr " in Iran"
+
+#~ msgid "طراح و سازنده انواع "
+#~ msgstr "Designer and manufacturer of "
+
+#~ msgid "مرکز "
+#~ msgstr " "
+
+#~ msgid "فیلترهای آب شرب"
+#~ msgstr " Drinking Water Filters"

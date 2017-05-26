@@ -20,6 +20,7 @@ from myapp.views import *
 
 
 urlpatterns = [
+    # it will enable the set language redirect view
     url(r'^i18n/', include('django.conf.urls.i18n')),
 ]
 

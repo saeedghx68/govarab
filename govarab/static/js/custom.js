@@ -509,13 +509,13 @@ $(document).ready(function() {
 
   // Marker Image
   var image = 'images/marker.png';
-  
-  //  Start Marker    
-  var myLatlng = new google.maps.LatLng(30.307863, -97.752329);
 
-  // Marker Text 
+  //  Start Marker
+  var myLatlng = new google.maps.LatLng(34.918398, 50.821748);
+
+  // Marker Text
    var contentString = '<div id="map-tooltip"><h5>Our Office Location</h5><p>Come see us!</p></div>';
-  
+
   var marker = new google.maps.Marker({
       position: myLatlng,
       map: map,
@@ -526,7 +526,7 @@ $(document).ready(function() {
   var infowindow = new google.maps.InfoWindow({
     content: contentString
     });
-    
+
    google.maps.event.addListener(marker, 'click', function() {
     infowindow.open(map,marker);
     });

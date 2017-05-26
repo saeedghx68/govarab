@@ -50,13 +50,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'django.middleware.locale.LocaleMiddleware',
-    'myapp.force_default_middleware.ForceDefaultLanguageMiddleware',
+    'django.middleware.locale.LocaleMiddleware',  # it enables language selection based on request
 ]
-
-LOCALE_PATHS = (
-    os.path.join(BASE_DIR, 'locale/'),
-)
 
 ROOT_URLCONF = 'config.urls'
 
@@ -117,6 +112,11 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/1.10/topics/i18n/
 
+# this is where translation files will be stored
+LOCALE_PATHS = (
+    os.path.join(BASE_DIR, 'locale/'),
+)
+
 from django.utils.translation import ugettext_lazy as _
 
 LANGUAGES = (
@@ -127,10 +127,9 @@ LANGUAGES = (
 
 LANGUAGE_CODE = 'fa'
 
-
 MODELTRANSLATION_DEFAULT_LANGUAGE = 'fa'
 MODELTRANSLATION_AUTO_POPULATE = True  # !
-MODELTRANSLATION_FALLBACK_LANGUAGES = ('fa', 'ar')
+MODELTRANSLATION_FALLBACK_LANGUAGES = ('en', 'ar')
 MODELTRANSLATION_DEBUG = True
 
 
