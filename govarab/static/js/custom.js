@@ -485,6 +485,7 @@ $(document).ready(function ($) {
   });
 });
 
+$('#home').css('height', screen.height-70);
 
  /*-----------------------------------
 Google Map
