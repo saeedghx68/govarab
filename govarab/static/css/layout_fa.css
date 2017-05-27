@@ -175,26 +175,31 @@ a.header-down-arrow:hover{color: #2a8cb6 !important;}
 	position: relative;
 	background-position:center center;
 	background-attachment: fixed;
+	background-size:cover;
 }
 #slides .slides-container .slide-1{
 	background:
 	url(../images/pattern-1.png) left top repeat,
 	url(../images/headers/Baner-1.jpg);
+	background-size:cover;
 }
 #slides .slides-container .slide-2{
 	background:
 	url(../images/pattern-1.png) left top repeat,
 	url(../images/headers/Baner-2.jpg);
+	background-size:cover;
 }
 #slides .slides-container .slide-3{
 	background:
 	url(../images/pattern-1.png) left top repeat,
 	url(../images/headers/Baner-3.jpg);
+	background-size:cover;
 }
 #slides .slides-container .slide-4{
 	background:
 	url(../images/pattern-1.png) left top repeat,
 	url(../images/headers/Baner-2.jpg);
+	background-size:cover;
 }
 .slides-navigation {
 	position: absolute;
