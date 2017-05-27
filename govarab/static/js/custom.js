@@ -485,7 +485,11 @@ $(document).ready(function ($) {
   });
 });
 
-$('#home').css('height', screen.height-70);
+$(document).ready(function() {
+    if($('#question').outerHeight() >= 400) {
+        $('.accordion').addClass('importantRule');
+    }
+});
 
  /*-----------------------------------
 Google Map

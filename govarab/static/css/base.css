@@ -9,7 +9,7 @@
 
 html, body {
 	font-family: 'Lato', sans-serif;
-	color:#2f2f2f;
+	color:#000;
 	font-size: 16px;
 	font-weight: 300;
 	line-height: 24px;
@@ -84,11 +84,17 @@ h6{
 }
 .subtitle{
 	font-weight: 300;
-	color: #6c6c6c;
+	color: #303030;
 	margin: 15px 0 56px 0;
 	padding: 0;
+	text-align: justify;
+    -moz-text-align-last: center;
+    text-align-last: center;
 }
 
+h4.subtitle{
+    text-align-last: auto !important;
+}
 /* --------------------------------
 Helper Classes
 -------------------------------- */
@@ -96,7 +102,7 @@ Helper Classes
 /* Colors */
 .white{color:#ffffff !important;}
 .color {color: #e74c3c;}
-.light-gray {color:#6c6c6c !important;}
+.light-gray {color:#181818 !important;}
 .dark-gray {color:#2f2f2f !important;}
 
 /* Alignment */
@@ -112,8 +118,8 @@ Images
 -------------------------------- */
 
 img.scale-with-grid {
-	max-width: 100%;
-	height: auto;
+	max-width: 100% !important;
+	height: auto !important;
 }
 
 /* --------------------------------
@@ -144,7 +150,7 @@ textarea{
 	padding: 16px;
 	font-size: 16px;
 	border:1px solid rgba(47,47,47,.3);
-	color:#6c6c6c !important;
+	color:#181818 !important;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
@@ -209,7 +215,7 @@ Callout Boxes
 	background: #ecf0f1;
 	margin: 24px 0;
 	padding: 16px;
-	border-left: 4px solid #6c6c6c;
+	border-left: 4px solid #181818;
 	position: relative;
 }
 .callout-box.co-colored-box{border-left: 4px solid #e74c3c;}
@@ -222,7 +228,7 @@ Callout Boxes
 	left: 12px;	
 	top: 30px;
 	font-size: 48px;
-	color:#6c6c6c;
+	color:#181818;
 }
 
 /* --------------------------------
@@ -257,7 +263,7 @@ a.social-btn{
 	width: 32px;
 	height: 32px;
 	background: #ecf0f1;
-	color:#6c6c6c;
+	color:#181818;
 	text-align: center;
 	padding: 4px 0 0 1px;
 	-webkit-border-radius: 3px;
@@ -336,3 +342,6 @@ Alert Boxes
 	color: #af3022;
 }
 
+.importantRule{
+    background-position: center center !important;
+}

@@ -119,7 +119,20 @@
         .container .offset-by-thirteen  { padding-left: 975px; }
         .container .offset-by-fourteen  { padding-left: 1050px; }
         .container .offset-by-fifteen   { padding-left: 1125px; }
- 
+
+}
+
+@media only screen and (max-width: 1200px)  {
+    .pattern-container.alt-header  { height: auto !important; }
+    .pattern-container.alt-header img { width: auto !important; }
+    .slides-container                 { width: auto !important; }
+    .services-list, .counter,
+        .accordion, .testimonials,
+        .static-testimonial           {
+            background-position: center center !important;
+            background-size: cover !important;
+            background-repeat: no-repeat !important;
+         }
 }
 
 /* #Tablet (Portrait)
@@ -256,7 +269,11 @@
         .container .two-thirds.column { width: 420px; }
     }
 
-
+    @media only screen and (max-width: 450px) {
+        #catalog    { top: 7px !important; left: 25px !important; width: 75px;}
+        #logo img   { left: 10px !important;}
+        #lang-menu  { right: 50px !important; top:5px important; }
+    }
 /* #Clearing
 ================================================== */
 

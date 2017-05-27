@@ -1,7 +1,9 @@
 /* --------------------------------
 Base Layout
 -------------------------------- */
-
+h2{
+    font-size: 38px;
+}
 .container{
 	text-align: center;
 	height: auto;
@@ -52,7 +54,7 @@ Home (Header) Section
 }
 .home:after {clear: both;}
 .header{
-	padding-top: 28%;
+	padding-top: 19%;
 	text-align: center;
 }
 .header .logo{
@@ -71,7 +73,7 @@ Home (Header) Section
     padding: 24px 16px;
     margin: 0 auto;
     width: 45%;
-    margin-bottom: 30px;
+    margin-bottom: 70px;
 }
 .text-slides{
 	text-transform: uppercase;
@@ -110,11 +112,11 @@ Home (Header) Section
 }
 
 a.header-down-arrow {
-	color: #00a0d8;
+	color: #fff; /* #45acd9 */
 	display: inline-block;
 	font-size: 40px;
 	font-weight: 400;
-	margin-top: 30px;
+	margin-top: 100px;
 
 	-webkit-transform: rotate(-90deg);
 	-moz-transform: rotate(-90deg);
@@ -123,7 +125,7 @@ a.header-down-arrow {
 	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
 }
 a.header-down-arrow:after{content: "\2329";}
-a.header-down-arrow:hover{color: #fff !important;}
+a.header-down-arrow:hover{color: #2a8cb6 !important;}
 
 /* Home Section Full Screen Slider */
 
@@ -145,21 +147,25 @@ a.header-down-arrow:hover{color: #fff !important;}
 	background:
 	url(../images/pattern-1.png) left top repeat,
 	url(../images/headers/Baner-1.jpg);
+	background-size:cover;
 }
 #slides .slides-container .slide-2{
 	background:
 	url(../images/pattern-1.png) left top repeat,
 	url(../images/headers/Baner-2.jpg);
+	background-size:cover;
 }
 #slides .slides-container .slide-3{
 	background:
 	url(../images/pattern-1.png) left top repeat,
 	url(../images/headers/Baner-3.jpg);
+	background-size:cover;
 }
 #slides .slides-container .slide-4{
 	background:
 	url(../images/pattern-1.png) left top repeat,
 	url(../images/headers/Baner-2.jpg);
+	background-size:cover;
 }
 .slides-navigation {
 	position: absolute;
@@ -272,7 +278,7 @@ Navigation Bar
     width: 70%;
     direction: ltr;
     height: 100%;
-    max-width: 1170px;
+    max-width: 2000px;
 }
 .mobile-nav-button{
 	display: none;
@@ -382,7 +388,7 @@ About Section
 	height: 96px;
 	padding: 26px 0 0 2px;
     margin: 0 auto 16px auto;
-    border: 3px solid #07507F;
+    border: 2px solid #07507F;
     background: #07507F;
     color: #fff;
 	-webkit-border-radius: 50%;
@@ -425,8 +431,9 @@ Testimonials
 
 .testimonials{
 	background:
-	url(../images/pattern-1.png) left top repeat,
 	url(../images/parallax/banner-img-12.jpg) center center fixed;
+	background-repeat: no-repeat;
+    background-size: cover;
 	padding:0 0 96px 0;
 	text-align: center;
 	overflow: hidden;
@@ -497,8 +504,9 @@ Testimonials
 		rgba(231,76,60,.8),
 		rgba(231,76,60,.8)
 	),
-	url(../images/pattern-2.png) left top repeat,
 	url(../images/parallax/bg-3.jpg) center center fixed;
+	background-repeat: no-repeat;
+    background-size: cover;
 	padding:96px 0 0 0;
 	text-align: center;
 	overflow: hidden;
@@ -540,13 +548,15 @@ Services Section
 
 #services img.mockup{
     width: 460px;
-    border-radius: 20px;
+    height: 460px;
+    border-radius: 50%;
 }
 
 .services-list{
 	background:
-	url(../images/pattern-1.png) left top repeat,
 	url(../images/parallax/bg-12.jpg) center center fixed;
+	background-repeat: no-repeat;
+    background-size: cover;
 	padding:56px 0 32px 0;
 	text-align: center;
 	overflow: hidden;
@@ -865,8 +875,9 @@ Counter Section
 
 .counter{
 	background:
-	url(../images/pattern-1.png) left top repeat,
 	url(../images/parallax/parallax-bg-3.jpg) center center fixed;
+	background-repeat: no-repeat;
+    background-size: cover;
 	padding:0 0 32px 0;
 	text-align: center;
 	overflow: hidden;
@@ -952,12 +963,11 @@ a.price-button:hover, a.price-button.selected{
 Accordion
 -------------------------------- */
 
-#accordion img.mockup{width: 425px; border-radius: 20px;}
+#accordion img.mockup{width: 425px; border-radius: 50%;}
 
 .accordion{
-	background:
-	url(../images/pattern-2.png) left top repeat,
-	url(../images/parallax/bg-41.jpg) center center fixed;
+    background: linear-gradient( rgba(0,0,0,.6), rgba(0,0,0,.6) ), url(../images/parallax/bg-24.jpg) center center no-repeat fixed;
+    background-size: cover;
 }
 .accordion-container{text-align: left;}
 .accordion-button{
@@ -968,7 +978,7 @@ Accordion
 }
 .accordion-button:hover{color: #00a0d8;}
 .accordion-button i{margin-right: 8px;}
-.accordion-button i.fa-arrow-circle-o-down{color: #00a0d8;}
+.accordion-button i.fa-arrow-circle-o-down{color: #96be1f;}
 .accordion-content{margin-bottom: 16px;}
 
 /* --------------------------------
@@ -1492,6 +1502,7 @@ Footer
 	display: inline-block;
 	margin: 0 4px;
 }
+#footer-top .container{ font-family: 'Lato', sans-serif;}
 #footer-top .social-links li a{
 	display: block;
 	padding: 4px 0;
@@ -1506,6 +1517,7 @@ Footer
 #footer-top .social-links li a:hover{
 	background: rgba(47, 47, 47, 1);
 }
+#footer-bottom h2{ font-family: 'Lato', sans-serif; }
 #footer-bottom{
 	position: relative;
 	background: #2f2f2f;
@@ -1580,4 +1592,77 @@ a.button-to-top:hover {color: #e74c3c;}
 
 #question h2{
     font-size: 36px;
+}
+
+#question, #question h4{
+    color: #fff;
+}
+
+#gallery-title{
+    position: relative;
+    display: inline-block;
+}
+
+/*#gallery-title:before{
+    position: absolute;
+    top: 4px;
+    left: 0px;
+    z-index: -1;
+    content: url('../images/wave-3.jpg');
+    display: block;
+    max-width: 100%;
+    height: auto;
+}*/
+
+#services{
+    background: url(../images/circle-3.png) no-repeat;
+    background-position: -204px 0px;
+}
+
+#about{
+    background: url(../images/circle-2.png) no-repeat, url(../images/circle-1.png) no-repeat;
+    background-position: right -119px top -127px, left -100px bottom -176px;
+}
+
+#products{
+    background: url(../images/circle-2.png) no-repeat;
+    background-position: left -75px top -185px;
+}
+
+#gallery{
+    background: url(../images/circle-2.png) no-repeat;
+    background-position: right -75px top -45px;
+}
+
+.hr{
+    background-color: #94d000;
+    width: 72px;
+    height: 3px;
+    margin-bottom: 32px;
+    margin-top: 13px;
+    border: none;
+    border-radius: 30%;
+}
+
+.hr-next{
+    margin-left: 2px;
+    border-radius: 0 30% 30% 0;
+    width: 72px;
+    background-color: #94d000;
+    height: 3px;
+    margin-bottom: 32px;
+    margin-top: 13px;
+    border: none;
+}
+
+.slides-container, .pattern-container.alt-header img{
+    width: 100%;
+}
+
+.subtitle {
+    color: #000000;
+}
+
+#services .subtitle{
+    text-align-last: auto !important;
 }

@@ -1,25 +1,28 @@
 a, .header ul.social-links li a:hover, .testimonials .flex-direction-nav li a:hover,
-.service-item:hover i, .price-table:hover h4, .price-table h4.selected, a.price-button:hover, a.price-button.selected,
+.price-table:hover h4, .price-table h4.selected, a.price-button:hover, a.price-button.selected,
 a.header-down-arrow:hover, .team-photo ul.team-social-links li a:hover,
-a.button-to-top:hover, .title, .mobile-nav-button:hover, .callout-box.co-colored-box h5, .color {color:#00a0d8;}
+a.button-to-top:hover, .title, .mobile-nav-button:hover, .callout-box.co-colored-box h5, .color {color:#2a8cb6;}
 
+.service-item:hover i{ color:#96be1f; }
 .nav li a.selected,
 .nav li a:hover,
-.nav li a.current {color:#00a0d8 !important;}
+.nav li a.current {color:#2980b9 !important;}
 
 a.button, .skillbar-title, .skillbar-bar, button#submit
-{background: #07507F;}
+{background: #96be1f;}
 
-button#submit {border:1px solid #00a0d8;}
+button#submit {border:1px solid #2980b9;}
 
-.callout-box.co-colored-box{border-left: 4px solid #00a0d8;}
+.callout-box.co-colored-box{border-left: 4px solid #2980b9;}
 
 .static-testimonial{
 background:
+
 linear-gradient(  rgba(41,128,185,.8),  rgba(41,128,185,.8) ),
-url(../../images/pattern-2.png) left top repeat,
-url(../../images/parallax/img1.jpg) center center fixed;
+url(../../images/parallax/bg-16.jpg) center center no-repeat fixed;
+background-size: cover;
+}
 
 .accordion-button i.fa-arrow-circle-o-down, .accordion-button:hover{
-    color: rgb(246, 142, 38) !important;
+    color: #96be1f !important;
 }
