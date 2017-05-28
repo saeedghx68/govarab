@@ -216,16 +216,16 @@ a.header-down-arrow:hover{color: #2a8cb6 !important;}
 	height:48px;
 	opacity:0;
 	color: #fff;
-	font-size: 32px;
+	font-size: 21px;
 	font-weight: 400;
 	background: #000;
 	-webkit-border-radius: 24px;
 	-moz-border-radius: 24px;
 	border-radius: 24px;
 }
-.slides-navigation a.prev {left: 2%; padding:9px 0 0 16px;}
+.slides-navigation a.prev {left: 2%; padding:12px 0 0 16px;}
 .slides-navigation a.prev:before{content: "\ab";}
-.slides-navigation a.next {right: 2%; padding:9px 0 0 19px;}
+.slides-navigation a.next {right: 2%; padding:12px 0 0 19px;}
 .slides-navigation a.next:before{content: "\bb";}
 #home:hover .slides-navigation a{opacity:.3;}
 .slides-navigation a:hover{opacity:.8 !important;}
