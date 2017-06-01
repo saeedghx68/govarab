@@ -86,7 +86,7 @@ Home (Header) Section
 }
 .home:after {clear: both;}
 .header{
-	padding-top: 21%;
+	padding-top: 33%;
 	text-align: center;
 }
 .header .logo{
@@ -149,7 +149,7 @@ a.header-down-arrow {
 	display: inline-block;
 	font-size: 40px;
 	font-weight: 400;
-	margin-top: 100px;
+	margin-top: 40px;
 	-webkit-transform: rotate(-90deg);
 	-moz-transform: rotate(-90deg);
 	-ms-transform: rotate(-90deg);
