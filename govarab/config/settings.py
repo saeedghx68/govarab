@@ -82,8 +82,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'govarab_db',
-        'USER': 'boshra',
-        'PASSWORD': 'b123',
+        'USER': 'saeed',
+        'PASSWORD': '123',
         'HOST': '',
         'PORT': '5432'
     }
