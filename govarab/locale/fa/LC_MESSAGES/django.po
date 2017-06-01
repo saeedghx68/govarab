@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-06-01 16:12+0430\n"
+"POT-Creation-Date: 2017-06-01 19:58+0430\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -104,13 +104,21 @@ msgstr "سمت"
 msgid "image"
 msgstr "عکس"
 
-#: myapp/models.py:89
+#: myapp/models.py:89 myapp/models.py:102
 msgid "priority"
 msgstr "ترتیب چیدمان"
 
 #: myapp/models.py:95 myapp/models.py:96
 msgid "Team"
 msgstr "تیم فنی"
+
+#: myapp/models.py:101
+msgid "text"
+msgstr "متن"
+
+#: myapp/models.py:108 myapp/models.py:109
+msgid "Slogan"
+msgstr "شعار تبلیغاتی"
 
 #: templates/base.html:9 templates/index.html:77
 msgid "گواراب"
@@ -421,7 +429,7 @@ msgstr "۰۹۱۲ ۶۵۱ ۲۲۶۷"
 msgid "قم، کیلومتر ۴ جاده قدیم قم-تهران، جنب مجتمع بعثت"
 msgstr ""
 
-#: templates/product_details.html:99
+#: templates/product_details.html:88
 msgid "دسته بندی"
 msgstr ""
 

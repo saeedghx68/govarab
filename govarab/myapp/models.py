@@ -94,3 +94,18 @@ class Team(models.Model):
     class Meta:
         verbose_name = _('Team')
         verbose_name_plural = _('Team')
+
+
+# #******************End of Product Category ********************
+class Slogan(models.Model):
+    text = models.CharField(max_length=1200, verbose_name=_('text'))
+    priority = models.IntegerField(verbose_name=_('priority'))
+
+    def __unicode__(self):
+        return self.text
+
+    class Meta:
+        verbose_name = _('Slogan')
+        verbose_name_plural = _('Slogan')
+
+#******************End of Product Category ********************
