@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-05-28 00:41+0430\n"
+"POT-Creation-Date: 2017-06-01 16:12+0430\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -55,12 +55,18 @@ msgid "Product Category"
 msgstr "دسته بندی محصولات"
 
 #: myapp/models.py:48
+msgid "product name"
+msgstr "نام محصول"
+
+#: myapp/models.py:49
 msgid "product category"
 msgstr "دسته بندی محصول"
 
-#: myapp/models.py:49
-msgid "product name"
-msgstr "نام محصول"
+#: myapp/models.py:54
+#, fuzzy
+#| msgid "product description"
+msgid "description"
+msgstr "توضیحات محصول"
 
 #: myapp/models.py:61
 msgid "Product"
@@ -106,59 +112,65 @@ msgstr "ترتیب چیدمان"
 msgid "Team"
 msgstr "تیم فنی"
 
-#: templates/index.html:9 templates/index.html:121
+#: templates/base.html:9 templates/index.html:77
 msgid "گواراب"
 msgstr ""
 
-#: templates/index.html:58
+#: templates/base.html:56
+msgid "GOWARAB"
+msgstr "گواراب"
+
+#: templates/index.html:14 templates/product_details.html:18
 msgid "دانلود کاتالوگ"
 msgstr ""
 
-#: templates/index.html:67
+#: templates/index.html:23 templates/product_details.html:27
 msgid "خانه"
 msgstr ""
 
-#: templates/index.html:68
+#: templates/index.html:24 templates/product_details.html:28
 msgid "درباره ما"
 msgstr ""
 
-#: templates/index.html:69 templates/index.html:166
+#: templates/index.html:25 templates/index.html:122
+#: templates/product_details.html:29
 msgid "خدمات"
 msgstr ""
 
-#: templates/index.html:70
+#: templates/index.html:26 templates/product_details.html:30
 msgid "محصولات"
 msgstr ""
 
-#: templates/index.html:71 templates/index.html:350
+#: templates/index.html:27 templates/index.html:306
+#: templates/product_details.html:31
 msgid "سؤالات متداول"
 msgstr ""
 
-#: templates/index.html:72
+#: templates/index.html:28 templates/product_details.html:32
 msgid "گالری"
 msgstr ""
 
-#: templates/index.html:73
+#: templates/index.html:29 templates/product_details.html:33
 msgid "اعضای تیم"
 msgstr ""
 
-#: templates/index.html:75
+#: templates/index.html:31 templates/product_details.html:35
 msgid "تماس با ما "
 msgstr ""
 
-#: templates/index.html:125
+#: templates/index.html:81
 msgid "اولین شرکت دانش بنیان در زمینه تصفیه آب در ایران"
 msgstr ""
 
-#: templates/index.html:126
+#: templates/index.html:82
 msgid "طراح و سازنده انواع  فیلترهای کربنی، پلیمری و معدنی "
 msgstr ""
 
-#: templates/index.html:127
+#: templates/index.html:83
 msgid "مرکز آزمون عملکرد و بهداشت فیلترهای آب شرب"
 msgstr ""
 
-#: templates/index.html:145
+#: templates/index.html:101
 #, python-format
 msgid ""
 "\n"
@@ -166,11 +178,11 @@ msgid ""
 "\t"
 msgstr ""
 
-#: templates/index.html:153
+#: templates/index.html:109
 msgid "درباره گواراب"
 msgstr ""
 
-#: templates/index.html:156
+#: templates/index.html:112
 msgid ""
 "شرکت گواراب سازان دشت سبز که بطور کلّی ساختار خویش را بر فعّالیّت در صنعت تصفیه "
 "ی آب؛ با همه ی گرایش های تخصّصی و مؤلّفه های علمی دربرگیرنده ی این صنعت، طرح "
@@ -183,18 +195,18 @@ msgid ""
 "دارد:"
 msgstr ""
 
-#: templates/index.html:159
+#: templates/index.html:115
 msgid "پاسخگویی"
 msgstr ""
 
-#: templates/index.html:161
+#: templates/index.html:117
 msgid ""
 "در شرکت گواراب سازان دشت سبز، مسؤولیّت ها به نحوی مستند، آموزش و پایش شده اند "
 "که چه در فرایندهای درون سازمانی و چه فرایندهای مرتبط با مشتری، پاسخگویی به "
 "عنوان یک رویکرد راهبردی و در جهت بهبود اثربخش کار تعریف شده است."
 msgstr ""
 
-#: templates/index.html:168
+#: templates/index.html:124
 msgid ""
 "شرکت گواراب سازان دشت سبز در رویکرد ارزشی خود، برخورداری مشتریان را نه تنها "
 "به بایسته های خدمات مرتبط با محصولات خویش مانند پاسخگویی اثربخش و ضمانت "
@@ -203,11 +215,11 @@ msgid ""
 "مادّه حیاتی تصمیم سازی می نماید در زمره ی خدمات خویش می داند."
 msgstr ""
 
-#: templates/index.html:173
+#: templates/index.html:129
 msgid "پژوهش و توسعه"
 msgstr ""
 
-#: templates/index.html:175
+#: templates/index.html:131
 msgid ""
 "این شرکت در راستای پیشرفت تمام علوم و صنایع، بر خود می داند نسبت به شناسایی "
 "آنچه کیفیّت ضروری ترین نیاز زیستی مصرف کنندگان را داراست مطالعه نماید؛ مطالعه "
@@ -216,22 +228,22 @@ msgid ""
 "مطالعه، طراحی و ساخت ملزومات ارتقایی کیفیّت آب مصرفی ایشان گردد."
 msgstr ""
 
-#: templates/index.html:180
+#: templates/index.html:136
 msgid "کیفیّت"
 msgstr ""
 
-#: templates/index.html:182
+#: templates/index.html:138
 msgid ""
 "کیفیّت به عنوان یکی از اصلی ترین و قدرتمندترین فرایندهای سازمانی این شرکت، "
 "تصمیم سازی کار، ابزارهای پایش و کنترل دائمی، اقدامات اصلاحی و بهبود مستمرّ را "
 "در کلّیه ی مراحل پیش، حین و پس از تولید ایجاد می کند."
 msgstr ""
 
-#: templates/index.html:196
+#: templates/index.html:152
 msgid "چشم انداز شرکت "
 msgstr ""
 
-#: templates/index.html:206
+#: templates/index.html:162
 msgid ""
 "تا پایان سال ۱۳۹۸، ارائه دهنده محصولات و خدمات با مزیت رقابتی ویژه در کشور و "
 "وسعت بخشی به قلمروی حضور در خارج از مرزهای کشور و تبدیل شدن به شرکتی سرآمد و "
@@ -239,11 +251,11 @@ msgid ""
 "همواره مورد توجه قرار گیرد."
 msgstr ""
 
-#: templates/index.html:223
+#: templates/index.html:179
 msgid "خدمات شرکت"
 msgstr ""
 
-#: templates/index.html:226
+#: templates/index.html:182
 msgid ""
 "شرکت گواراب سازان دشت سبز همانگونه که در مفاهیم مدرن مارکتینگ نیز بدان تأکید "
 "شده بر این اعتقاد است که هر محصول خانواده ای دارد. خانواده ی محصولات گواراب "
@@ -260,19 +272,19 @@ msgid ""
 "که مسؤولیّت ها افراز می شوند همگان منتفع خواهیم بود."
 msgstr ""
 
-#: templates/index.html:235
+#: templates/index.html:191
 msgid "مأموریت گواراب"
 msgstr ""
 
-#: templates/index.html:242
+#: templates/index.html:198
 msgid "در افق این سند تا پایان سال ۱۳۹۸، ماموريت شرکت گواراب به شرح زیر است:"
 msgstr ""
 
-#: templates/index.html:247 templates/index.html:248
+#: templates/index.html:203 templates/index.html:204
 msgid "فناوری"
 msgstr ""
 
-#: templates/index.html:250
+#: templates/index.html:206
 msgid ""
 "از این نظر شركت همواره اقدام به پایش مستمر فناوری های روز محصولات و "
 "فرایندهای تولید نموده و توسعه و بهبود محصولات و بومی سازی تولید ماشین آلات "
@@ -280,22 +292,22 @@ msgid ""
 "خود قرار می دهد."
 msgstr ""
 
-#: templates/index.html:254 templates/index.html:255
+#: templates/index.html:210 templates/index.html:211
 msgid "بازارها"
 msgstr ""
 
-#: templates/index.html:257
+#: templates/index.html:213
 msgid ""
 "ما با تمام توان مي‏كوشيم شركت گواراب را در صحنه رقابت جهاني موفق كنيم. "
 "بازارهای مد نظر شرکت در افق این ماموریت عبارتند از: بازار ایران، شمال "
 "آفریقا، خاور میانه و اروپا"
 msgstr ""
 
-#: templates/index.html:261 templates/index.html:262
+#: templates/index.html:217 templates/index.html:218
 msgid "محصولات يا خدمات"
 msgstr ""
 
-#: templates/index.html:264
+#: templates/index.html:220
 msgid ""
 " انواع فیلترهای کربنی، انواع فیلترهای الیافی، تولید کربن اکتیو، تولید انواع "
 "دستگاه های تصفیه آب، خدمات آزمایشگاهی، ارایه مشاوره های فنی و مهندسی، تولید "
@@ -303,11 +315,11 @@ msgid ""
 "ظاهری متناسب با آب منطقه با استفاده از مواد اولیه متناسب با سلامت آب شرب."
 msgstr ""
 
-#: templates/index.html:268 templates/index.html:269
+#: templates/index.html:224 templates/index.html:225
 msgid "مشتريان"
 msgstr ""
 
-#: templates/index.html:271
+#: templates/index.html:227
 msgid ""
 "ما بر اين باوريم كه پيش از هر چيز در برابر نیازهای حال و آینده مشتریان و "
 "سلامت جامعه ملی و جهانی مسئول هستیم و خود را پاسخگوی مشتریان در قبال محصولات "
@@ -316,11 +328,11 @@ msgid ""
 "برای آنها هستیم."
 msgstr ""
 
-#: templates/index.html:277 templates/index.html:278
+#: templates/index.html:233 templates/index.html:234
 msgid "توجه به كاركنان"
 msgstr ""
 
-#: templates/index.html:280
+#: templates/index.html:236
 msgid ""
 "آموزش ‏دادن؛ ايجاد انگيزه؛ حفظ و نگهداري كاركناني كه از نظر توانايي، اخلاق و "
 "تعهد به سازمان داراي ويژگي ممتاز هستند؛ ایجاد محيط كار مناسب؛ جبران خدمت بر "
@@ -328,22 +340,22 @@ msgid ""
 "و حس افتخار نسبت به کار در شرکت."
 msgstr ""
 
-#: templates/index.html:284 templates/index.html:285
+#: templates/index.html:240 templates/index.html:241
 msgid "ويژگي های ممتاز"
 msgstr ""
 
-#: templates/index.html:287
+#: templates/index.html:243
 msgid ""
 "توان علمی و دانش فنی و توانايي‏هاي خلاق و سازنده مدیران؛پایبندی به مباحث کیفی "
 "محصولات و مشتری مداری برای حفظ فاصله از رقبا؛ توانمندی در تولید محصولات "
 "متنوع؛"
 msgstr ""
 
-#: templates/index.html:291 templates/index.html:292
+#: templates/index.html:247 templates/index.html:248
 msgid "فلسفه"
 msgstr ""
 
-#: templates/index.html:294
+#: templates/index.html:250
 msgid ""
 "ما بر اين باوريم كه حرکت در جهت سلامت انسانها از ارزشمندترين هدفهاي بشریت "
 "است و فلسفه گواراب در اين جمله خلاصه مي‏شود: تقويت روح مشاركت صنعتگر، ایده "
@@ -351,11 +363,11 @@ msgid ""
 "تجربه بياموزند و وقت خود را با مسرت و خوشي بگذرانند."
 msgstr ""
 
-#: templates/index.html:298 templates/index.html:299
+#: templates/index.html:254 templates/index.html:255
 msgid "توجه به بقا، رشد و سودآوري"
 msgstr ""
 
-#: templates/index.html:301
+#: templates/index.html:257
 msgid ""
 "از اين نظر شركت عمليات خود را با احتياط انجام مي‏دهد و ميزان سود و رشد خود را "
 "به‏ گونه‏ اي تنظيم مي‏نمايد كه در نهايت موفقيت بلند مدت تضمين شود. به عبارت "
@@ -363,55 +375,55 @@ msgid ""
 "كاركنان، سهامداران،تامین کنندگان و جامعه تأمين شود."
 msgstr ""
 
-#: templates/index.html:314
+#: templates/index.html:270
 msgid "محصولات گواراب"
 msgstr ""
 
-#: templates/index.html:324
+#: templates/index.html:280
 msgid "همه"
 msgstr ""
 
-#: templates/index.html:361
+#: templates/index.html:317
 msgid "پرسش های مشتریان و پاسخ آنها"
 msgstr ""
 
-#: templates/index.html:389
+#: templates/index.html:345
 msgid "گالری تصاویر"
 msgstr ""
 
-#: templates/index.html:418
+#: templates/index.html:374
 msgid ""
 "ما اکنون می توانیم با معتبرترین شرکتهای عرصه آب دنیا بر سر کیفیت محصول و "
 "خدمات خود به رقابت بپردازیم"
 msgstr ""
 
-#: templates/index.html:426
+#: templates/index.html:382
 msgid "اعضای تیم فنی"
 msgstr ""
 
-#: templates/index.html:436
+#: templates/index.html:392
 msgid "ارتباط با "
 msgstr ""
 
-#: templates/index.html:462
+#: templates/index.html:418
 msgid "تماس با ما"
 msgstr ""
 
-#: templates/index.html:482
+#: templates/index.html:438
 msgid "025 - 36647647"
 msgstr "۰۲۵ - ۳۶۶۴۷۶۴۷"
 
-#: templates/index.html:482
+#: templates/index.html:438
 msgid "0912 651 2267"
 msgstr "۰۹۱۲ ۶۵۱ ۲۲۶۷"
 
-#: templates/index.html:484
+#: templates/index.html:440
 msgid "قم، کیلومتر ۴ جاده قدیم قم-تهران، جنب مجتمع بعثت"
 msgstr ""
 
-#: templates/index.html:493
-msgid "GOWARAB"
-msgstr "گواراب"
+#: templates/product_details.html:99
+msgid "دسته بندی"
+msgstr ""
 
 #~ msgid "category description"
 #~ msgstr "توضیح دسته بندی"
@@ -427,9 +439,6 @@ msgstr "گواراب"
 
 #~ msgid "product price"
 #~ msgstr "قیمت محصول"
-
-#~ msgid "product description"
-#~ msgstr "توضیحات محصول"
 
 #~ msgid "product"
 #~ msgstr "محصول"

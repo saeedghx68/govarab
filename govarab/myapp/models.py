@@ -45,13 +45,13 @@ class ProductCategory(models.Model):
 # #******************End of Product Category ********************
 
 class Product(models.Model):
-    category = models.ForeignKey(ProductCategory, verbose_name=_('product category'))
     name = models.CharField(max_length=100, verbose_name=_('product name'))
+    category = models.ForeignKey(ProductCategory, verbose_name=_('product category'), related_name='productCat')
     small_img = models.ImageField(upload_to='images/products/', verbose_name=_('small image'),
                                   help_text='size(370px * 294px)', default='images/products/defaults.jpg')
     big_img = models.ImageField(upload_to='images/products/', verbose_name=_('large image'),
                                 help_text='size(570px * 453px)', default='images/products/defaults.jpg')
-
+    description = models.TextField(verbose_name=_('description'), default="")
     updated_at = models.DateTimeField(auto_now=True)
 
     def __unicode__(self):

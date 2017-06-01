@@ -9,8 +9,15 @@ class ExampleAdmin(TranslationAdmin):
     pass
 
 
-admin.site.register(Gallery, ExampleAdmin)
-admin.site.register(ProductCategory, ExampleAdmin)
-admin.site.register(Product, ExampleAdmin)
-admin.site.register(FAQ, ExampleAdmin)
-admin.site.register(Team, ExampleAdmin)
+@admin.register(Product)
+class ProductAdmin(ExampleAdmin, admin.ModelAdmin):
+    formfield_overrides = {models.TextField: {'widget': forms.Textarea(attrs={'class': 'ckeditor'})}, }
+
+    class Media:
+        js = ('ckeditor/ckeditor.js',)
+
+
+@admin.register(Gallery, ProductCategory, FAQ, Team)
+class ExampleAdmin(TranslationAdmin):
+    pass
+

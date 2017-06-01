@@ -1,0 +1,107 @@
+{% extends "base.html" %}
+{% load static from staticfiles %}
+{% load i18n %}
+
+{% block title %}
+	{{ product.name }}
+{% endblock %}
+
+{% block content %}
+	<!-- Navigation -->
+	<section id="navigation">
+		<!-- Navigation Container -->
+		<!-- Site Logo -->
+		<a href="/" class="site-logo" id="logo">
+			<img src="{% static 'images/logo.png' %}" style="position: fixed; left: 50px; top: 4px; width: 65px; height: 65px;" alt="">
+		</a>
+
+		<a href="#" id="catalog" class="button" style="position: fixed;left: 130px;top: 20px;text-align:center;">{% trans "دانلود کاتالوگ" %}</a>
+
+		<div class="nav-container">
+
+			<a class="mobile-nav-button"><i class="fa fa-bars"></i></a>
+
+			<!-- Navigation Menu -->
+			<div class="nav-menu">
+				<ul class="nav">
+					<li><a href="/#home" class="link">{% trans "خانه" %}</a></li>
+					<li><a href="/#about" class="link">{% trans "درباره ما" %}</a></li>
+					<li><a href="/#services" class="link">{% trans "خدمات" %}</a></li>
+					<li><a href="/#products" class="link">{% trans "محصولات" %}</a></li>
+					<li><a href="/#accordion" class="link">{% trans "سؤالات متداول" %}</a></li>
+					<li><a href="/#gallery" class="link">{% trans "گالری" %}</a></li>
+					<li><a href="/#team" class="link">{% trans "اعضای تیم" %}</a></li>
+					<li>
+						<a href="/#map" class="link">{% trans "تماس با ما " %}</a>
+						<!--<ul>
+							<li><i class="fa fa-chevron-down"></i><a href="blog-main.html">Blog Main</a></li>
+							<li><a href="blog-single.html">Blog Single</a></li>
+						</ul>-->
+					</li><!-- end drop down -->
+				</ul>
+			</div><!-- end nav menu -->
+			<ul id="lang-menu">
+				{% get_language_info_list for LANGUAGES as languages %}
+				{% for language in languages %}
+					<li>
+						<a href="/{{ language.code }}" style="font-family: 'Lato', sans-serif;">
+							{{ language.code }}
+						</a>
+					</li>
+				{% endfor %}
+			</ul>
+		</div><!-- end nav container -->
+	</section><!-- end navigation section -->
+
+
+<section class="container sub-page">
+
+<!-- Begin Main Content -->
+<div class="eleven columns main-content">
+
+	<!-- Begin Blog Post -->
+	<article class="blog-post animated left-align" data-animate="fadeIn" data-animate-delay="400">
+		<div id="pro-img">
+			<a href="#" class="post-img">
+				<img src="/media/{{ product.big_img }}" alt="" class="scale-with-grid">
+				<div class="mask"></div>
+			</a><!-- end post image -->
+		</div>
+		<div id="pro-title">
+			<a href="#" class="post-title">{{ product.name }}</a>
+			<ul class="post-meta">
+				<li><i class="fa fa-calendar"></i> 10/15/2015</li>
+			</ul><!-- end post meta -->
+		</div>
+		<p>{{ product.description }}</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, in, sunt, dolor, eaque esse distinctio autem eos reiciendis dolorum libero perferendis voluptatem debitis repellendus inventore magnam maiores culpa nam doloremque deleniti fuga sed consequuntur quos dolore sapiente harum quidem similique non iure tempore consectetur quibusdam magni beatae ipsa. Consequatur, illo!</p>
+		<h5>This is a colored call out box</h5>
+	</article><!-- end post -->
+
+</div><!-- end main column -->
+
+<!-- Begin Sidebar -->
+<div class="five columns offset-by-one sidebar left-align">
+
+	<!-- Blog Categories -->
+	<section class="sidebar-content">
+		<h4>{% trans 'دسته بندی' %}</h4>
+		<div class="sidebar-menu">
+			{% for category in productCategory %}
+				<div class="accordion-button"><i class="fa fa-arrow-circle-o-down fa-lg"></i>
+					{{ category.name }}
+				</div>
+					<div class="accordion-content {% if forloop.first %} active {% endif %}">
+					{% for pro in category.productCat.all  %}
+						<div class="sub-menu"><a href="product-details/{{ pro.id }}">{{ pro.name }}</a></div>
+					{% endfor %}
+				</div>
+			{% endfor %}
+		</div>
+	</section><!-- end blog categories -->
+
+</div><!-- end sidebar -->
+
+</section><!-- end page container -->
+
+{% endblock %}

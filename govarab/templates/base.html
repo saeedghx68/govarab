@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+{% load static from staticfiles %}
+{% load i18n %}
+
+<html lang="{{ SELECTEDLANG }}">
+<head>
+
+   <meta charset="utf-8" />
+   <title>{% block title %}{% endblock %} | {% trans "گواراب" %}</title>
+   <meta name="description" content="" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+   <!--Favicon -->
+	<link rel="icon" type="{% static 'image/png' %}" href="{% static 'images/logo.ico' %}" />
+
+	<!-- CSS Files -->
+	<link rel="stylesheet" href="{% static 'css/reset.css' %}" />
+	<link rel="stylesheet" href="{% static 'css/animate.min.css' %}" />
+	<link rel="stylesheet" href="{% static 'css/grid.css' %}" />
+	<link rel="stylesheet" href="{% static 'css/base.css' %}" />
+	{% if SELECTEDLANG == 'en' %}
+		<link rel="stylesheet" href="{% static 'css/layout_en.css' %}" />
+	{% else %}
+		<link rel="stylesheet" href="{% static 'css/layout_fa.css' %}" />
+	{% endif %}
+	<link rel="stylesheet" href="{% static 'css/flexslider.css' %}" />
+	<link rel="stylesheet" href="{% static 'css/font-awesome.css' %}" />
+	<link rel="stylesheet" href="{% static 'css/prettyPhoto.css' %}" />
+	<link rel="stylesheet" href="{% static 'css/player/YTPlayer.css' %}" />
+	<link rel="stylesheet" href="{% static 'css/media-queries.css' %}" />
+
+	<!-- Color Options -->
+	<link id="color-options" rel="stylesheet" href="{% static 'css/colors/blue.css' %}" />
+
+	<!-- Theme Options -->
+	<link id="theme-options" rel="stylesheet" href="{% static 'css/theme/light.css' %}" />
+
+</head>
+
+<body>
+
+	<!-- Page Loader -->
+	<section id="preloader">
+		<div class="loader fa fa-spin"></div>
+	</section>
+
+    {% block content %}
+
+    {% endblock %}
+
+	<section id="footer-bottom" class="section">
+		<div class="container">
+			<a href="/" class="scroll button-to-top">
+					<i class="fa fa-angle-double-up"></i>
+				</a>
+			<h2>{% trans 'GOWARAB' %}</h2>
+			<p><span class="color" style="font-family: 'Lato', sans-serif;color: #add92d;">
+				 2017 &copy; All rights reserved </span></p>
+		</div><!-- end container -->
+	</section><!-- end footer bottom section -->
+
+
+	<!-- All The JS Files -->
+	<script type="text/javascript" src="{% static 'js/jquery-1.11.0.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/jquery.appear.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/jquery.prettyPhoto.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/SmoothScroll.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/jquery.parallax-1.1.3.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/jquery.superslides.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/jquery.flexslider.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/jquery.isotope.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/jquery.fitvids.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/jquery.countTo.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/jquery.fs.tipper.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/custom.js' %}"></script>
+
+    {% block script %}
+    {% endblock %}
+
+</body>
+</html>
