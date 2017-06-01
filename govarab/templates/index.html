@@ -78,9 +78,9 @@
 			<!-- Text Slider -->
 			<div class="header-text">
 				<ul class="text-slider">
-					<li class="text-slides">{% trans 'اولین شرکت دانش بنیان در زمینه تصفیه آب در ایران' %}</li>
-					<li class="text-slides">{% trans 'طراح و سازنده انواع  فیلترهای کربنی، پلیمری و معدنی ' %}</li>
-					<li class="text-slides">{% trans 'مرکز آزمون عملکرد و بهداشت فیلترهای آب شرب' %}</li>
+                    {% for item in slogan %}
+                        <li class="text-slides">{{item.text}}</li>
+                    {% endfor %}
 				</ul>
 			</div><!-- end text slider -->
 			<!-- Social Media Links -->

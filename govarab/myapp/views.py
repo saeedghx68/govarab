@@ -18,6 +18,7 @@ def home(request):
         c['FAQs'] = FAQ.objects.all()
         c['gallery'] = Gallery.objects.all()
         c['team'] = Team.objects.all()
+        c['slogan'] = Slogan.objects.all().order_by('priority')
     except:
         print (u'داده ها وارد نشده!')
     return render_to_response('index.html', c)

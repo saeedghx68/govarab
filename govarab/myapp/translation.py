@@ -28,4 +28,4 @@ class TeamTranslationOptions(TranslationOptions):
 
 @register(Slogan)
 class TeamTranslationOptions(TranslationOptions):
-    fields = ('text', 'priority',)
+    fields = ('text',)
