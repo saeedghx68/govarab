@@ -28,7 +28,7 @@
 					<li><a href="/#about" class="link">{% trans "درباره ما" %}</a></li>
 					<li><a href="/#services" class="link">{% trans "خدمات" %}</a></li>
 					<li><a href="/#products" class="link">{% trans "محصولات" %}</a></li>
-					<li><a href="/#accordion" class="link">{% trans "سؤالات متداول" %}</a></li>
+					<li><a href="/#FAQ" class="link">{% trans "سؤالات متداول" %}</a></li>
 					<li><a href="/#gallery" class="link">{% trans "گالری" %}</a></li>
 					<li><a href="/#team" class="link">{% trans "اعضای تیم" %}</a></li>
 					<li>
@@ -55,28 +55,8 @@
 
 <section class="container sub-page">
 
-<!-- Begin Main Content -->
-<div class="eleven columns main-content">
-
-	<!-- Begin Blog Post -->
-	<article class="blog-post animated left-align" data-animate="fadeIn" data-animate-delay="400" style="text-align: justify;">
-		<div id="pro-img">
-			<a href="#" class="post-img">
-				<img src="/media/{{ product.big_img }}" alt="" class="scale-with-grid">
-			</a><!-- end post image -->
-		</div>
-		<div id="pro-title">
-			<a href="#" class="post-title">{{ product.name }}</a>
-		</div>
-		{% autoescape off %}
-		<p>{{ product.description }}</p>
-		{% endautoescape %}
-	</article><!-- end post -->
-
-</div><!-- end main column -->
-
 <!-- Begin Sidebar -->
-<div class="five columns offset-by-one sidebar left-align">
+<div class="five columns offset-by-one sidebar left-align" id="sidebar">
 
 	<!-- Blog Categories -->
 	<section class="sidebar-content">
@@ -96,6 +76,26 @@
 	</section><!-- end blog categories -->
 
 </div><!-- end sidebar -->
+
+<!-- Begin Main Content -->
+<div class="eleven columns main-content">
+
+	<!-- Begin Blog Post -->
+	<article class="blog-post animated left-align" data-animate="fadeIn" data-animate-delay="400" style="text-align: justify;">
+		<div id="pro-img">
+			<a href="#" class="post-img">
+				<img src="/media/{{ product.big_img }}" alt="" class="scale-with-grid">
+			</a><!-- end post image -->
+		</div>
+		<div id="pro-title">
+			<a href="#" class="post-title">{{ product.name }}</a>
+		</div>
+		{% autoescape off %}
+		<p>{{ product.description }}</p>
+		{% endautoescape %}
+	</article><!-- end post -->
+
+</div><!-- end main column -->
 
 </section><!-- end page container -->
 

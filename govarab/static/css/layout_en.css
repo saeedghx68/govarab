@@ -93,7 +93,7 @@ Home (Header) Section
     padding: 24px 16px;
     margin: 0 auto;
     width: 45%;
-    margin-bottom: 70px;
+    margin-bottom: 20px;
 }
 .text-slides{
 	font-size: 24px;
@@ -134,7 +134,7 @@ a.header-down-arrow {
 	display: inline-block;
 	font-size: 40px;
 	font-weight: 400;
-	margin-top: 40px;
+	margin-top: 20px;
 
 	-webkit-transform: rotate(-90deg);
 	-moz-transform: rotate(-90deg);
@@ -1728,8 +1728,8 @@ a.button-to-top:hover {color: #e74c3c;}
     width: 50%;
     position: relative;
     overflow: hidden;
-    float: left;
-    margin-right: 30px;
+    float: right;
+    margin-left: 30px;
 }
 
 #pro-title{
@@ -1748,5 +1748,11 @@ a.button-to-top:hover {color: #e74c3c;}
   text-indent: 0px;
   margin-right: 6px;
   font-weight: bold !important;
+}
+
+#sidebar{
+    float: left;
+    padding-left: 0px;
+    padding-right: 75px;
 }
 
