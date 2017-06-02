@@ -74,7 +74,7 @@ Home (Header) Section
 }
 .home:after {clear: both;}
 .header{
-	padding-top: 17%;
+	padding-top: 33%;
 	text-align: center;
 }
 
@@ -134,7 +134,7 @@ a.header-down-arrow {
 	display: inline-block;
 	font-size: 40px;
 	font-weight: 400;
-	margin-top: 100px;
+	margin-top: 40px;
 
 	-webkit-transform: rotate(-90deg);
 	-moz-transform: rotate(-90deg);
@@ -1749,3 +1749,4 @@ a.button-to-top:hover {color: #e74c3c;}
   margin-right: 6px;
   font-weight: bold !important;
 }
+

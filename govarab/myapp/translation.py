@@ -25,3 +25,7 @@ class FAQTranslationOptions(TranslationOptions):
 @register(Team)
 class TeamTranslationOptions(TranslationOptions):
     fields = ('name', 'post',)
+
+@register(Slogan)
+class TeamTranslationOptions(TranslationOptions):
+    fields = ('text',)
