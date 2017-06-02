@@ -29,3 +29,7 @@ class TeamTranslationOptions(TranslationOptions):
 @register(Slogan)
 class TeamTranslationOptions(TranslationOptions):
     fields = ('text',)
+
+@register(Catalog)
+class TeamTranslationOptions(TranslationOptions):
+    fields = ()

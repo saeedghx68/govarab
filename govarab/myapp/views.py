@@ -19,6 +19,7 @@ def home(request):
         c['gallery'] = Gallery.objects.all()
         c['team'] = Team.objects.all()
         c['slogan'] = Slogan.objects.all().order_by('priority')
+        c['catalog'] = Catalog.objects.all()[0]
     except:
         print (u'داده ها وارد نشده!')
     return render_to_response('index.html', c)
@@ -42,5 +43,9 @@ def product_details(request, product_id):
         c['productCategory'] = ProductCategory.objects.all()
     except:
         c['productCategory'] = u'دسته بندی وجود ندارد!'
+    try:
+        c['catalog'] = Catalog.objects.all()[0]
+    except:
+        c['catalog'] = u'کاتالوگ اضافه نشده'
 
     return render_to_response('product_details.html', c)

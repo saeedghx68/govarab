@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 from django.db import models
 from django.utils.translation import ugettext_lazy as _
+
+
 # from easymode.i18n.decorators import I18n
 
 
@@ -48,9 +50,9 @@ class Product(models.Model):
     name = models.CharField(max_length=100, verbose_name=_('product name'))
     category = models.ForeignKey(ProductCategory, verbose_name=_('product category'), related_name='productCat')
     small_img = models.ImageField(upload_to='images/products/', verbose_name=_('small image'),
-                                  help_text='size(370px * 294px)', default='images/products/defaults.jpg')
+                                  help_text='size(500px * 334px)', default='images/products/defaults.jpg')
     big_img = models.ImageField(upload_to='images/products/', verbose_name=_('large image'),
-                                help_text='size(570px * 453px)', default='images/products/defaults.jpg')
+                                default='images/products/defaults.jpg')
     description = models.TextField(verbose_name=_('description'), default="")
     updated_at = models.DateTimeField(auto_now=True)
 
@@ -108,4 +110,17 @@ class Slogan(models.Model):
         verbose_name = _('Slogan')
         verbose_name_plural = _('Slogan')
 
-#******************End of Product Category ********************
+
+# ******************End of Product Category ********************
+
+
+class Catalog(models.Model):
+    title = models.CharField(default='', max_length=100, verbose_name=_('title'))
+    file = models.FileField(upload_to='catalog/', max_length=100, verbose_name=_('file'))
+
+    def __unicode__(self):
+        return self.title
+
+    class Meta:
+        verbose_name = _('catalog')
+        verbose_name_plural = _('catalog')

@@ -17,7 +17,7 @@ class ProductAdmin(ExampleAdmin, admin.ModelAdmin):
         js = ('ckeditor/ckeditor.js',)
 
 
-@admin.register(Gallery, ProductCategory, FAQ, Team, Slogan)
+@admin.register(Gallery, ProductCategory, FAQ, Team, Slogan, Catalog)
 class ExampleAdmin(TranslationAdmin):
     pass
 
