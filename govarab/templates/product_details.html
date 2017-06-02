@@ -53,29 +53,24 @@
 		</div><!-- end nav container -->
 	</section><!-- end navigation section -->
 
-
 <section class="container sub-page">
 
 <!-- Begin Main Content -->
 <div class="eleven columns main-content">
 
 	<!-- Begin Blog Post -->
-	<article class="blog-post animated left-align" data-animate="fadeIn" data-animate-delay="400">
+	<article class="blog-post animated left-align" data-animate="fadeIn" data-animate-delay="400" style="text-align: justify;">
 		<div id="pro-img">
 			<a href="#" class="post-img">
 				<img src="/media/{{ product.big_img }}" alt="" class="scale-with-grid">
-				<div class="mask"></div>
 			</a><!-- end post image -->
 		</div>
 		<div id="pro-title">
 			<a href="#" class="post-title">{{ product.name }}</a>
-			<ul class="post-meta">
-				<li><i class="fa fa-calendar"></i> 10/15/2015</li>
-			</ul><!-- end post meta -->
 		</div>
+		{% autoescape off %}
 		<p>{{ product.description }}</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, in, sunt, dolor, eaque esse distinctio autem eos reiciendis dolorum libero perferendis voluptatem debitis repellendus inventore magnam maiores culpa nam doloremque deleniti fuga sed consequuntur quos dolore sapiente harum quidem similique non iure tempore consectetur quibusdam magni beatae ipsa. Consequatur, illo!</p>
-		<h5>This is a colored call out box</h5>
+		{% endautoescape %}
 	</article><!-- end post -->
 
 </div><!-- end main column -->
@@ -93,7 +88,7 @@
 				</div>
 					<div class="accordion-content {% if forloop.first %} active {% endif %}">
 					{% for pro in category.productCat.all  %}
-						<div class="sub-menu"><a href="product-details/{{ pro.id }}">{{ pro.name }}</a></div>
+						<div class="sub-menu"><a href="/{{ SELECTEDLANG }}/product-details/{{ pro.id }}">{{ pro.name }}</a></div>
 					{% endfor %}
 				</div>
 			{% endfor %}
@@ -103,5 +98,16 @@
 </div><!-- end sidebar -->
 
 </section><!-- end page container -->
+
+<section id="footer-bottom" class="section">
+	<div class="container">
+		<a href="#" class="scroll button-to-top">
+				<i class="fa fa-angle-double-up"></i>
+			</a>
+		<h2>{% trans 'GOWARAB' %}</h2>
+		<p style="text-align:center;"><span class="color" style="font-family:'Segoeui', 'Lato', sans-serif;color: #add92d;">
+			 2017 &copy; All rights reserved </span></p>
+	</div><!-- end container -->
+</section><!-- end footer bottom section -->
 
 {% endblock %}

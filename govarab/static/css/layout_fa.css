@@ -109,7 +109,7 @@ Home (Header) Section
 }
 .text-slides{
 	text-transform: uppercase;
-	font-size: 26px;
+	font-size: 22px;
 	line-height: 56px;
 	font-weight: 300;
 	width:100%;
@@ -481,7 +481,6 @@ Testimonials
 .testimonials h4{
     color:#fff;
     text-align: justify;
-    text-align-last: center;
     font-size: 22px;
     line-height: 2;
     margin-bottom: 40px;
@@ -514,7 +513,7 @@ Testimonials
 
 .testimonials .flex-direction-nav{
 	width:0;
-	height: 32px;
+	height: 0px;
 	margin:0 auto;
 	position: relative;
 }
@@ -590,19 +589,17 @@ Services Section
 
 #services img.mockup{
     width: 460px;
-    height: 460px;
+    height: 460px !important;
     border-radius: 50%;
 }
 
 .services-list{
-	background:
-	url(../images/parallax/bg-12.jpg) center center fixed;
-	background-repeat-x: no-repeat;
+    background: linear-gradient( rgba(0,0,0,.7), rgba(0,0,0,.7) ), url(../images/parallax/bg.jpg) center center no-repeat fixed;
     background-size: cover;
-	padding:56px 0 32px 0;
-	text-align: center;
-	overflow: hidden;
-	color:#fff;
+    padding: 56px 0 32px 0;
+    text-align: center;
+    overflow: hidden;
+    color: #fff;
 }
 .services-list h5{color: #fff;}
 .service-item{cursor: default;}
@@ -622,7 +619,7 @@ Portfolio Section
 	height: auto;
 	padding:20px 0 56px 0;
 }
-#portfolio-title{padding: 56px 0 20px 0 !important;}
+#portfolio-title{padding: 56px 0 0px 0 !important;}
 #portfolio-title h4.subtitle{margin-bottom: 0 !important;}
 
 .item{
@@ -686,6 +683,7 @@ Portfolio Section
 	bottom: -100px;
 	z-index:100;
 	color: #fff;
+	direction: ltr;
 	opacity: 0;
 	text-align: center;
    width: 100%;
@@ -714,6 +712,7 @@ Portfolio Section
 .option-set li a{
 	padding: 4px 8px;
 	color: #6c6c6c;
+    direction: rtl;
 	font-size: 12px;
 	font-weight: 400;
 	text-transform: uppercase;
@@ -1018,8 +1017,9 @@ Accordion
     font-family: 'Sahel';
 	text-transform: uppercase;
 	font-weight: 400;
+    direction: rtl;
 	cursor: pointer;
-	margin: 16px 0 10px 0;
+	margin: 16px 0 13px 0;
 }
 .accordion-button:hover{color: #00a0d8;}
 .accordion-button i{
@@ -1595,7 +1595,6 @@ a.button-to-top:hover {color: #e74c3c;}
 #about p{
     font-size: 14px !important;
     text-align: justify;
-    text-align-last: center;
 }
 
 #about h4{
@@ -1618,10 +1617,11 @@ a.button-to-top:hover {color: #e74c3c;}
 #Mission-list p{
     font-size: 13px;
     text-align: justify;
-    text-align-last: center;
 }
 
 #question{
+    margin-left: 30px;
+    margin-right: 30px;
     float: right;
     color: #fff;
     text-align: right;
@@ -1758,12 +1758,17 @@ div.pp_default .pp_content_container .pp_right {
 }
 
 .sub-menu {
-    margin-right: 25px;
+    margin-right: 30px;
     margin-bottom: 16px;
+    font-size: 14px !important;
 }
 
 .sub-menu a{
     color: #777;
+}
+
+.container-title{
+    padding: 35px 0 10px 0;
 }
 
 .sub-menu a:hover{
@@ -1791,4 +1796,23 @@ div.pp_default .pp_content_container .pp_right {
 
 #pro-title{
     text-align: right;
+}
+
+.container-title{
+    padding: 40px 0 10px 0;
+}
+
+.blog-post ul > li {
+  text-indent: -5px;
+}
+.blog-post ul > li:before {
+  content: "-";
+  text-indent: 0px;
+  margin-left: 6px;
+  font-weight: bold !important;
+}
+
+.blog-post strong{
+    font-weight: bold !important;
+    color: #555;
 }

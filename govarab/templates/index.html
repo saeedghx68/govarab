@@ -22,7 +22,6 @@
 				<ul class="nav">
 					<li><a href="#home" class="scroll link">{% trans "خانه" %}</a></li>
 					<li><a href="#about" class="scroll link">{% trans "درباره ما" %}</a></li>
-					<li><a href="#services" class="scroll link">{% trans "خدمات" %}</a></li>
 					<li><a href="#products" class="scroll link">{% trans "محصولات" %}</a></li>
 					<li><a href="#FAQ" class="scroll link">{% trans "سؤالات متداول" %}</a></li>
 					<li><a href="#gallery" class="scroll link">{% trans "گالری" %}</a></li>
@@ -67,15 +66,8 @@
 
 		</div>
 
-		<!--<div class="pattern-container alt-header" style="width: 100%;">
-			<img src="{% static 'images/headers/banner-img-10.jpg' %}" alt="Pattern Image"/>
-		</div> end pattern container-->
-
 		<div class="container header slider-home">
 
-			<!-- Site Logo
-			<span class="logo">{% trans "گواراب" %}</span>-->
-			<!-- Text Slider -->
 			<div class="header-text">
 				<ul class="text-slider">
 					<li class="text-slides">{% trans 'اولین شرکت دانش بنیان در زمینه تصفیه آب در ایران' %}</li>
@@ -98,13 +90,9 @@
 		</div><!-- end header container -->
 	</section><!-- end home section -->
 
-	<!--<h1>{% blocktrans with amount=team.post %}
-		{{ amount }}
-	{% endblocktrans %}</h1>-->
-
 	<!-- About Section -->
 	<section id="about" class="section" >
-		<div class="container">
+		<div class="container" style="padding-bottom: 30px;padding-top: 40px;">
 			<h2 class="title animated" data-animate="bounceIn" data-animate-delay="400" style="margin-bottom:45px;">
 				{% trans "درباره گواراب" %}
 				<hr class="hr">
@@ -147,7 +135,7 @@
 
 	<!-- Callout Title -->
 	<section class="callout" style="margin-bottom:0px;">
-		<div class="container">
+		<div class="container container-title">
 			<h3 class="animated" data-animate="bounceInDown" data-animate-delay="300">
 				{% trans 'چشم انداز شرکت ' %}
 				<hr class="hr">
@@ -155,47 +143,47 @@
 		</div><!-- end container -->
 	</section><!-- end callout title -->
 
-		<div class="container">
-			<ul class="testimonial-slider">
+		<div class="container" style="padding-bottom: 10px;padding-top: 40px;">
+			<div class="testimonial-slider">
 				<!-- Testimonial 1 -->
-				<li class="t-slide">
-					<h4>{% trans 'تا پایان سال ۱۳۹۸، ارائه دهنده محصولات و خدمات با مزیت رقابتی ویژه در کشور و وسعت بخشی به قلمروی حضور در خارج از مرزهای کشور و تبدیل شدن به شرکتی سرآمد و جهانی در صنعت پالایش آب باشیم بطوریکه نام تجاری شرکت در بازارهای منطقه همواره مورد توجه قرار گیرد.' %}
+				<div>
+					<h4 style="text-align: initial;">{% trans 'تا پایان سال ۱۳۹۸، ارائه دهنده محصولات و خدمات با مزیت رقابتی ویژه در کشور و وسعت بخشی به قلمروی حضور در خارج از مرزهای کشور و تبدیل شدن به شرکتی سرآمد و جهانی در صنعت پالایش آب باشیم بطوریکه نام تجاری شرکت در بازارهای منطقه همواره مورد توجه قرار گیرد.' %}
 					</h4>
-				</li>
+				</div>
 				<!-- Testimonial 2 -->
-			</ul><!-- end testimonials list -->
+			</div><!-- end testimonials list -->
 		</div><!-- end container -->
 	</section><!-- end testimonials -->
 
 	<!-- Services Section -->
 	<section id="services" class="section">
-		<div class="container">
+		<div class="container" >
 			<div id="service-img" class="eight columns alpha left-align animated" data-animate="bounceInLeft" data-animate-delay="400" >
 				<img src="{% static 'images/deram.jpg' %}" alt="Service Image" class="scale-with-grid mockup" title="There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which"  />
 			</div><!-- end ipad mockup -->
 
 			<div id="serv" class="eight columns omega left-align">
 				<h3 class="title animated" data-animate="bounceInRight" data-animate-delay="400" style="color: #07507F;">
-					{% trans 'خدمات شرکت' %}
+					{% trans 'درباره درم' %}
 					<hr class="hr-next">
 				</h3>
-				<h5 class="subtitle">{% trans 'شرکت گواراب سازان دشت سبز همانگونه که در مفاهیم مدرن مارکتینگ نیز بدان تأکید شده بر این اعتقاد است که هر محصول خانواده ای دارد. خانواده ی محصولات گواراب را تأمین کنندگان موادّ اولیّه، کارخانه و همه ی منابع داخلی آن، شعب و نمایندگان فروش و خدمات پس از فروش، توزیع کنندگان عمده و خرد، تمام عوامل ستادی و میانی و بالاخره مصرف کنندگان تشکیل می دهند. ما معتقدیم؛ مصرف کنندگان مهمترین عضو این خانواده هستند که همه ی اقدامات در نهایت در جهت نیازها و خواسته های واقعی او و بهره مندی ایشان از خدمات شایسته، بجا و بموقع شکل می گیرد. در خانواده ی گواراب، همه ی عوامل انجام این مهمّ دارای ارزشی درخور هستند و شرکت به عنوان ریشه ی این درخت، مسؤولیّت حفظ و بهره مندی همه ی اجزا را بر عهده دارد. لذا همه ی آنان که دانش، تجربه و منش خدمت به مشتریان را می دانند و به اصول کار و تجارت و خدمت پایبندی دارند و به تدریج و کاملاً موزون به خانواده ی گواراب پیوند می خورند مشمول مزایای همیشگی این همکاری مبارک خواهند بود و در ساختاری که مسؤولیّت ها افراز می شوند همگان منتفع خواهیم بود.' %}</h5>
+				<h5 class="subtitle">{% trans 'شرکت گواراب سازان دشت سبز دارای پروانه بهره برداری شماره ی … از سازمان صنعت، معدن و تجارت، فیلترهای کربنی خود را با شناسه ی صنعتی (برند) درم عرضه می نماید. محصولاتی که تاکنون تحت این  برند تولید شده اند همگی دارای کد انحصاری ایران در زمره کالاهای ثبت شده در سازمان ایران کد هستند. برند درم در داخل و خارج از کشور ثبت شده و شرکت گواراب سازان دشت سبز صاحب امتیاز مادّی و معنوی آن است و حقّ تولید صنعتی این محصول با برند درم فقط و فقط در انحصار این شرکت می باشد. بنابراین هرگونه کپی برداری، تولید و توزیع محصولات شرکت توسطّ اشخاص حقیقی یا حقوقی با این شناسه ی صنعتی غیر مجاز و پیگرد قانونی دارد.' %}</h5>
 			</div><!-- end eight col accordion section -->
 
 		</div><!-- end container -->
 
-		<section id="Mission-list" class="services-list parallax2" style="padding-top:0px;">
+		<section id="Mission-list" class="services-list parallax2" style="padding-bottom: 0;padding-top:0px;">
 			<section class="callout" style="margin-bottom:0px;">
-				<div class="container">
+				<div class="container container-title">
 					<h3 class="animated" data-animate="bounceInDown" data-animate-delay="300" style="font-size: 32px;">
 						{% trans 'مأموریت گواراب' %}
 						<hr class="hr">
 					</h3>
 				</div><!-- end container -->
 			</section>
-			<div class="container">
+			<div class="container" style="padding-bottom: 0px;padding-top: 40px;">
 				<div class="row">
-					<h6>{% trans 'در افق این سند تا پایان سال ۱۳۹۸، ماموريت شرکت گواراب به شرح زیر است:' %}
+					<h6 style="text-align:inherit;">{% trans 'در افق این سند تا پایان سال ۱۳۹۸، ماموريت شرکت گواراب به شرح زیر است:' %}
 					</h6>
 				</div>
 				<div class="row">
@@ -307,14 +295,14 @@
 				</h3>
 			</div><!-- end container -->
 		</section>
-		<div class="container" style="padding-top: 30px;">
+		<div class="container" style="padding-top: 20px;">
 
 			<!--<div class="eight columns animated" data-animate="bounceInLeft" data-animate-delay="400">
 				<img src="{% static 'images/faq.jpg' %}" alt="iPad Image" class="scale-with-grid mockup" />
 			</div> end ipad mockup -->
 
 			<div id="question" class="eight columns accordion-container">
-				<h4 class="subtitle" style="margin-bottom: 30px;">{% trans 'پرسش های مشتریان و پاسخ آنها' %}</h4>
+				<h4 class="subtitle" style="margin-bottom: 30px;padding-top: 45px;">{% trans 'پرسش های مشتریان و پاسخ آنها' %}</h4>
 
 				{% for faq in FAQs %}
 					{% if forloop.first %}
@@ -340,7 +328,7 @@
 		<!-- Portfolio Section -->
 	<section id="gallery" class="section">
 
-		<div class="container">
+		<div class="container" style="padding-bottom:20px;">
 			<h2 id="gallery-title" class="title animated" data-animate="bounceIn" data-animate-delay="400" style="color: #2a8cb6;">
 				{% trans 'گالری تصاویر' %}
 				<hr class="hr">
@@ -387,7 +375,7 @@
 			{% for member in team %}
 				<div class="four columns team animated" data-animate="bounceIn" data-animate-delay="400">
 					<div class="team-photo">
-						<img src="/media/{{ member.image }}" alt="{{ member.name }}" class="scale-with-grid">
+						<img src="/media/{{ member.image }}" alt="{{ member.name }}" class="scale-with-grid" style="width:100%;">
 						<div class="mask"></div>
 						<h5>{% trans 'ارتباط با ' %} {{ member.name }}</h5>
 						<ul class="team-social-links">
@@ -440,6 +428,18 @@
 			<br><span>{% trans 'قم، کیلومتر ۴ جاده قدیم قم-تهران، جنب مجتمع بعثت' %}</span>
 		</div><!-- end container -->
 	</section><!-- end footer top section -->
+
+	<section id="footer-bottom" class="section">
+		<div class="container">
+			<a href="/" class="scroll button-to-top">
+					<i class="fa fa-angle-double-up"></i>
+				</a>
+			<h2>{% trans 'GOWARAB' %}</h2>
+			<p style="text-align:center;"><span class="color" style="font-family:'Segoeui', 'Lato', sans-serif;color: #add92d;">
+				 2017 &copy; All rights reserved </span></p>
+		</div><!-- end container -->
+	</section><!-- end footer bottom section -->
+
 {% endblock %}
 
 {% block script %}

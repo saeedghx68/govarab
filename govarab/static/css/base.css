@@ -47,8 +47,12 @@ Typography
 h1, h2, h3, h4, h5, h6{
 	display: block;
 	color:#2f2f2f;
-	text-transform: uppercase;
 }
+
+h1, h2, h3{
+    text-transform: uppercase;
+}
+
 h1{
 	font-size: 48px;
 	line-height: 56px;
@@ -88,8 +92,6 @@ h6{
 	margin: 15px 0 56px 0;
 	padding: 0;
 	text-align: justify;
-    -moz-text-align-last: center;
-    text-align-last: center;
 }
 
 h4.subtitle{

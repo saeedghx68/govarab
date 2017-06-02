@@ -30,6 +30,7 @@
 @media only screen and (min-width: 959px) and (max-width: 1010px) {
     #services img.mockup{
         width: 440px !important;
+        height: auto !important;
         float: right !important;
     }
 }
@@ -105,6 +106,7 @@
 
 @media only screen and (min-width: 767px) and (max-width: 810px) {
     #services img.mockup{
+        height: auto !important;
         width: 95% !important;
         float: right !important;
     }
