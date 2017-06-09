@@ -1,4 +1,4 @@
-../.idea/
+.idea/
 govarab/myapp/__pycache__/
 govarab/myapp/migrations/__pycache__/
 govarab/config/settings.py
