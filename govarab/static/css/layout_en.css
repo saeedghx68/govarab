@@ -161,30 +161,7 @@ a.header-down-arrow:hover{color: #2a8cb6 !important;}
 	background-position:center center;
 	background-attachment: fixed;
 }
-#slides .slides-container .slide-1{
-	background:
-	url(../images/pattern-1.png) left top repeat,
-	url(../images/headers/Baner-1.jpg);
-	background-size:cover;
-}
-#slides .slides-container .slide-2{
-	background:
-	url(../images/pattern-1.png) left top repeat,
-	url(../images/headers/Baner-2.jpg);
-	background-size:cover;
-}
-#slides .slides-container .slide-3{
-	background:
-	url(../images/pattern-1.png) left top repeat,
-	url(../images/headers/Baner-3.jpg);
-	background-size:cover;
-}
-#slides .slides-container .slide-4{
-	background:
-	url(../images/pattern-1.png) left top repeat,
-	url(../images/headers/Baner-2.jpg);
-	background-size:cover;
-}
+
 .slides-navigation {
 	position: absolute;
 	top: 45%;
@@ -1756,3 +1733,32 @@ a.button-to-top:hover {color: #e74c3c;}
     padding-right: 75px;
 }
 
+#article-more{
+	text-align: right !important;
+}
+
+.article-box .columns{
+    float: left;
+}
+
+.article-box{
+	text-align: left;
+	margin-left: 0 !important;
+    float: left !important;
+    margin-top: 32px;
+    padding-bottom: 10px;
+}
+
+.article-img{
+	margin-right: 10px !important;
+    margin-left: 0px !important;
+}
+
+.article-img img {
+	max-width: 95% !important;
+}
+
+#article-list{
+	min-height: 800px;
+	text-align: left;
+}

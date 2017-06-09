@@ -34,7 +34,16 @@
 
 	<!-- Theme Options -->
 	<link id="theme-options" rel="stylesheet" href="{% static 'css/theme/light.css' %}" />
-
+	<style type="text/css">
+		{% for image in slidesImages %}
+			#slides .slides-container .slide-{{ forloop.counter }}{
+				background:
+				url('/static/images/pattern-1.png') left top repeat,
+				url('/media/{{ image.img }}');
+				background-size:cover;
+			}
+		{% endfor %}
+	</style>
 </head>
 
 <body>

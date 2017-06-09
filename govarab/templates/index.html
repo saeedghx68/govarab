@@ -11,7 +11,7 @@
 			<img src="{% static 'images/logo.png' %}" style="position: relative; left: 50px; top: 4px; width: 65px; height: 65px;" alt="">
 		</a>
 
-		<a href="/media/{{ catalog.file }}" id="catalog" class="button scroll" style="position: relative; left: 70px;top: 20px;text-align:center;">{% trans "دانلود کاتالوگ" %}</a>
+		<a href="/media/{{ catalog.file }}" target="_blank" id="catalog" class="button scroll" style="position: relative; left: 70px;top: 20px;text-align:center;">{% trans "دانلود کاتالوگ" %}</a>
 
 		<div class="nav-container">
 
@@ -24,6 +24,7 @@
 					<li><a href="#about" class="scroll link">{% trans "درباره ما" %}</a></li>
 					<li><a href="#products" class="scroll link">{% trans "محصولات" %}</a></li>
 					<li><a href="#FAQ" class="scroll link">{% trans "سؤالات متداول" %}</a></li>
+					<li><a href="#articles" class="scroll link">{% trans "آخرین مقاله ها" %}</a></li>
 					<li><a href="#gallery" class="scroll link">{% trans "گالری" %}</a></li>
 					<li><a href="#team" class="scroll link">{% trans "اعضای تیم" %}</a></li>
 					<li>
@@ -277,7 +278,7 @@
 				{% for product in products %}
 					<div class="item four columns {{ product.category.id }}">
 						<a href="product-details/{{ product.id }}">
-							<img src="/media/{{ product.small_img }}" alt="{{ product.name }}" />
+							<img src="/media/{{ product.images.all.0.small_img }}" alt="{{ product.name }}" />
 							<div class="mask"></div>
 							<h5>{{ product.name }}</h5>
 						</a>
@@ -324,6 +325,35 @@
 
 		</div><!-- end container -->
 	</section><!-- end accordion section -->
+
+	<section id="articles" class="section" style="background-color:#f3f3f3;">
+		<div class="container">
+			<h2 class="title animated" data-animate="bounceIn" data-animate-delay="400" style="color: #2a8cb6;">
+				{% trans 'آخرین مقاله ها' %}
+				<hr class="hr">
+			</h2>
+
+			{% for article in articles %}
+				<div class="one-third column post-preview animated" data-animate="fadeIn" data-animate-delay="400" id="article-text">
+					<a href="articles/{{ article.id }}" class="post-img">
+						<img src="/media/{{ article.image }}" alt="" class="scale-with-grid">
+						<div class="mask"></div>
+						<h5>{% trans 'خواندن کامل مقاله' %}</h5>
+					</a><!-- end post image -->
+					<a href="articles/{{ article.id }}" class="post-title">{{ article.title }}</a>
+					{% autoescape off %}
+						<p>{{ article.text |truncatewords:60 }}</p>
+					{% endautoescape %}
+					<p id="article-more"><a href="articles/{{ article.id }}" >{% trans 'بیشتر بخوانید' %} &raquo;</a></p>
+				</div><!-- end post preview -->
+			{% endfor %}
+
+			<div class="row full-blog-link">
+				<a href="articles" class="button">{% trans 'خواندن تمامی مقاله ها' %}</a>
+			</div>
+
+		</div><!-- end container -->
+	</section><!-- end blog section -->
 
 		<!-- Portfolio Section -->
 	<section id="gallery" class="section">
@@ -377,13 +407,10 @@
 					<div class="team-photo">
 						<img src="/media/{{ member.image }}" alt="{{ member.name }}" class="scale-with-grid" style="width:100%;">
 						<div class="mask"></div>
-						<h5>{% trans 'ارتباط با ' %} {{ member.name }}</h5>
+						<h5>{{member.email}}</h5>
 						<ul class="team-social-links">
-							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-							<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-							<li><a href="#"><i class="fa fa-instagram"></i></a></li>
-							<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+							<li><a href="/media/{{member.file}}" target="_blank">{% trans 'دانلود رزومه' %}</i></a></li>
+
 						</ul>
 					</div><!-- end team photo -->
 

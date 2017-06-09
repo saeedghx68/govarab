@@ -54,61 +54,38 @@
 		</div><!-- end nav container -->
 	</section><!-- end navigation section -->
 
-<section class="container sub-page">
+<section class="container sub-page" id="article-list">
+    <h3 class="title animated" data-animate="bounceInRight" data-animate-delay="400" style="color: #07507F;">
+        {% trans 'مقاله ها' %}
+        <hr class="hr-next">
+    </h3>
 
-<!-- Begin Sidebar -->
-<div class="five columns offset-by-one sidebar left-align" id="sidebar">
-
-	<!-- Blog Categories -->
-	<section class="sidebar-content">
-		<h4>{% trans 'دسته بندی' %}</h4>
-		<div class="sidebar-menu">
-			{% for category in productCategory %}
-				<div class="accordion-button"><i class="fa fa-arrow-circle-o-down fa-lg"></i>
-					{{ category.name }}
-				</div>
-					<div class="accordion-content {% if forloop.first %} active {% endif %}">
-					{% for pro in category.productCat.all  %}
-						<div class="sub-menu"><a href="/{{ SELECTEDLANG }}/product-details/{{ pro.id }}">{{ pro.name }}</a></div>
-					{% endfor %}
-				</div>
-			{% endfor %}
+    {% for article in articles %}
+    <div class="about-author sixteen columns alpha article-box">
+		<div class="five columns alpha article-img" >
+			<img src="/media/{{ article.image }}" alt="{{ article.title }}" class="scale-with-grid">
 		</div>
-	</section><!-- end blog categories -->
-
-</div><!-- end sidebar -->
-
-<!-- Begin Main Content -->
-<div class="eleven columns main-content">
-
-	<!-- Begin Blog Post -->
-	<article class="blog-post animated left-align" data-animate="fadeIn" data-animate-delay="400" style="text-align: justify;">
-		<div id="pro-img">
-			<a href="#" class="post-img">
-				<img src="/media/{{ product.big_img }}" alt="" class="scale-with-grid">
-			</a><!-- end post image -->
+		<div class="eleven columns omega">
+            <h5 style="font-size: 20px;color: #479bbe;"><a href="/{{ SELECTEDLANG }}/articles/{{ article.id }}">{{ article.title }}</a></h5>
+			{% autoescape off %}
+                <p>{{ article.text |truncatewords:40 }}</p>
+            {% endautoescape %}
+            <p id="article-more"><a href="/{{ SELECTEDLANG }}/articles/{{ article.id }}" >{% trans 'بیشتر بخوانید' %} &raquo;</a></p>
 		</div>
-		<div id="pro-title">
-			<a href="#" class="post-title">{{ product.name }}</a>
-		</div>
-		{% autoescape off %}
-		<p>{{ product.description }}</p>
-		{% endautoescape %}
-	</article><!-- end post -->
-
-</div><!-- end main column -->
+	</div>
+    {% endfor %}
 
 </section><!-- end page container -->
 
-<section id="footer-bottom" class="section">
-	<div class="container">
-		<a href="#" class="scroll button-to-top">
-				<i class="fa fa-angle-double-up"></i>
-			</a>
-		<h2>{% trans 'GOWARAB' %}</h2>
-		<p style="text-align:center;"><span class="color" style="font-family:'Segoeui', 'Lato', sans-serif;color: #add92d;">
-			 2017 &copy; All rights reserved </span></p>
-	</div><!-- end container -->
-</section><!-- end footer bottom section -->
+    <section id="footer-bottom" class="section">
+        <div class="container">
+            <a href="#" class="scroll button-to-top">
+                    <i class="fa fa-angle-double-up"></i>
+                </a>
+            <h2>{% trans 'GOWARAB' %}</h2>
+            <p style="text-align:center;"><span class="color" style="font-family:'Segoeui', 'Lato', sans-serif;color: #add92d;">
+                 2017 &copy; All rights reserved </span></p>
+        </div><!-- end container -->
+    </section><!-- end footer bottom section -->
 
 {% endblock %}

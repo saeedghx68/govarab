@@ -23,6 +23,14 @@ url(../../images/parallax/bg-16.jpg) center center no-repeat fixed;
 background-size: cover;
 }
 
-.accordion-button i.fa-arrow-circle-o-down, .accordion-button:hover{
+.accordion-button i.fa-arrow-circle-o-down, .accordion-button:hover, .accordion-button a:hover {
     color: #96be1f !important;
+}
+
+.accordion-button a {
+    color: #2f2f2f;
+}
+
+.accordion-button i{
+    color:#96be1f !important;
 }

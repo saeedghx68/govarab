@@ -6,6 +6,9 @@ from myapp.models import *
 class GalleryTranslationOptions(TranslationOptions):
     fields = ('alt',)
 
+@register(SlidesImages)
+class TeamTranslationOptions(TranslationOptions):
+    fields = ()
 
 @register(ProductCategory)
 class ProductCategoryTranslationOptions(TranslationOptions):
@@ -33,3 +36,7 @@ class TeamTranslationOptions(TranslationOptions):
 @register(Catalog)
 class TeamTranslationOptions(TranslationOptions):
     fields = ()
+
+@register(Article)
+class TeamTranslationOptions(TranslationOptions):
+    fields = ('title', 'text',)

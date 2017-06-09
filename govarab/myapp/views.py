@@ -13,10 +13,12 @@ def home(request):
     c['LANGUAGES'] = settings.LANGUAGES
     c['SELECTEDLANG'] = request.LANGUAGE_CODE
     try:
+        c['slidesImages'] = SlidesImages.objects.all()
         c['productCategory'] = ProductCategory.objects.all()
         c['products'] = Product.objects.all()
         c['FAQs'] = FAQ.objects.all()
         c['gallery'] = Gallery.objects.all()
+        c['articles'] = Article.objects.all()[0:3]
         c['team'] = Team.objects.all()
         c['slogan'] = Slogan.objects.all().order_by('priority')
         c['catalog'] = Catalog.objects.all()[0]
@@ -49,3 +51,42 @@ def product_details(request, product_id):
         c['catalog'] = u'کاتالوگ اضافه نشده'
 
     return render_to_response('product_details.html', c)
+
+
+def article_single(request, article_id):
+    request.session[translation.LANGUAGE_SESSION_KEY] = user_language
+    c = {}
+    c['LANGUAGES'] = settings.LANGUAGES
+    c['SELECTEDLANG'] = request.LANGUAGE_CODE
+    try:
+        c['article'] = Article.objects.get(pk=article_id)
+    except Exception as e:
+        print e
+        c['article'] = u'مقاله ای با این id وجود ندارد!'
+    try:
+        c['articles'] = Article.objects.all()
+    except:
+        c['articles'] = u'مقاله ای وارد نشده!'
+    try:
+        c['catalog'] = Catalog.objects.all()[0]
+    except:
+        c['catalog'] = u'کاتالوگ اضافه نشده'
+
+    return render_to_response('article_single.html', c)
+
+
+def articles(request):
+    request.session[translation.LANGUAGE_SESSION_KEY] = user_language
+    c = {}
+    c['LANGUAGES'] = settings.LANGUAGES
+    c['SELECTEDLANG'] = request.LANGUAGE_CODE
+    try:
+        c['articles'] = Article.objects.all()
+    except:
+        c['articles'] = u'مقاله ای وارد نشده!'
+    try:
+        c['catalog'] = Catalog.objects.all()[0]
+    except:
+        c['catalog'] = u'کاتالوگ اضافه نشده'
+
+    return render_to_response('articles.html', c)

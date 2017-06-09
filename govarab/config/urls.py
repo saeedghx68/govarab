@@ -28,4 +28,6 @@ urlpatterns += i18n_patterns(
     url(r'^admin/', include(admin.site.urls)),
     url(r'^$', home, name='home'),
     url(r'^product-details/(?P<product_id>\w+)/$', product_details, name='product_details'),
+    url(r'^articles/$', articles, name='articles'),
+    url(r'^articles/(?P<article_id>\w+)/$', article_single, name='article_single'),
 )

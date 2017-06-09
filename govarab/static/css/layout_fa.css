@@ -36,6 +36,18 @@ h2{
     font-size: 34px;
 }
 
+#articles h4, p{
+	font-size: 16px;
+}
+
+#article-text{
+	text-align: right;
+}
+
+#article-more{
+	text-align: left;
+}
+
 .container{
 	text-align: center;
 	height: auto;
@@ -177,30 +189,7 @@ a.header-down-arrow:hover{color: #2a8cb6 !important;}
 	background-attachment: fixed;
 	background-size:cover;
 }
-#slides .slides-container .slide-1{
-	background:
-	url(../images/pattern-1.png) left top repeat,
-	url(../images/headers/Baner-1.jpg);
-	background-size:cover;
-}
-#slides .slides-container .slide-2{
-	background:
-	url(../images/pattern-1.png) left top repeat,
-	url(../images/headers/Baner-2.jpg);
-	background-size:cover;
-}
-#slides .slides-container .slide-3{
-	background:
-	url(../images/pattern-1.png) left top repeat,
-	url(../images/headers/Baner-3.jpg);
-	background-size:cover;
-}
-#slides .slides-container .slide-4{
-	background:
-	url(../images/pattern-1.png) left top repeat,
-	url(../images/headers/Baner-2.jpg);
-	background-size:cover;
-}
+
 .slides-navigation {
 	position: absolute;
 	top: 45%;
@@ -1750,7 +1739,7 @@ div.pp_default .pp_content_container .pp_right {
 
 .sidebar-menu {
     margin-bottom: 16px;
-    min-height: 500px;
+    min-height: 600px;
     padding: 10px 15px 50px 15px;
     background-color: #ecf0f1;
     /* border-right: 5px solid #96be1f; */
@@ -1817,6 +1806,28 @@ div.pp_default .pp_content_container .pp_right {
     color: #555;
 }
 
-#sidebar{
+#sidebar, .article-box .columns{
     float: right;
+}
+
+.article-box{
+	text-align: right;
+	margin-right: 0 !important;
+    float: right !important;
+    margin-top: 32px;
+    padding-bottom: 10px;
+}
+
+.article-img{
+	margin-left: 10px !important;
+    margin-right: 0px !important;
+}
+
+.article-img img {
+	max-width: 95% !important;
+}
+
+#article-list{
+	min-height: 800px;
+	text-align: right;
 }
