@@ -1,5 +1,6 @@
 # coding=utf-8
 from django.shortcuts import render, render_to_response
+from django.utils.translation import ugettext_lazy as _
 from config import settings
 from myapp.models import *
 from django.utils import translation
@@ -22,6 +23,10 @@ def home(request):
         c['team'] = Team.objects.all()
         c['slogan'] = Slogan.objects.all().order_by('priority')
         c['catalog'] = Catalog.objects.all()[0]
+        c['resellers'] = Dealership.objects.filter(type='1')
+        c['representatives'] = Dealership.objects.filter(type='2')
+        print(c['resellers'])
+        print(c['resellers'])
     except:
         print (u'داده ها وارد نشده!')
     return render_to_response('index.html', c)

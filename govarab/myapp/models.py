@@ -173,3 +173,24 @@ class Article(models.Model):
         verbose_name = _('article')
         verbose_name_plural = _('articles')
 # ******************End of articles ********************
+
+
+class Dealership(models.Model):
+    TYPE = (
+        ('1', _('Resellers')),
+        ('2', _('Representatives')),
+    )
+    name = models.CharField(max_length=100, verbose_name=_('name'))
+    tel = models.CharField(max_length=14, verbose_name=_('phone'))
+    address = models.CharField(max_length=300, verbose_name=_('address'))
+    description = models.TextField(verbose_name=_('description'))
+    type = models.CharField(max_length=30, choices=TYPE, verbose_name=_('type'))
+
+    def __unicode__(self):
+        return self.name
+
+    class Meta:
+        ordering = ['name']
+        verbose_name = _('dealership')
+        verbose_name_plural = _('dealerships')
+# ******************End of dealership ********************

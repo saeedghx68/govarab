@@ -403,7 +403,7 @@ Navigation Bar
 Sub Page
 -------------------------------- */
 
-.sub-page {padding-top: 128px;}
+.sub-page {padding-top: 128px;padding-bottom: 150px;}
 
 /* --------------------------------
 About Section
@@ -1252,6 +1252,8 @@ Blog
 }
 .post-title{
 	font-size: 24px;
+	text-align: right;
+    color: #2a8cb6;
 	line-height: 32px;
 }
 .post-meta {margin:8px 0 16px 0;}
@@ -1355,8 +1357,8 @@ Blog
 article.blog-post{
     text-align: right;
 	padding-bottom: 32px;
-	margin-bottom: 40px;
-	border-bottom: 1px solid rgba(108,108,108, .2);
+/*  margin-bottom: 25px;
+	border-bottom: 1px solid rgba(108,108,108, .2); */
 }
 .sub-page article.blog-post:last-child{border-bottom:none;}
 
@@ -1806,7 +1808,12 @@ div.pp_default .pp_content_container .pp_right {
     color: #555;
 }
 
-#sidebar, .article-box .columns{
+#sidebar{
+    padding-left: 20px;
+    float: right;
+}
+
+.article-box .columns{
     float: right;
 }
 
@@ -1830,4 +1837,22 @@ div.pp_default .pp_content_container .pp_right {
 #article-list{
 	min-height: 800px;
 	text-align: right;
+}
+
+table *{
+    font-size: 14px;
+    font-family: Sahel;
+    text-align: right !important;
+}
+
+.fa{
+    margin-left: 5px;
+}
+
+.sky-tabs-pos-right > label {
+    line-height: 22px;
+    font-size: 17px;
+    font-family: Sahel;
+    font-weight: bold;
+    text-align: right;
 }

@@ -371,7 +371,7 @@ Navigation Bar
 Sub Page
 -------------------------------- */
 
-.sub-page {padding-top: 128px;}
+.sub-page {padding-top: 128px;padding-bottom: 150px;}
 
 /* --------------------------------
 About Section
@@ -1205,6 +1205,8 @@ Blog
 }
 .post-title{
 	font-size: 24px;
+	text-align: left;
+	color: #2a8cb6;
 	line-height: 32px;
 }
 .post-meta {margin:8px 0 16px 0;}
@@ -1307,8 +1309,8 @@ Blog
 
 article.blog-post{
 	padding-bottom: 32px;
-	margin-bottom: 40px;
-	border-bottom: 1px solid rgba(108,108,108, .2);
+/*	margin-bottom: 25px;
+	border-bottom: 1px solid rgba(108,108,108, .2);  */
 }
 .sub-page article.blog-post:last-child{border-bottom:none;}
 
@@ -1730,7 +1732,7 @@ a.button-to-top:hover {color: #e74c3c;}
 #sidebar{
     float: left;
     padding-left: 0px;
-    padding-right: 75px;
+    padding-right: 20px;
 }
 
 #article-more{
@@ -1761,4 +1763,27 @@ a.button-to-top:hover {color: #e74c3c;}
 #article-list{
 	min-height: 800px;
 	text-align: left;
+}
+
+table *{
+    font-size: 14px;
+    font-family:Segoeui;
+    text-align: left !important;
+}
+
+.fa{
+    margin-right: 5px;
+}
+
+.sky-tabs > input:checked + label span span {
+    font-weight: bold;
+    text-align: left !important;
+}
+
+.sky-tabs-pos-left > label {
+    font-size: 17px;
+    font-family:Segoeui;
+    font-weight: bold;
+    text-align: left;
+    border: 1px solid #dfdfdf;
 }

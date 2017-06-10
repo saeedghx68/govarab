@@ -26,14 +26,9 @@
 					<li><a href="#FAQ" class="scroll link">{% trans "سؤالات متداول" %}</a></li>
 					<li><a href="#articles" class="scroll link">{% trans "آخرین مقاله ها" %}</a></li>
 					<li><a href="#gallery" class="scroll link">{% trans "گالری" %}</a></li>
+					<li><a href="#dealerships" class="scroll link">{% trans "نمایندگی ها" %}</a></li>
 					<li><a href="#team" class="scroll link">{% trans "اعضای تیم" %}</a></li>
-					<li>
-						<a href="#map" class="scroll link">{% trans "تماس با ما " %}</a>
-						<!--<ul>
-							<li><i class="fa fa-chevron-down"></i><a href="blog-main.html">Blog Main</a></li>
-							<li><a href="blog-single.html">Blog Single</a></li>
-						</ul>-->
-					</li><!-- end drop down -->
+					<li><a href="#map" class="scroll link">{% trans "تماس با ما " %}</a></li>
 				</ul>
 			</div><!-- end nav menu -->
 			<ul id="lang-menu">
@@ -394,6 +389,107 @@
 		</div><!-- end container -->
 	</section><!-- end static testimonial section -->
 
+	<section id="dealerships" class="section" style="background-color:#f6f6f6;">
+		<div class="container">
+			<h2 class="title animated" data-animate="bounceIn" data-animate-delay="400" style="color: #2a8cb6;">
+				{% trans 'نمایندگی ها' %}
+				<hr class="hr">
+			</h2>
+
+			<!-- tabs -->
+			<div class="sky-tabs {% if SELECTEDLANG == 'en' %} sky-tabs-pos-left {% else %} sky-tabs-pos-right {% endif %} sky-tabs-anim-flip sky-tabs-response-to-icons">
+				<input type="radio" name="sky-tabs" checked id="sky-tab1" class="sky-tab-content-1">
+				<label for="sky-tab1" style="border-top: 1px solid #dfdfdf;"><span><span><i class="fa fa-users ticon" aria-hidden="true"></i>{% trans 'نمایندگان فروش' %}</span></span></label>
+
+				<input type="radio" name="sky-tabs" id="sky-tab2" class="sky-tab-content-2">
+				<label for="sky-tab2"><span><span><i class="fa fa-users ticon" aria-hidden="true"></i>{% trans 'عاملین فروش' %}</span></span></label>
+
+				<ul>
+					<li class="sky-tab-content-1">
+					  <div>
+						<div class="tit">
+
+							<div>
+							  <table>
+								<thead>
+									<th style="width:15%;"><div>
+										<i class="fa fa-building-o" aria-hidden="true"></i>
+										{% trans 'نام' %}
+									</div></th>
+									<th style="width:15%;"><div><i class="fa fa-phone" aria-hidden="true"></i>
+										{% trans 'تلفن' %}
+									</div></th>
+									<th style="width:20%;"><div><i class="fa fa-map-marker" aria-hidden="true"></i>
+										{% trans 'آدرس' %}
+									</div></th>
+									<th><div><i class="fa fa-file-text" aria-hidden="true"></i>
+										{% trans 'توضیحات' %}
+									</div></th>
+								</thead>
+								<tbody>
+									{% for representative in representatives %}
+										<tr>
+										  <td>{{ representative.name }}</td>
+										  <td>{{ representative.tel }}</td>
+										  <td>{{ representative.address }}</td>
+										  {% autoescape off %}
+										    <td style="padding-bottom:0;">{{ representative.description }}</td>
+										  {% endautoescape %}
+										</tr>
+									{% endfor %}
+								</tbody>
+							  </table>
+							</div>
+						</div>
+					  </div>
+					</li>
+
+					<li class="sky-tab-content-2">
+						<div>
+						<div class="tit">
+
+							<div>
+							  <table>
+								<thead>
+									<th style="width:15%;"><div>
+										<i class="fa fa-building-o" aria-hidden="true"></i>
+										{% trans 'نام' %}
+									</div></th>
+									<th style="width:15%;"><div><i class="fa fa-phone" aria-hidden="true"></i>
+										{% trans 'تلفن' %}
+									</div></th>
+									<th style="width:20%;"><div><i class="fa fa-map-marker" aria-hidden="true"></i>
+										{% trans 'آدرس' %}
+									</div></th>
+									<th><div><i class="fa fa-file-text" aria-hidden="true"></i>
+										{% trans 'توضیحات' %}
+									</div></th>
+								</thead>
+								<tbody>
+									{% for reseller in resellers %}
+										<tr>
+										  <td>{{ reseller.name }}</td>
+										  <td>{{ reseller.tel }}</td>
+										  <td>{{ reseller.address }}</td>
+										  {% autoescape off %}
+										    <td style="padding-bottom:0;">{{ reseller.description }}</td>
+										  {% endautoescape %}
+										</tr>
+									{% endfor %}
+								</tbody>
+							  </table>
+							</div>
+						</div>
+					  </div>
+					</li>
+				</ul>
+			</div>
+			<!--/ tabs -->
+
+		</div><!-- end container -->
+	</section><!-- end blog section -->
+
+
 	<section id="team" class="section">
 		<div class="container" style="padding-bottom:0px;">
 			<h2 class="title" style="color: color: #2a8cb6;">
@@ -407,7 +503,7 @@
 					<div class="team-photo">
 						<img src="/media/{{ member.image }}" alt="{{ member.name }}" class="scale-with-grid" style="width:100%;">
 						<div class="mask"></div>
-						<h5>{{member.email}}</h5>
+						<h5>{{ member.email }}</h5>
 						<ul class="team-social-links">
 							<li><a href="/media/{{member.file}}" target="_blank">{% trans 'دانلود رزومه' %}</i></a></li>
 
@@ -458,7 +554,7 @@
 
 	<section id="footer-bottom" class="section">
 		<div class="container">
-			<a href="/" class="scroll button-to-top">
+			<a href="#home" class="scroll button-to-top">
 					<i class="fa fa-angle-double-up"></i>
 				</a>
 			<h2>{% trans 'GOWARAB' %}</h2>

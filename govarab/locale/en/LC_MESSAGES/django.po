@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-06-09 17:36+0430\n"
+"POT-Creation-Date: 2017-06-10 23:27+0430\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,131 +31,167 @@ msgstr ""
 
 #: myapp/models.py:11 myapp/models.py:82
 msgid "small image"
-msgstr "تصویر کوچک"
+msgstr ""
 
 #: myapp/models.py:13 myapp/models.py:84
 msgid "large image"
-msgstr "تصویر بزرگ"
+msgstr ""
 
-#: myapp/models.py:14 myapp/models.py:147 myapp/models.py:160
+#: myapp/models.py:14 myapp/models.py:149 myapp/models.py:162
 msgid "title"
-msgstr "عنوان"
+msgstr ""
 
 #: myapp/models.py:30 myapp/models.py:31
 msgid "Gallery"
-msgstr "گالری"
+msgstr ""
 
-#: myapp/models.py:38 myapp/models.py:118 myapp/models.py:162
+#: myapp/models.py:38 myapp/models.py:120 myapp/models.py:164
 msgid "image"
-msgstr "عکس"
+msgstr ""
 
 #: myapp/models.py:44
 msgid "Slides image"
-msgstr "تصویر اسلایدر"
+msgstr ""
 
 #: myapp/models.py:45
 msgid "Slides Images"
-msgstr "تصاویر اسلایدر"
+msgstr ""
 
 #: myapp/models.py:52
 msgid "category name"
-msgstr "نام دسته بندی"
+msgstr ""
 
 #: myapp/models.py:58 myapp/models.py:59
 msgid "Product Category"
-msgstr "دسته بندی محصولات"
+msgstr ""
 
 #: myapp/models.py:65
 msgid "product name"
-msgstr "نام محصول"
+msgstr ""
 
 #: myapp/models.py:66
 msgid "product category"
-msgstr "دسته بندی محصول"
+msgstr ""
 
-#: myapp/models.py:67
+#: myapp/models.py:67 myapp/models.py:186
 msgid "description"
-msgstr "توضیح"
+msgstr ""
 
 #: myapp/models.py:74
 msgid "Product"
-msgstr "محصول"
+msgstr ""
 
 #: myapp/models.py:75
 msgid "Products"
-msgstr "محصولات"
+msgstr ""
 
 #: myapp/models.py:81
 msgid "product"
-msgstr "محصول"
+msgstr ""
 
 #: myapp/models.py:93
 msgid "Product Image"
-msgstr "تصویر محصول"
+msgstr ""
 
 #: myapp/models.py:94
 msgid "Products Images"
-msgstr "تصاویر محصولات"
+msgstr ""
 
 #: myapp/models.py:99
 msgid "question"
-msgstr "پرسش"
+msgstr ""
 
 #: myapp/models.py:100
 msgid "answer"
-msgstr "پاسخ"
+msgstr ""
 
 #: myapp/models.py:108
 msgid "FAQ"
-msgstr "پرسش و پاسخ"
+msgstr ""
 
 #: myapp/models.py:109
 msgid "FAQs"
-msgstr "سوالات متداول"
+msgstr ""
 
-#: myapp/models.py:116
+#: myapp/models.py:116 myapp/models.py:183
 msgid "name"
-msgstr "نام"
+msgstr ""
 
 #: myapp/models.py:117
 msgid "post"
-msgstr "مقام"
+msgstr ""
 
-#: myapp/models.py:120 myapp/models.py:133
+#: myapp/models.py:118
+msgid "CV"
+msgstr ""
+
+#: myapp/models.py:119
+msgid "email"
+msgstr ""
+
+#: myapp/models.py:122 myapp/models.py:135
 msgid "priority"
-msgstr "ترتیب چیدمان"
+msgstr ""
 
-#: myapp/models.py:126 myapp/models.py:127
+#: myapp/models.py:128 myapp/models.py:129
 msgid "Team"
-msgstr "تیم"
+msgstr ""
 
-#: myapp/models.py:132 myapp/models.py:161
+#: myapp/models.py:134 myapp/models.py:163
 msgid "text"
-msgstr "متن"
+msgstr ""
 
-#: myapp/models.py:139 myapp/models.py:140
+#: myapp/models.py:141 myapp/models.py:142
 msgid "Slogan"
-msgstr "شعار"
+msgstr ""
 
-#: myapp/models.py:148
+#: myapp/models.py:150
 msgid "file"
-msgstr "فایل"
+msgstr ""
 
-#: myapp/models.py:154 myapp/models.py:155
+#: myapp/models.py:156 myapp/models.py:157
 msgid "catalog"
-msgstr "دسته بندی"
+msgstr ""
 
-#: myapp/models.py:163
+#: myapp/models.py:165
 msgid "source link"
-msgstr "لینک منبع"
+msgstr ""
 
-#: myapp/models.py:171
+#: myapp/models.py:173
 msgid "article"
-msgstr "مقاله"
+msgstr ""
 
-#: myapp/models.py:172
+#: myapp/models.py:174
 msgid "articles"
-msgstr "مقاله ها"
+msgstr ""
+
+#: myapp/models.py:180 myapp/views.py:26
+msgid "Resellers"
+msgstr ""
+
+#: myapp/models.py:181 myapp/views.py:27
+msgid "Representatives"
+msgstr ""
+
+#: myapp/models.py:184
+msgid "phone"
+msgstr ""
+
+#: myapp/models.py:185
+msgid "address"
+msgstr ""
+
+#: myapp/models.py:187 myapp/views.py:27
+msgid "type"
+msgstr ""
+
+#: myapp/models.py:194
+msgid "dealership"
+msgstr ""
+
+#: myapp/models.py:195
+msgid "dealerships"
+msgstr ""
 
 #: templates/article_single.html:18 templates/articles.html:18
 #: templates/index.html:14 templates/product_details.html:18
@@ -173,7 +209,7 @@ msgid "درباره ما"
 msgstr "about us"
 
 #: templates/article_single.html:29 templates/articles.html:29
-#: templates/index.html:111 templates/product_details.html:29
+#: templates/index.html:106 templates/product_details.html:29
 msgid "خدمات"
 msgstr "services"
 
@@ -183,10 +219,10 @@ msgid "محصولات"
 msgstr "products"
 
 #: templates/article_single.html:31 templates/articles.html:31
-#: templates/index.html:26 templates/index.html:295
+#: templates/index.html:26 templates/index.html:290
 #: templates/product_details.html:31
 msgid "سؤالات متداول"
-msgstr "Frequently Asked Questions"
+msgstr "FAQs"
 
 #: templates/article_single.html:32 templates/articles.html:32
 #: templates/product_details.html:32
@@ -199,7 +235,13 @@ msgid "گالری"
 msgstr "gallery"
 
 #: templates/article_single.html:34 templates/articles.html:34
-#: templates/index.html:29 templates/product_details.html:34
+#: templates/index.html:29 templates/index.html:395
+#: templates/product_details.html:34
+msgid "نمایندگی ها"
+msgstr "dealerships"
+
+#: templates/article_single.html:35 templates/articles.html:35
+#: templates/index.html:30 templates/product_details.html:35
 msgid "اعضای تیم"
 msgstr "team"
 
@@ -208,24 +250,24 @@ msgstr "team"
 msgid "تماس با ما "
 msgstr "contact us"
 
-#: templates/article_single.html:64
+#: templates/article_single.html:59
 msgid "لیست مقالات"
 msgstr "Articles"
 
-#: templates/article_single.html:93
+#: templates/article_single.html:88
 msgid "منبع"
 msgstr "souece"
 
-#: templates/article_single.html:106 templates/articles.html:85
-#: templates/index.html:467 templates/product_details.html:108
+#: templates/article_single.html:101 templates/articles.html:80
+#: templates/index.html:560 templates/product_details.html:116
 msgid "GOWARAB"
 msgstr ""
 
-#: templates/articles.html:59
+#: templates/articles.html:54
 msgid "مقاله ها"
 msgstr "Articles"
 
-#: templates/articles.html:73 templates/index.html:347
+#: templates/articles.html:68 templates/index.html:342
 msgid "بیشتر بخوانید"
 msgstr "Read more"
 
@@ -233,15 +275,15 @@ msgstr "Read more"
 msgid "گواراب"
 msgstr "GOWARAB"
 
-#: templates/index.html:27 templates/index.html:332
+#: templates/index.html:27 templates/index.html:327
 msgid "آخرین مقاله ها"
 msgstr "Latest Articles"
 
-#: templates/index.html:98
+#: templates/index.html:93
 msgid "درباره گواراب"
 msgstr "ABOUT GOWARAB"
 
-#: templates/index.html:101
+#: templates/index.html:96
 msgid ""
 "شرکت گواراب سازان دشت سبز که بطور کلّی ساختار خویش را بر فعّالیّت در صنعت تصفیه "
 "ی آب؛ با همه ی گرایش های تخصّصی و مؤلّفه های علمی دربرگیرنده ی این صنعت، طرح "
@@ -264,11 +306,11 @@ msgstr ""
 "intermediate products, installers and logistic factors, the approach The "
 "following codes are a non-negligible role of values ​​and strict adherence to:"
 
-#: templates/index.html:104
+#: templates/index.html:99
 msgid "پاسخگویی"
 msgstr "responsiveness"
 
-#: templates/index.html:106
+#: templates/index.html:101
 msgid ""
 "در شرکت گواراب سازان دشت سبز، مسؤولیّت ها به نحوی مستند، آموزش و پایش شده اند "
 "که چه در فرایندهای درون سازمانی و چه فرایندهای مرتبط با مشتری، پاسخگویی به "
@@ -279,7 +321,7 @@ msgstr ""
 "processes related to customer responsiveness as a strategic approach in "
 "order to improve the effectiveness of work defined"
 
-#: templates/index.html:113
+#: templates/index.html:108
 msgid ""
 "شرکت گواراب سازان دشت سبز در رویکرد ارزشی خود، برخورداری مشتریان را نه تنها "
 "به بایسته های خدمات مرتبط با محصولات خویش مانند پاسخگویی اثربخش و ضمانت "
@@ -295,11 +337,11 @@ msgstr ""
 "consumers need for this vital decision-making are among the services he "
 "knows."
 
-#: templates/index.html:118
+#: templates/index.html:113
 msgid "پژوهش و توسعه"
 msgstr "Research and development"
 
-#: templates/index.html:120
+#: templates/index.html:115
 msgid ""
 "این شرکت در راستای پیشرفت تمام علوم و صنایع، بر خود می داند نسبت به شناسایی "
 "آنچه کیفیّت ضروری ترین نیاز زیستی مصرف کنندگان را داراست مطالعه نماید؛ مطالعه "
@@ -314,11 +356,11 @@ msgstr ""
 "research, design and construction requirements for water quality improvement "
 "is consumed by them."
 
-#: templates/index.html:125
+#: templates/index.html:120
 msgid "کیفیّت"
 msgstr "Quality"
 
-#: templates/index.html:127
+#: templates/index.html:122
 msgid ""
 "کیفیّت به عنوان یکی از اصلی ترین و قدرتمندترین فرایندهای سازمانی این شرکت، "
 "تصمیم سازی کار، ابزارهای پایش و کنترل دائمی، اقدامات اصلاحی و بهبود مستمرّ را "
@@ -329,11 +371,11 @@ msgstr ""
 "corrective actions and continuous improvement in all stages before, during "
 "and after the production."
 
-#: templates/index.html:141
+#: templates/index.html:136
 msgid "چشم انداز شرکت "
 msgstr "GOWARAB'S VISION"
 
-#: templates/index.html:151
+#: templates/index.html:146
 msgid ""
 "تا پایان سال ۱۳۹۸، ارائه دهنده محصولات و خدمات با مزیت رقابتی ویژه در کشور و "
 "وسعت بخشی به قلمروی حضور در خارج از مرزهای کشور و تبدیل شدن به شرکتی سرآمد و "
@@ -346,11 +388,11 @@ msgstr ""
 "global industrial water treatment, we as the company's brand in regional "
 "markets attention be."
 
-#: templates/index.html:168
+#: templates/index.html:163
 msgid "درباره درم"
 msgstr "about dram"
 
-#: templates/index.html:171
+#: templates/index.html:166
 msgid ""
 "شرکت گواراب سازان دشت سبز دارای پروانه بهره برداری شماره ی … از سازمان صنعت، "
 "معدن و تجارت، فیلترهای کربنی خود را با شناسه ی صنعتی (برند) درم عرضه می "
@@ -368,21 +410,21 @@ msgstr ""
 "Any copying, production and distribution of industrial enterprises by "
 "natural or legal persons with ID is illegal and liable to prosecution."
 
-#: templates/index.html:180
+#: templates/index.html:175
 msgid "مأموریت گواراب"
 msgstr "GOWARAB'S MISSOIN"
 
-#: templates/index.html:187
+#: templates/index.html:182
 msgid "در افق این سند تا پایان سال ۱۳۹۸، ماموريت شرکت گواراب به شرح زیر است:"
 msgstr ""
 "On the horizon of this document by the end of 2020, Gowarab mission is as "
 "follows:"
 
-#: templates/index.html:192 templates/index.html:193
+#: templates/index.html:187 templates/index.html:188
 msgid "فناوری"
 msgstr "Technology"
 
-#: templates/index.html:195
+#: templates/index.html:190
 msgid ""
 "از این نظر شركت همواره اقدام به پایش مستمر فناوری های روز محصولات و "
 "فرایندهای تولید نموده و توسعه و بهبود محصولات و بومی سازی تولید ماشین آلات "
@@ -394,11 +436,11 @@ msgstr ""
 "localization machinery manufacturing mechanized approach to production and "
 "increase production efficiency as a priority as well."
 
-#: templates/index.html:199 templates/index.html:200
+#: templates/index.html:194 templates/index.html:195
 msgid "بازارها"
 msgstr "Markets"
 
-#: templates/index.html:202
+#: templates/index.html:197
 msgid ""
 "ما با تمام توان مي‏كوشيم شركت گواراب را در صحنه رقابت جهاني موفق كنيم. "
 "بازارهای مد نظر شرکت در افق این ماموریت عبارتند از: بازار ایران، شمال "
@@ -408,11 +450,11 @@ msgstr ""
 "be successful. Global Horizons consider participating in this mission are: "
 "the Iran, North Africa, the Middle East and Europe"
 
-#: templates/index.html:206 templates/index.html:207
+#: templates/index.html:201 templates/index.html:202
 msgid "محصولات يا خدمات"
 msgstr "Products or Services"
 
-#: templates/index.html:209
+#: templates/index.html:204
 msgid ""
 " انواع فیلترهای کربنی، انواع فیلترهای الیافی، تولید کربن اکتیو، تولید انواع "
 "دستگاه های تصفیه آب، خدمات آزمایشگاهی، ارایه مشاوره های فنی و مهندسی، تولید "
@@ -425,11 +467,11 @@ msgstr ""
 "characteristics, health and safety and appearance according to the Water "
 "District using raw materials appropriate to the health of drinking water."
 
-#: templates/index.html:213 templates/index.html:214
+#: templates/index.html:208 templates/index.html:209
 msgid "مشتريان"
 msgstr "customers"
 
-#: templates/index.html:216
+#: templates/index.html:211
 msgid ""
 "ما بر اين باوريم كه پيش از هر چيز در برابر نیازهای حال و آینده مشتریان و "
 "سلامت جامعه ملی و جهانی مسئول هستیم و خود را پاسخگوی مشتریان در قبال محصولات "
@@ -443,11 +485,11 @@ msgstr ""
 "confided them to the top of his career the know and to create customer "
 "loyalty through sustainable value for them."
 
-#: templates/index.html:222 templates/index.html:223
+#: templates/index.html:217 templates/index.html:218
 msgid "توجه به كاركنان"
 msgstr "According to the staff"
 
-#: templates/index.html:225
+#: templates/index.html:220
 msgid ""
 "آموزش ‏دادن؛ ايجاد انگيزه؛ حفظ و نگهداري كاركناني كه از نظر توانايي، اخلاق و "
 "تعهد به سازمان داراي ويژگي ممتاز هستند؛ ایجاد محيط كار مناسب؛ جبران خدمت بر "
@@ -460,11 +502,11 @@ msgstr ""
 "security for employees;Create a sense of belonging to the organization and "
 "feel proud to work in the company."
 
-#: templates/index.html:229 templates/index.html:230
+#: templates/index.html:224 templates/index.html:225
 msgid "ويژگي های ممتاز"
 msgstr "Premium Features"
 
-#: templates/index.html:232
+#: templates/index.html:227
 msgid ""
 "توان علمی و دانش فنی و توانايي‏هاي خلاق و سازنده مدیران؛پایبندی به مباحث کیفی "
 "محصولات و مشتری مداری برای حفظ فاصله از رقبا؛ توانمندی در تولید محصولات "
@@ -474,11 +516,11 @@ msgstr ""
 "management commitment to quality products and customer issues to keep away "
 "from competitors; the ability to produce different products;"
 
-#: templates/index.html:236 templates/index.html:237
+#: templates/index.html:231 templates/index.html:232
 msgid "فلسفه"
 msgstr "Philosophy"
 
-#: templates/index.html:239
+#: templates/index.html:234
 msgid ""
 "ما بر اين باوريم كه حرکت در جهت سلامت انسانها از ارزشمندترين هدفهاي بشریت "
 "است و فلسفه گواراب در اين جمله خلاصه مي‏شود: تقويت روح مشاركت صنعتگر، ایده "
@@ -489,11 +531,11 @@ msgstr ""
 "to the places where people can acquire knowledge and production experience, "
 "learn and spend time with winsome."
 
-#: templates/index.html:243 templates/index.html:244
+#: templates/index.html:238 templates/index.html:239
 msgid "توجه به بقا، رشد و سودآوري"
 msgstr "Due to the survival, growth and profitability"
 
-#: templates/index.html:246
+#: templates/index.html:241
 msgid ""
 "از اين نظر شركت عمليات خود را با احتياط انجام مي‏دهد و ميزان سود و رشد خود را "
 "به‏ گونه‏ اي تنظيم مي‏نمايد كه در نهايت موفقيت بلند مدت تضمين شود. به عبارت "
@@ -504,31 +546,31 @@ msgstr ""
 "interests of customers, employees, shareholders, suppliers and society is "
 "fulfilled."
 
-#: templates/index.html:259
+#: templates/index.html:254
 msgid "محصولات گواراب"
 msgstr "products"
 
-#: templates/index.html:269
+#: templates/index.html:264
 msgid "همه"
 msgstr "all"
 
-#: templates/index.html:306
+#: templates/index.html:301
 msgid "پرسش های مشتریان و پاسخ آنها"
 msgstr "Customer questions and answers"
 
-#: templates/index.html:341
+#: templates/index.html:336
 msgid "خواندن کامل مقاله"
 msgstr "Read Full Article"
 
-#: templates/index.html:352
+#: templates/index.html:347
 msgid "خواندن تمامی مقاله ها"
 msgstr "Read all articles"
 
-#: templates/index.html:363
+#: templates/index.html:358
 msgid "گالری تصاویر"
 msgstr "GALLERY"
 
-#: templates/index.html:392
+#: templates/index.html:387
 msgid ""
 "ما اکنون می توانیم با معتبرترین شرکتهای عرصه آب دنیا بر سر کیفیت محصول و "
 "خدمات خود به رقابت بپردازیم"
@@ -536,33 +578,64 @@ msgstr ""
 "We can now world's most prestigious companies in the field of water over the "
 "quality of their products and services to compete"
 
-#: templates/index.html:400
+#: templates/index.html:402
+msgid "نمایندگان فروش"
+msgstr "dealerships"
+
+#: templates/index.html:405
+msgid "عاملین فروش"
+msgstr "representative"
+
+#: templates/index.html:417 templates/index.html:456
+msgid "نام"
+msgstr "name"
+
+#: templates/index.html:420 templates/index.html:459
+msgid "تلفن"
+msgstr "phone"
+
+#: templates/index.html:423 templates/index.html:462
+msgid "آدرس"
+msgstr "address"
+
+#: templates/index.html:426 templates/index.html:465
+msgid "توضیحات"
+msgstr "description"
+
+#: templates/index.html:496
 msgid "اعضای تیم فنی"
 msgstr "TECHNICAL TEAM MEMBERS"
 
-#: templates/index.html:410
-msgid "ارتباط با "
-msgstr "contact with"
+#: templates/index.html:508
+msgid "دانلود رزومه"
+msgstr "Download Catalog"
 
-#: templates/index.html:436
+#: templates/index.html:529
 msgid "تماس با ما"
 msgstr "CONTACT US"
 
-#: templates/index.html:456
+#: templates/index.html:549
 msgid "025 - 36647647"
 msgstr ""
 
-#: templates/index.html:456
+#: templates/index.html:549
 msgid "0912 651 2267"
 msgstr ""
 
-#: templates/index.html:458
+#: templates/index.html:551
 msgid "قم، کیلومتر ۴ جاده قدیم قم-تهران، جنب مجتمع بعثت"
 msgstr "Qom, Qom-Tehran 4 km old road, next to the complex Besat"
 
-#: templates/product_details.html:64
+#: templates/product_details.html:59
 msgid "دسته بندی"
 msgstr "Category"
+
+#: templates/product_details.html:89
+msgid "تصاویر محصول"
+msgstr "product images"
+
+#~ msgid "ارتباط با "
+#~ msgstr "contact with"
 
 #~ msgid "اولین شرکت دانش بنیان در زمینه تصفیه آب در ایران"
 #~ msgstr ""

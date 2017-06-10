@@ -40,3 +40,7 @@ class TeamTranslationOptions(TranslationOptions):
 @register(Article)
 class TeamTranslationOptions(TranslationOptions):
     fields = ('title', 'text',)
+
+@register(Dealership)
+class TeamTranslationOptions(TranslationOptions):
+    fields = ('name', 'address', 'description',)

@@ -23,7 +23,7 @@ class ProductAdmin(ExampleAdmin, admin.ModelAdmin):
         js = ('ckeditor/ckeditor.js',)
 
 
-@admin.register(Article)
+@admin.register(Article, Dealership)
 class ArticleAdmin(ExampleAdmin, admin.ModelAdmin):
     formfield_overrides = {models.TextField: {'widget': forms.Textarea(attrs={'class': 'ckeditor'})}, }
 
