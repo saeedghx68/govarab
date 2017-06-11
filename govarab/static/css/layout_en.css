@@ -1792,3 +1792,7 @@ table .fa-2x {
     font-size: 22px !important;
     color: #df2f2f;
 }
+
+.sky-tabs > label span span {
+    padding: 8px 20px !important;
+}
