@@ -183,6 +183,8 @@ class Dealership(models.Model):
     name = models.CharField(max_length=100, verbose_name=_('name'))
     tel = models.CharField(max_length=14, verbose_name=_('phone'))
     address = models.CharField(max_length=300, verbose_name=_('address'))
+    lat = models.FloatField(_('Latitude'), blank=True, null=True)
+    lon = models.FloatField(_('Longitude'), blank=True, null=True)
     description = models.TextField(verbose_name=_('description'))
     type = models.CharField(max_length=30, choices=TYPE, verbose_name=_('type'))
 

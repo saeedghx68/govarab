@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-06-10 23:27+0430\n"
+"POT-Creation-Date: 2017-06-11 06:36+0430\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -75,7 +75,7 @@ msgstr "اسم المنتج"
 msgid "product category"
 msgstr "فئة المنتج"
 
-#: myapp/models.py:67 myapp/models.py:186
+#: myapp/models.py:67 myapp/models.py:188
 msgid "description"
 msgstr "وصف"
 
@@ -167,11 +167,11 @@ msgstr "مقالة"
 msgid "articles"
 msgstr "مقالات"
 
-#: myapp/models.py:180 myapp/views.py:26
+#: myapp/models.py:180
 msgid "Resellers"
 msgstr "بائعون"
 
-#: myapp/models.py:181 myapp/views.py:27
+#: myapp/models.py:181
 msgid "Representatives"
 msgstr "النواب"
 
@@ -183,15 +183,23 @@ msgstr "هاتف"
 msgid "address"
 msgstr "عنوان"
 
-#: myapp/models.py:187 myapp/views.py:27
+#: myapp/models.py:186
+msgid "Latitude"
+msgstr "خط العرض"
+
+#: myapp/models.py:187
+msgid "Longitude"
+msgstr "خط الطول"
+
+#: myapp/models.py:189
 msgid "type"
 msgstr "نوع"
 
-#: myapp/models.py:194
+#: myapp/models.py:196
 msgid "dealership"
 msgstr "وكلاء"
 
-#: myapp/models.py:195
+#: myapp/models.py:197
 msgid "dealerships"
 msgstr "وكلاء"
 
@@ -261,7 +269,7 @@ msgid "منبع"
 msgstr "مصدر"
 
 #: templates/article_single.html:101 templates/articles.html:80
-#: templates/index.html:560 templates/product_details.html:116
+#: templates/index.html:569 templates/product_details.html:116
 msgid "GOWARAB"
 msgstr ""
 
@@ -571,43 +579,47 @@ msgstr "الوكلاء"
 msgid "عاملین فروش"
 msgstr "الممثلين"
 
-#: templates/index.html:417 templates/index.html:456
+#: templates/index.html:417 templates/index.html:460
 msgid "نام"
 msgstr "الإسم"
 
-#: templates/index.html:420 templates/index.html:459
+#: templates/index.html:420 templates/index.html:463
 msgid "تلفن"
 msgstr "هاتف"
 
-#: templates/index.html:423 templates/index.html:462
+#: templates/index.html:423 templates/index.html:466
 msgid "آدرس"
 msgstr "عنوان"
 
-#: templates/index.html:426 templates/index.html:465
+#: templates/index.html:426 templates/index.html:469
 msgid "توضیحات"
 msgstr "وصف"
 
-#: templates/index.html:496
+#: templates/index.html:436 templates/index.html:479
+msgid "مشاهده در نقشه گوگل"
+msgstr "عرض على خرائط جوجل"
+
+#: templates/index.html:505
 msgid "اعضای تیم فنی"
 msgstr "أعضاء الفريق التقني"
 
-#: templates/index.html:508
+#: templates/index.html:517
 msgid "دانلود رزومه"
 msgstr "تحميل الكتالوج"
 
-#: templates/index.html:529
+#: templates/index.html:538
 msgid "تماس با ما"
 msgstr "اتصل بنا"
 
-#: templates/index.html:549
+#: templates/index.html:558
 msgid "025 - 36647647"
 msgstr ""
 
-#: templates/index.html:549
+#: templates/index.html:558
 msgid "0912 651 2267"
 msgstr ""
 
-#: templates/index.html:551
+#: templates/index.html:560
 msgid "قم، کیلومتر ۴ جاده قدیم قم-تهران، جنب مجتمع بعثت"
 msgstr "قم، قم طهران 4 كم الطريق القديم، إلى جانب مهمة معقدة"
 

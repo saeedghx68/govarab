@@ -419,7 +419,7 @@
 									<th style="width:15%;"><div><i class="fa fa-phone" aria-hidden="true"></i>
 										{% trans 'تلفن' %}
 									</div></th>
-									<th style="width:20%;"><div><i class="fa fa-map-marker" aria-hidden="true"></i>
+									<th style="width:20%;"><div><i class="fa fa-globe" aria-hidden="true"></i>
 										{% trans 'آدرس' %}
 									</div></th>
 									<th><div><i class="fa fa-file-text" aria-hidden="true"></i>
@@ -427,13 +427,18 @@
 									</div></th>
 								</thead>
 								<tbody>
-									{% for representative in representatives %}
+									{% for reseller in resellers %}
 										<tr>
-										  <td>{{ representative.name }}</td>
-										  <td>{{ representative.tel }}</td>
-										  <td>{{ representative.address }}</td>
+										  <td>{{ reseller.name }}</td>
+										  <td>{{ reseller.tel }}</td>
+										  <td>{{ reseller.address }}
+											  <a href="http://maps.google.com/?q={{ reseller.lat }},{{ reseller.lon }}" target="_blank"
+												 class="tooltip-top" data-tooltip="{% trans 'مشاهده در نقشه گوگل' %}">
+												 <i class="fa fa-map-marker fa-2x" aria-hidden="true"></i>
+											  </a>
+										  </td>
 										  {% autoescape off %}
-										    <td style="padding-bottom:0;">{{ representative.description }}</td>
+										    <td style="padding-bottom:0;">{{ reseller.description }}</td>
 										  {% endautoescape %}
 										</tr>
 									{% endfor %}
@@ -447,7 +452,6 @@
 					<li class="sky-tab-content-2">
 						<div>
 						<div class="tit">
-
 							<div>
 							  <table>
 								<thead>
@@ -458,7 +462,7 @@
 									<th style="width:15%;"><div><i class="fa fa-phone" aria-hidden="true"></i>
 										{% trans 'تلفن' %}
 									</div></th>
-									<th style="width:20%;"><div><i class="fa fa-map-marker" aria-hidden="true"></i>
+									<th style="width:20%;"><div><i class="fa fa-globe" aria-hidden="true"></i>
 										{% trans 'آدرس' %}
 									</div></th>
 									<th><div><i class="fa fa-file-text" aria-hidden="true"></i>
@@ -466,13 +470,18 @@
 									</div></th>
 								</thead>
 								<tbody>
-									{% for reseller in resellers %}
+									{% for representative in representatives %}
 										<tr>
-										  <td>{{ reseller.name }}</td>
-										  <td>{{ reseller.tel }}</td>
-										  <td>{{ reseller.address }}</td>
+										  <td>{{ representative.name }}</td>
+										  <td>{{ representative.tel }}</td>
+										  <td>{{ representative.address }}
+											  <a href="http://maps.google.com/?q={{ representative.lat }},{{ representative.lon }}" target="_blank"
+												 class="tooltip-top" data-tooltip="{% trans 'مشاهده در نقشه گوگل' %}">
+												 <i class="fa fa-map-marker fa-2x" aria-hidden="true"></i>
+											  </a>
+										  </td>
 										  {% autoescape off %}
-										    <td style="padding-bottom:0;">{{ reseller.description }}</td>
+										    <td style="padding-bottom:0;">{{ representative.description }}</td>
 										  {% endautoescape %}
 										</tr>
 									{% endfor %}

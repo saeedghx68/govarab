@@ -1787,3 +1787,8 @@ table *{
     text-align: left;
     border: 1px solid #dfdfdf;
 }
+
+table .fa-2x {
+    font-size: 22px !important;
+    color: #df2f2f;
+}

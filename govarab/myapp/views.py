@@ -25,8 +25,6 @@ def home(request):
         c['catalog'] = Catalog.objects.all()[0]
         c['resellers'] = Dealership.objects.filter(type='1')
         c['representatives'] = Dealership.objects.filter(type='2')
-        print(c['resellers'])
-        print(c['resellers'])
     except:
         print (u'داده ها وارد نشده!')
     return render_to_response('index.html', c)

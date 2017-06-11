@@ -1856,3 +1856,8 @@ table *{
     font-weight: bold;
     text-align: right;
 }
+
+table .fa-2x {
+    font-size: 22px !important;
+    color: #df2f2f;
+}
