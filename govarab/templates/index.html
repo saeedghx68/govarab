@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% load static from staticfiles %}
 {% load i18n %}
+{% load l10n %}
 
 {% block content %}
 	<!-- Navigation -->
@@ -432,7 +433,7 @@
 										  <td>{{ reseller.name }}</td>
 										  <td>{{ reseller.tel }}</td>
 										  <td>{{ reseller.address }}
-											  <a href="http://maps.google.com/?q={{ reseller.lat }},{{ reseller.lon }}" target="_blank"
+											  <a href="http://maps.google.com/?q={{ reseller.lat |unlocalize }},{{ reseller.lon |unlocalize }}" target="_blank"
 												 class="tooltip-top" data-tooltip="{% trans 'مشاهده در نقشه گوگل' %}">
 												 <i class="fa fa-map-marker fa-2x" aria-hidden="true"></i>
 											  </a>
