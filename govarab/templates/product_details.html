@@ -26,10 +26,9 @@
 				<ul class="nav">
 					<li><a href="/{{ SELECTEDLANG }}/#home" class="link">{% trans "خانه" %}</a></li>
 					<li><a href="/{{ SELECTEDLANG }}/#about" class="link">{% trans "درباره ما" %}</a></li>
-					<li><a href="/{{ SELECTEDLANG }}/#services" class="link">{% trans "خدمات" %}</a></li>
 					<li><a href="/{{ SELECTEDLANG }}/#products" class="link">{% trans "محصولات" %}</a></li>
 					<li><a href="/{{ SELECTEDLANG }}/#FAQ" class="link">{% trans "سؤالات متداول" %}</a></li>
-					<li><a href="/{{ SELECTEDLANG }}/#articles" class="link">{% trans "مقالات" %}</a></li>
+					<li><a href="/{{ SELECTEDLANG }}/#articles" class="link">{% trans "مقالات علمی" %}</a></li>
 					<li><a href="/{{ SELECTEDLANG }}/#gallery" class="link">{% trans "گالری" %}</a></li>
 					<li><a href="/{{ SELECTEDLANG }}/#dealerships" class="link">{% trans "نمایندگی ها" %}</a></li>
 					<li><a href="/{{ SELECTEDLANG }}/#team" class="link">{% trans "اعضای تیم" %}</a></li>
@@ -95,8 +94,8 @@
 
 			{% for pic in product.images.all %}
 				<div class="item three columns product-imgs">
-					<a href="/media/{{ pic.small_img }}" data-rel="prettyPhoto[gallery]">
-						<img src="/media/{{ pic.big_img }}" alt="{{ pic.alt }}" />
+					<a href="/media/{{ pic.big_img }}" data-rel="prettyPhoto[gallery]">
+						<img src="/media/{{ pic.small_img }}" alt="{{ pic.alt }}" />
 						<div class="mask"></div>
 					</a>
 				</div>

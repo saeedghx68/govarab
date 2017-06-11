@@ -159,10 +159,11 @@ class Catalog(models.Model):
 
 
 class Article(models.Model):
-    title = models.CharField(default='', max_length=100, verbose_name=_('title'))
+    title = models.CharField(default='', max_length=300, verbose_name=_('title'))
     text = models.TextField(verbose_name=_('text'))
     image = models.ImageField(blank=True, null=True, upload_to='images/articles/', verbose_name=_('image'))
-    link = models.URLField(verbose_name=_('source link'))
+    link = models.URLField(verbose_name=_('Reference link'))
+    reference_title = models.CharField(default='', max_length=300, verbose_name=_('Reference title'))
     created_at = models.DateTimeField(auto_now=True)
 
     def __unicode__(self):

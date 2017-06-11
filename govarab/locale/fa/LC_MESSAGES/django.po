@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-06-11 06:37+0430\n"
+"POT-Creation-Date: 2017-06-11 15:39+0430\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -74,9 +74,9 @@ msgstr "نام محصول"
 msgid "product category"
 msgstr "دسته بندی محصول"
 
-#: myapp/models.py:67 myapp/models.py:188
+#: myapp/models.py:67 myapp/models.py:189
 msgid "description"
-msgstr "توضیحات محصول"
+msgstr "توضیحات"
 
 #: myapp/models.py:74
 msgid "Product"
@@ -114,7 +114,7 @@ msgstr "سؤالات متداول"
 msgid "FAQs"
 msgstr "سؤالات متداول"
 
-#: myapp/models.py:116 myapp/models.py:183
+#: myapp/models.py:116 myapp/models.py:184
 msgid "name"
 msgstr "نام"
 
@@ -155,50 +155,54 @@ msgid "catalog"
 msgstr "کاتالوگ"
 
 #: myapp/models.py:165
-msgid "source link"
+msgid "Reference link"
 msgstr "لینک منبع"
 
-#: myapp/models.py:173
+#: myapp/models.py:166
+msgid "Reference title"
+msgstr "عنوان منبع"
+
+#: myapp/models.py:174
 msgid "article"
 msgstr "مقاله"
 
-#: myapp/models.py:174
+#: myapp/models.py:175
 msgid "articles"
 msgstr "مقالات"
 
-#: myapp/models.py:180
+#: myapp/models.py:181
 msgid "Resellers"
 msgstr "نمایندگان فروش"
 
-#: myapp/models.py:181
+#: myapp/models.py:182
 msgid "Representatives"
 msgstr "عاملین فروش"
 
-#: myapp/models.py:184
+#: myapp/models.py:185
 msgid "phone"
 msgstr "تلفن"
 
-#: myapp/models.py:185
+#: myapp/models.py:186
 msgid "address"
 msgstr "آدرس"
 
-#: myapp/models.py:186
+#: myapp/models.py:187
 msgid "Latitude"
 msgstr "عرض جغرافیایی"
 
-#: myapp/models.py:187
+#: myapp/models.py:188
 msgid "Longitude"
 msgstr "طول جغرافیایی"
 
-#: myapp/models.py:189
+#: myapp/models.py:190
 msgid "type"
 msgstr "نوع"
 
-#: myapp/models.py:196
+#: myapp/models.py:197
 msgid "dealership"
 msgstr "نمایندگی"
 
-#: myapp/models.py:197
+#: myapp/models.py:198
 msgid "dealerships"
 msgstr "نمایندگی ها"
 
@@ -218,74 +222,62 @@ msgid "درباره ما"
 msgstr ""
 
 #: templates/article_single.html:29 templates/articles.html:29
-#: templates/index.html:106 templates/product_details.html:29
-msgid "خدمات"
-msgstr ""
-
-#: templates/article_single.html:30 templates/articles.html:30
-#: templates/index.html:25 templates/product_details.html:30
+#: templates/index.html:25 templates/product_details.html:29
 msgid "محصولات"
 msgstr ""
 
-#: templates/article_single.html:31 templates/articles.html:31
+#: templates/article_single.html:30 templates/articles.html:30
 #: templates/index.html:26 templates/index.html:290
-#: templates/product_details.html:31
+#: templates/product_details.html:30
 msgid "سؤالات متداول"
 msgstr ""
 
-#: templates/article_single.html:32 templates/articles.html:32
-#: templates/product_details.html:32
-msgid "مقالات"
+#: templates/article_single.html:31 templates/articles.html:31
+#: templates/articles.html:53 templates/index.html:27
+#: templates/product_details.html:31
+msgid "مقالات علمی"
 msgstr ""
 
-#: templates/article_single.html:33 templates/articles.html:33
-#: templates/index.html:28 templates/product_details.html:33
+#: templates/article_single.html:32 templates/articles.html:32
+#: templates/index.html:28 templates/product_details.html:32
 msgid "گالری"
 msgstr ""
 
-#: templates/article_single.html:34 templates/articles.html:34
+#: templates/article_single.html:33 templates/articles.html:33
 #: templates/index.html:29 templates/index.html:395
-#: templates/product_details.html:34
+#: templates/product_details.html:33
 msgid "نمایندگی ها"
 msgstr ""
 
-#: templates/article_single.html:35 templates/articles.html:35
-#: templates/index.html:30 templates/product_details.html:35
+#: templates/article_single.html:34 templates/articles.html:34
+#: templates/index.html:30 templates/product_details.html:34
 msgid "اعضای تیم"
 msgstr ""
 
-#: templates/article_single.html:36 templates/articles.html:36
-#: templates/index.html:31 templates/product_details.html:36
+#: templates/article_single.html:35 templates/articles.html:35
+#: templates/index.html:31 templates/product_details.html:35
 msgid "تماس با ما "
 msgstr ""
 
-#: templates/article_single.html:59
-msgid "لیست مقالات"
+#: templates/article_single.html:58
+msgid "لیست مقالات علمی"
 msgstr ""
 
-#: templates/article_single.html:88
+#: templates/article_single.html:87
 msgid "منبع"
 msgstr ""
 
-#: templates/article_single.html:101 templates/articles.html:80
-#: templates/index.html:569 templates/product_details.html:116
+#: templates/article_single.html:100 templates/articles.html:79
+#: templates/index.html:569 templates/product_details.html:115
 msgid "GOWARAB"
 msgstr "گواراب"
 
-#: templates/articles.html:54
-msgid "مقاله ها"
-msgstr ""
-
-#: templates/articles.html:68 templates/index.html:342
+#: templates/articles.html:67 templates/index.html:342
 msgid "بیشتر بخوانید"
 msgstr ""
 
 #: templates/base.html:9
 msgid "گواراب"
-msgstr ""
-
-#: templates/index.html:27 templates/index.html:327
-msgid "آخرین مقاله ها"
 msgstr ""
 
 #: templates/index.html:93
@@ -314,6 +306,10 @@ msgid ""
 "در شرکت گواراب سازان دشت سبز، مسؤولیّت ها به نحوی مستند، آموزش و پایش شده اند "
 "که چه در فرایندهای درون سازمانی و چه فرایندهای مرتبط با مشتری، پاسخگویی به "
 "عنوان یک رویکرد راهبردی و در جهت بهبود اثربخش کار تعریف شده است."
+msgstr ""
+
+#: templates/index.html:106
+msgid "خدمات"
 msgstr ""
 
 #: templates/index.html:108
@@ -492,6 +488,10 @@ msgstr ""
 msgid "پرسش های مشتریان و پاسخ آنها"
 msgstr ""
 
+#: templates/index.html:327
+msgid "آخرین مقالات علمی"
+msgstr ""
+
 #: templates/index.html:336
 msgid "خواندن کامل مقاله"
 msgstr ""
@@ -562,11 +562,11 @@ msgstr "۰۹۱۲ ۶۵۱ ۲۲۶۷"
 msgid "قم، کیلومتر ۴ جاده قدیم قم-تهران، جنب مجتمع بعثت"
 msgstr ""
 
-#: templates/product_details.html:59
+#: templates/product_details.html:58
 msgid "دسته بندی"
 msgstr ""
 
-#: templates/product_details.html:89
+#: templates/product_details.html:88
 msgid "تصاویر محصول"
 msgstr ""
 

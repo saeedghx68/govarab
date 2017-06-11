@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-06-11 06:37+0430\n"
+"POT-Creation-Date: 2017-06-11 15:39+0430\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -73,7 +73,7 @@ msgstr ""
 msgid "product category"
 msgstr ""
 
-#: myapp/models.py:67 myapp/models.py:188
+#: myapp/models.py:67 myapp/models.py:189
 msgid "description"
 msgstr ""
 
@@ -113,7 +113,7 @@ msgstr ""
 msgid "FAQs"
 msgstr ""
 
-#: myapp/models.py:116 myapp/models.py:183
+#: myapp/models.py:116 myapp/models.py:184
 msgid "name"
 msgstr ""
 
@@ -154,50 +154,54 @@ msgid "catalog"
 msgstr ""
 
 #: myapp/models.py:165
-msgid "source link"
+msgid "Reference link"
 msgstr ""
 
-#: myapp/models.py:173
-msgid "article"
+#: myapp/models.py:166
+msgid "Reference title"
 msgstr ""
 
 #: myapp/models.py:174
+msgid "article"
+msgstr ""
+
+#: myapp/models.py:175
 msgid "articles"
 msgstr ""
 
-#: myapp/models.py:180
+#: myapp/models.py:181
 msgid "Resellers"
 msgstr ""
 
-#: myapp/models.py:181
+#: myapp/models.py:182
 msgid "Representatives"
 msgstr ""
 
-#: myapp/models.py:184
+#: myapp/models.py:185
 msgid "phone"
 msgstr ""
 
-#: myapp/models.py:185
+#: myapp/models.py:186
 msgid "address"
 msgstr ""
 
-#: myapp/models.py:186
+#: myapp/models.py:187
 msgid "Latitude"
 msgstr ""
 
-#: myapp/models.py:187
+#: myapp/models.py:188
 msgid "Longitude"
 msgstr ""
 
-#: myapp/models.py:189
+#: myapp/models.py:190
 msgid "type"
 msgstr ""
 
-#: myapp/models.py:196
+#: myapp/models.py:197
 msgid "dealership"
 msgstr ""
 
-#: myapp/models.py:197
+#: myapp/models.py:198
 msgid "dealerships"
 msgstr ""
 
@@ -217,75 +221,63 @@ msgid "درباره ما"
 msgstr "about us"
 
 #: templates/article_single.html:29 templates/articles.html:29
-#: templates/index.html:106 templates/product_details.html:29
-msgid "خدمات"
-msgstr "services"
-
-#: templates/article_single.html:30 templates/articles.html:30
-#: templates/index.html:25 templates/product_details.html:30
+#: templates/index.html:25 templates/product_details.html:29
 msgid "محصولات"
 msgstr "products"
 
-#: templates/article_single.html:31 templates/articles.html:31
+#: templates/article_single.html:30 templates/articles.html:30
 #: templates/index.html:26 templates/index.html:290
-#: templates/product_details.html:31
+#: templates/product_details.html:30
 msgid "سؤالات متداول"
 msgstr "FAQs"
 
-#: templates/article_single.html:32 templates/articles.html:32
-#: templates/product_details.html:32
-msgid "مقالات"
-msgstr "Articles"
+#: templates/article_single.html:31 templates/articles.html:31
+#: templates/articles.html:53 templates/index.html:27
+#: templates/product_details.html:31
+msgid "مقالات علمی"
+msgstr "Scientific Articles"
 
-#: templates/article_single.html:33 templates/articles.html:33
-#: templates/index.html:28 templates/product_details.html:33
+#: templates/article_single.html:32 templates/articles.html:32
+#: templates/index.html:28 templates/product_details.html:32
 msgid "گالری"
 msgstr "gallery"
 
-#: templates/article_single.html:34 templates/articles.html:34
+#: templates/article_single.html:33 templates/articles.html:33
 #: templates/index.html:29 templates/index.html:395
-#: templates/product_details.html:34
+#: templates/product_details.html:33
 msgid "نمایندگی ها"
 msgstr "dealerships"
 
-#: templates/article_single.html:35 templates/articles.html:35
-#: templates/index.html:30 templates/product_details.html:35
+#: templates/article_single.html:34 templates/articles.html:34
+#: templates/index.html:30 templates/product_details.html:34
 msgid "اعضای تیم"
 msgstr "team"
 
-#: templates/article_single.html:36 templates/articles.html:36
-#: templates/index.html:31 templates/product_details.html:36
+#: templates/article_single.html:35 templates/articles.html:35
+#: templates/index.html:31 templates/product_details.html:35
 msgid "تماس با ما "
 msgstr "contact us"
 
-#: templates/article_single.html:59
-msgid "لیست مقالات"
-msgstr "Articles"
+#: templates/article_single.html:58
+msgid "لیست مقالات علمی"
+msgstr "List of scientific papers"
 
-#: templates/article_single.html:88
+#: templates/article_single.html:87
 msgid "منبع"
-msgstr "souece"
+msgstr "Reference"
 
-#: templates/article_single.html:101 templates/articles.html:80
-#: templates/index.html:569 templates/product_details.html:116
+#: templates/article_single.html:100 templates/articles.html:79
+#: templates/index.html:569 templates/product_details.html:115
 msgid "GOWARAB"
 msgstr ""
 
-#: templates/articles.html:54
-msgid "مقاله ها"
-msgstr "Articles"
-
-#: templates/articles.html:68 templates/index.html:342
+#: templates/articles.html:67 templates/index.html:342
 msgid "بیشتر بخوانید"
 msgstr "Read more"
 
 #: templates/base.html:9
 msgid "گواراب"
 msgstr "GOWARAB"
-
-#: templates/index.html:27 templates/index.html:327
-msgid "آخرین مقاله ها"
-msgstr "Latest Articles"
 
 #: templates/index.html:93
 msgid "درباره گواراب"
@@ -328,6 +320,10 @@ msgstr ""
 "documentation, training and monitoring have been that internal processes and "
 "processes related to customer responsiveness as a strategic approach in "
 "order to improve the effectiveness of work defined"
+
+#: templates/index.html:106
+msgid "خدمات"
+msgstr "services"
 
 #: templates/index.html:108
 msgid ""
@@ -566,6 +562,10 @@ msgstr "all"
 msgid "پرسش های مشتریان و پاسخ آنها"
 msgstr "Customer questions and answers"
 
+#: templates/index.html:327
+msgid "آخرین مقالات علمی"
+msgstr "Latest Articles"
+
 #: templates/index.html:336
 msgid "خواندن کامل مقاله"
 msgstr "Read Full Article"
@@ -638,13 +638,16 @@ msgstr ""
 msgid "قم، کیلومتر ۴ جاده قدیم قم-تهران، جنب مجتمع بعثت"
 msgstr "Qom, Qom-Tehran 4 km old road, next to the complex Besat"
 
-#: templates/product_details.html:59
+#: templates/product_details.html:58
 msgid "دسته بندی"
 msgstr "Category"
 
-#: templates/product_details.html:89
+#: templates/product_details.html:88
 msgid "تصاویر محصول"
 msgstr "product images"
+
+#~ msgid "مقاله ها"
+#~ msgstr "Articles"
 
 #~ msgid "ارتباط با "
 #~ msgstr "contact with"

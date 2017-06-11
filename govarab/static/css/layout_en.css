@@ -1204,7 +1204,7 @@ Blog
 	text-align: left;
 }
 .post-title{
-	font-size: 24px;
+	font-size: 22px;
 	text-align: left;
 	color: #2a8cb6;
 	line-height: 32px;
@@ -1771,7 +1771,7 @@ table *{
     text-align: left !important;
 }
 
-.fa{
+table th .fa{
     margin-right: 5px;
 }
 

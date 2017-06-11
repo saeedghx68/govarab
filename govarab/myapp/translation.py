@@ -39,7 +39,7 @@ class TeamTranslationOptions(TranslationOptions):
 
 @register(Article)
 class TeamTranslationOptions(TranslationOptions):
-    fields = ('title', 'text',)
+    fields = ('title', 'text', 'reference_title')
 
 @register(Dealership)
 class TeamTranslationOptions(TranslationOptions):

@@ -24,7 +24,7 @@
 					<li><a href="#about" class="scroll link">{% trans "درباره ما" %}</a></li>
 					<li><a href="#products" class="scroll link">{% trans "محصولات" %}</a></li>
 					<li><a href="#FAQ" class="scroll link">{% trans "سؤالات متداول" %}</a></li>
-					<li><a href="#articles" class="scroll link">{% trans "آخرین مقاله ها" %}</a></li>
+					<li><a href="#articles" class="scroll link">{% trans "مقالات علمی" %}</a></li>
 					<li><a href="#gallery" class="scroll link">{% trans "گالری" %}</a></li>
 					<li><a href="#dealerships" class="scroll link">{% trans "نمایندگی ها" %}</a></li>
 					<li><a href="#team" class="scroll link">{% trans "اعضای تیم" %}</a></li>
@@ -324,7 +324,7 @@
 	<section id="articles" class="section" style="background-color:#f3f3f3;">
 		<div class="container">
 			<h2 class="title animated" data-animate="bounceIn" data-animate-delay="400" style="color: #2a8cb6;">
-				{% trans 'آخرین مقاله ها' %}
+				{% trans 'آخرین مقالات علمی' %}
 				<hr class="hr">
 			</h2>
 
@@ -337,7 +337,7 @@
 					</a><!-- end post image -->
 					<a href="articles/{{ article.id }}" class="post-title">{{ article.title }}</a>
 					{% autoescape off %}
-						<p>{{ article.text |truncatewords:60 }}</p>
+						<p>{{ article.text |truncatewords:30 }}</p>
 					{% endautoescape %}
 					<p id="article-more"><a href="articles/{{ article.id }}" >{% trans 'بیشتر بخوانید' %} &raquo;</a></p>
 				</div><!-- end post preview -->
