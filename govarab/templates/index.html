@@ -2,6 +2,7 @@
 {% load static from staticfiles %}
 {% load i18n %}
 {% load l10n %}
+{% load compress %}
 
 {% block content %}
 	<!-- Navigation -->
@@ -543,7 +544,7 @@
 		</section><!-- end callout title -->
 
 		<div id="google-map">
-			<iframe marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d209961.59360736088!2d50.71197817334581!3d34.688784481321996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f93bb6eb88ce195%3A0xcc35bec1c2604470!2sQom%2C+Qom+Province!5e0!3m2!1sen!2sir!4v1495482575764" frameborder="0" height="400" width="100%"></iframe>
+			<iframe marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d418755.0935126648!2d50.5415986318846!3d34.91838888037912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDU1JzA2LjIiTiA1MMKwNDknMTguMyJF!5e0!3m2!1sen!2s!4v1497557851041" style="border:0" allowfullscreen frameborder="0" height="400" width="100%"></iframe>
 		</div>
 	</section><!-- end map section -->
 
@@ -576,23 +577,8 @@
 {% endblock %}
 
 {% block script %}
-    <script type="text/javascript" src="{% static 'js/navigation.js' %}"></script>
-	<script>
-		function myMap() {
-		  var myCenter = new google.maps.LatLng(34.918398, 50.821748);
-		  var mapCanvas = document.getElementById("google-map");
-		  var mapOptions = {center: myCenter, zoom: 5};
-		  var map = new google.maps.Map(mapCanvas, mapOptions);
-		  var marker = new google.maps.Marker({position:myCenter});
-		  marker.setMap(map);
+	{% compress js %}
+		<script type="text/javascript" src="{% static 'js/navigation.js' %}"></script>
+	{% endcompress %}
 
-		  google.maps.event.addListener(marker,'click',function() {
-			var pos = map.getZoom();
-			map.setZoom(14);
-			map.setCenter(marker.getPosition());
-			window.setTimeout(function() {map.setZoom(pos);},3000);
-		  });
-		}
-	</script>
-	<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
 {% endblock %}

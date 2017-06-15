@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'modeltranslation',
+    'compressor',
     'myapp',
 ]
 
@@ -141,6 +142,15 @@ USE_L10N = True
 
 USE_TZ = True
 
+# compressor settings (Compresses linked and inline JavaScript or CSS into a single cached file.)
+
+COMPRESS_ENABLED = True
+
+STATICFILES_FINDERS = (
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+    'compressor.finders.CompressorFinder',
+)
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
